@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Mea+Culpa&family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.cabecalho {
+    background-color: #0d0d0d;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.078);
+    height: 90px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+
+.cabecalho img {
+    display: flex;
+    width: 120px;
+    /* margin: 165px; */
+}
+
+/* .cabecalho ul li img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 20px;
+
+} */
+
+
+.itensHeader {
+    display: flex;
+    align-items: center;
+    color: white;
+    /* padding: 200px; */
+}
+
+.itensHeader ul li {
+    font-size: 15px;
+    display: inline;
+    margin-right: 50px;
+}
+
+.itensHeader ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.itensHeader ul li a:hover {
+    text-decoration: none;
+    color:#d1d1d1;
+}
+
+
+
