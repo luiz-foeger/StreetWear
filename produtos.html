@@ -4,12 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style/style-produtos.css">
     <link rel="stylesheet" href="style/style-header.css">
     <title>StreetWear - Camisetas</title>
 </head>
 
 <body>
+    <section id="carrinho">
+        <div id="cabecalho-carrinho">
+            <p>Meu Carrinho</p>
+            <button id="btn-fechar-carrinho"><i class="fa-solid fa-x"></i></button>
+        </div>
+        <section id="section-carrinho">
+            <p>Camisa High Razor</p>
+            <p>Camisa High Golf</p>
+            <p>Camisa High Polo</p>
+        </section>
+        <p id="preco-carrinho">R$353,90</p>
+        <button class="botao-style">FINALIZAR</button>
+    </section>
     <header class="cabecalho">
         <div>
             <a href="index.html"><img src="icon/logo.png" alt="Logo EAFC24 Site Official"></a>
@@ -20,7 +36,8 @@
                     <a href="#">Histórico</a>
                 </li>
                 <li>
-                    <a href="#">Carrinho</a>
+                    <a href="#" >Carrinho</a>
+                    <button id="btn-abrir-carrinho">Carrinho</button>
                 </li>
             </ul>
         </nav>
@@ -31,6 +48,7 @@
     </main>
     <footer></footer>
     <script src="script/script-index.js"></script>
+    <script src="script/script-carrinho.js"></script>
 </body>
 
 </html>
