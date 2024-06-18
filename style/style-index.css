@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Mea+Culpa&family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-principal {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.container-principal img {
+    /* width: 49.9%; */
+    width: 50%;
+    height: auto;
+    transition: transform .5s ease;
+    cursor: pointer;
+}
+
+.container-principal img:hover {
+    transform: scale(0.99);
+}
+
+#faixa {
+    height: 40px;
+    width: 100vw;
+    background-color: #000000;
+}
+
+/* .section-botões {
+    display: flex;
+    height: 900px;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.078);
+    height: 90px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    
+} */
+
+/* -------------------------------------------------------------------------------- */
+
+/* .container-botões {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 200px;
+    font-family: "Mea Culpa", cursive;
+}
+
+.container-botões a {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-size: 45px;
+    width: 380px;
+    border-radius: 15px;
+    transition: ease 0.2s;
+    text-shadow: 0 0 5px #ffffff56, 0 0 10px #ffffff56, 0 0 1px #ffffff56, 0 0 2px #ffffff56, 0 0 30px #ffffff56, 0 0 40px #ffffff56, 0 0 55px #ffffff56, 0 0 75px #ffffff56;
+}
+
+.container-botões a:hover {
+    color: #0d0d0d;
+    background-color: #fff;
+    box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.171);
+    -webkit-box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.171);
+    -moz-box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.171);
+} */
+
+
+/* -------------------------------------------------------------------------------- */
+
+.container-botões {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 200px;
+    font-family: "Mea Culpa", cursive;
+}
+
+.container-botões a {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    font-size: 45px;
+    width: 380px;
+    border-radius: 15px;
+    transition: ease 0.3s;
+    box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.171);
+    -webkit-box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.171);
+    -moz-box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.171);
+}
+
+.container-botões a:hover {
+    color: #fff;
+    background-color: #0b0b0b;
+    text-shadow: 0 0 5px #ffffff56, 0 0 10px #ffffff56, 0 0 1px #ffffff56, 0 0 2px #ffffff56,
+        0 0 30px #ffffff56, 0 0 40px #ffffff56, 0 0 55px #ffffff56, 0 0 75px #ffffff56;
+    box-shadow: 0px 0px 0px 0px #fff;
+
+    /* text-shadow: 0px 0px 37px rgba(255, 255, 255, 1); */
+}
+
+/* -------------------------------------------------------------------------------- */
+
+
+
+/* .section-botões {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.078);
+    height: 300px;
+    font-family: "Mea Culpa", cursive;
+    font-weight: 300;
+}
+
+.section-botões ul li {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    width: 380px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.144);
+    -webkit-box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.144);
+    -moz-box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.144);
+}
+
+
+.section-botões ul li a {
+    font-size: 60px;
+    text-decoration: none;
+    color: #000000;
+} */
+
+/*
+    width: 150px;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    background-color: #0d0d0d;
+    border: none;
+    padding: 10px 20px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 12px;
+    transition: ease 0.2s;

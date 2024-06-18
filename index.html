@@ -1,28 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/icon/icon-logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="style/style-produtos.css">
+    <link rel="stylesheet" href="style/style-index.css">
+    <link rel="stylesheet" href="style/style-carrinho.css">
     <link rel="stylesheet" href="style/style-header.css">
     <title>StreetWear - Site Oficial</title>
 </head>
+
 <body>
+    <section id="carrinho" style="display: none;">
+        <div id="cabecalho-carrinho">
+            <p>Meu Carrinho</p>
+            <button onclick="fecharCarrinho()" id="btn-fechar-carrinho"><i class="fa-solid fa-x"></i></button>
+        </div>
+        <section id="section-carrinho">
+            <p>Camisa High Razor</p>
+            <p>Camisa High Golf</p>
+            <p>Camisa High Polo</p>
+        </section>
+        <p id="preco-carrinho">R$353,90</p>
+        <button class="botao-style">FINALIZAR</button>
+    </section>
     <header class="cabecalho">
-        <div>
-            <a href="index.html"><img src="icon/logo.png" alt="Logo EAFC24 Site Official"></a>
+        <div class="logo">
+            <a href="index.html"><img src="icon/logo.png" alt=""></a>
         </div>
         <nav class="itensHeader">
             <ul>
                 <li>
-                    <a href="#">Histórico</a>
+                    <a href="#">LOJA</a>
                 </li>
                 <li>
-                    <a href="#">Carrinho</a>
+                    <a href="#">PRODUTOS</a>
+                </li>
+                <li>
+                    <a href="#">SOBRE</a>
                 </li>
             </ul>
         </nav>
+        <div class="icons">
+            <button><img class="btn-abrir-carrinho" src="icon/search.png" alt=""></button>
+            <button><img class="btn-abrir-carrinho" src="icon/profile.png" alt=""></button>
+            <button onclick="abrirCarrinho()" class="btn-abrir-carrinho"><img src="icon/cart.png" alt=""></button>
+        </div>
     </header>
+    <main>
+        <section class="container-principal">
+            <img src="img/img-destaque-1.jpg" alt="">
+            <img src="img/img-destaque-2.jpg" alt="">
+        </section>
+        <div id="faixa">
+        </div>
+        <div class="container-botões">
+            <a href="#">Acessórios</a>
+            <a href="produtos.html">Camisetas</a>
+            <a href="#">Sneakers</a>
+            <a href="#">Boards</a>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="script/script-index.js"></script>
+    <script src="script/script-carrinho.js"></script>
 </body>
+
 </html>

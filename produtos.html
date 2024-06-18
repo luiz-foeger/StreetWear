@@ -8,15 +8,16 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style/style-produtos.css">
+    <link rel="stylesheet" href="style/style-carrinho.css">
     <link rel="stylesheet" href="style/style-header.css">
     <title>StreetWear - Camisetas</title>
 </head>
 
 <body>
-    <section id="carrinho">
+    <section id="carrinho" style="display: none;">
         <div id="cabecalho-carrinho">
             <p>Meu Carrinho</p>
-            <button id="btn-fechar-carrinho"><i class="fa-solid fa-x"></i></button>
+            <button onclick="fecharCarrinho()" id="btn-fechar-carrinho"><i class="fa-solid fa-x"></i></button>
         </div>
         <section id="section-carrinho">
             <p>Camisa High Razor</p>
@@ -27,20 +28,27 @@
         <button class="botao-style">FINALIZAR</button>
     </section>
     <header class="cabecalho">
-        <div>
-            <a href="index.html"><img src="icon/logo.png" alt="Logo EAFC24 Site Official"></a>
+        <div class="logo">
+            <a href="index.html"><img src="icon/logo.png" alt=""></a>
         </div>
         <nav class="itensHeader">
             <ul>
                 <li>
-                    <a href="#">Histórico</a>
+                    <a href="#">LOJA</a>
                 </li>
                 <li>
-                    <a href="#" >Carrinho</a>
-                    <button id="btn-abrir-carrinho">Carrinho</button>
+                    <a href="#">PRODUTOS</a>
+                </li>
+                <li>
+                    <a href="#">SOBRE</a>
                 </li>
             </ul>
         </nav>
+        <div class="icons">
+            <button><img class="btn-abrir-carrinho" src="icon/search.png" alt=""></button>
+            <button><img class="btn-abrir-carrinho" src="icon/profile.png" alt=""></button>
+            <button onclick="abrirCarrinho()" class="btn-abrir-carrinho"><img src="icon/cart.png" alt=""></button>
+        </div>
     </header>
     <main>
         <section id="container-produtos">

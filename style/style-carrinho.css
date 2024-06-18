@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Mea+Culpa&family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#carrinho {
+    background-color: #ffffff;
+    color: #000000;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    height: 100vh;
+    width: 500px;
+    padding: 10px;
+    font-family: "Inter", sans-serif;
+    border-bottom-left-radius: 50px;
+    box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.21);
+    -webkit-box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.21);
+    -moz-box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.21);
+}
+
+#cabecalho-carrinho {
+    font-family: "Mea Culpa", cursive;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 15px;
+}
+
+#cabecalho-carrinho button {
+    background-color: #fff;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+}

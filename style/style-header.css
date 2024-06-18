@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
 .cabecalho {
@@ -14,13 +14,38 @@
     align-items: center;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.078);
     height: 90px;
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
+    font-family: "Bree Serif", serif;
+    font-weight: 200;
 }
 
-.cabecalho img {
+.cabecalho .logo img {
     display: flex;
     width: 120px;
+    /* margin: 165px; */
+}
+
+.cabecalho .icons {
+    display: flex;
+    /* margin: 165px; */
+}
+
+.cabecalho .icons img {
+    width: 20px;
+    margin-left: 15px;
+    /* margin-left: 10px; */
+    /* margin: 165px; */
+}
+
+.cabecalho .icons button {
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+    justify-content: center;
+    background-color: #0d0d0d;
+    border: none;
+    cursor: pointer;
+
+    /* margin-left: 10px; */
     /* margin: 165px; */
 }
 
@@ -35,25 +60,23 @@
 .itensHeader {
     display: flex;
     align-items: center;
-    color: white;
     /* padding: 200px; */
 }
 
 .itensHeader ul li {
-    font-size: 15px;
+    font-size: 16px;
     display: inline;
-    margin-right: 50px;
+    margin-right: 40px;
 }
 
 .itensHeader ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #dddddd;
 }
 
 .itensHeader ul li a:hover {
     text-decoration: none;
-    color:#d1d1d1;
+    color: #96abcc;
+    /* color: #687ea0; */
+    /* color: #a06868; */
 }
-
-
-

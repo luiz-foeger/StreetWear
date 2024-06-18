@@ -11,37 +11,6 @@ body {
     font-weight: 400;
 }
 
-#carrinho {
-    background-color: #ffffff;
-    color: #000000;
-    position: fixed;
-    top: 0;
-    right: 0px;
-    height: 100vh;
-    width: 500px;
-    padding: 10px;
-    font-family: "Inter", sans-serif;
-    border-bottom-left-radius: 50px;
-    box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.21);
-    -webkit-box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.21);
-    -moz-box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.21);
-}
-
-#cabecalho-carrinho {
-    font-family: "Mea Culpa", cursive;
-    font-weight: 300;
-    font-size: 30px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    margin: 0px 15px;
-}
-
-#cabecalho-carrinho button {
-    background-color: #fff;
-    color: #000000;
-    border: none;
-}
 
 /* --------------------- */
 
@@ -61,9 +30,16 @@ body {
     align-items: center;
     border-radius: 10px;
     margin: 20px;
-    box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.21);
+    transition: ease 0.2s;
+}
+
+.card-produto:hover {
+    /* box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.21);
     -webkit-box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.21);
-    -moz-box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.21);
+    -moz-box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.21); */
+    box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.178);
+    -webkit-box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.178);
+    -moz-box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.178);
 }
 
 .card-produto img {
@@ -99,6 +75,9 @@ body {
 }
 
 .botao-style:hover {
-    background-color: #181e36ee;
+    /* background-color: #181e36ee; */
+    background-color: #0b0b0b;
     font-size: px;
+    text-shadow: 0 0 5px #ffffff56, 0 0 10px #ffffff56, 0 0 1px #ffffff56, 0 0 2px #ffffff56,
+    0 0 30px #ffffff56, 0 0 40px #ffffff56, 0 0 55px #ffffff56, 0 0 75px #ffffff56;
 }
