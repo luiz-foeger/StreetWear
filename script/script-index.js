@@ -1,37 +1,37 @@
 const vetCatalogo = [
     {
         id: 1,
-        nome: 'CAMISETA HIGH "THINK" BLACK',
+        nome: 'CAMISETA "THINK" HIGH',
         preco: 139,
         imagem: 'product-1.jpg'
     },
     {
         id: 2,
-        nome: 'CAMISETA HIGH "RAZOR" BLUE',
+        nome: 'CAMISETA "RAZOR" HIGH',
         preco: 139,
         imagem: 'product-2.jpg'
     },
     {
         id: 3,
-        nome: 'CAMISETA HIGH "CELLPHONE" WHITE',
+        nome: 'CAMISETA "CELLPHONE" HIGH',
         preco: 139,
         imagem: 'product-3.jpg'
     },
     {
         id: 4,
-        nome: 'CAMISETA HIGH "GOLF" YELLOW',
+        nome: 'CAMISETA "GOLF" HIGH',
         preco: 149,
         imagem: 'product-4.jpg'
     },
     {
         id: 5,
-        nome: 'CAMISETA HIGH POLO SPORT WHITE',
+        nome: 'CAMISA POLO SPORT HIGH',
         preco: 169,
         imagem: 'product-5.jpg'
     },
     {
         id: 6,
-        nome: 'CAMISETA HIGH "COMET" RED',
+        nome: 'CAMISETA "COMET" HIGH',
         preco: 139,
         imagem: 'product-6.jpg'
     }
@@ -39,14 +39,14 @@ const vetCatalogo = [
 
 for (produtoCatalogo of vetCatalogo) {
     const cardProduto =
-        `<div id="card-produto">
-    <img src="img/${produtoCatalogo.imagem}" alt="" style="height: 200px;">
+        `<div id="card-produto-${produtoCatalogo.id}" class="card-produto">
+    <img src="img/${produtoCatalogo.imagem}" alt="">
         <p>${produtoCatalogo.nome}</p>
-        <p>R$${produtoCatalogo.preco},90</p>
-        <button>Adicionar ao carrinho</button>
+        <p id="paragrafo-preco">R$${produtoCatalogo.preco},90</p>
+        <button>ADICIONAR</button>
 </div>`;
 
-document.getElementById("container-produto").innerHTML += cardProduto; //innerHTML -> ver o html dentro do elemento
+document.getElementById("container-produtos").innerHTML += cardProduto; //innerHTML -> ver o html dentro do elemento
 };
 
 
