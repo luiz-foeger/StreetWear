@@ -17,8 +17,18 @@ const vetCatalogo = [
         preco: 271,
         imagem: 'deck-3.png'
     },
-
-
+    {
+        id: 4,
+        nome: 'SHAPE "M. INFERNO" CREATURE',
+        preco: 271,
+        imagem: 'deck-4.png'
+    },
+    {
+        id: 5,
+        nome: 'SHAPE "CATACOMB" CREATURE',
+        preco: 271,
+        imagem: 'deck-5.png'
+    }
 ];
 
 for (produtoCatalogo of vetCatalogo) {

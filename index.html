@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style/style-index.css">
     <link rel="stylesheet" href="style/style-carrinho.css">
     <link rel="stylesheet" href="style/style-header.css">
-    <title>Street&Wear - Página Inicial</title>
+    <title>StreetWear - Página Inicial</title>
 </head>
 
 <body>
@@ -22,8 +22,10 @@
             <p>Camisa High Golf</p>
             <p>Camisa High Polo</p>
         </section>
-        <p id="preco-carrinho">R$353,90</p>
-        <button class="botao-style">FINALIZAR</button>
+        <div id="detalhes-carrinho">
+            <p id="preco-carrinho">R$353,90</p>
+            <button class="botao-style">FINALIZAR</button>
+        </div>
     </section>
     <header class="cabecalho">
         <div class="logo">
@@ -59,11 +61,37 @@
         <div class="container-botões">
             <a href="/html/acessorios.html">Acessórios</a>
             <a href="/html/produtos.html">Camisetas</a>
-            <a href="#">Sneakers</a>
+            <a href="/html/sneakers.html">Sneakers</a>
             <a href="/html/decks.html">Decks</a>
         </div>
+        <section class="produtos-index">
+            <div class="card-produto">
+                <img src="img/acessorios/touca-1.png" alt="">
+                <p>TOUCA SOMETIMES</p>
+                <p id="paragrafo-preco">R$99,90</p>
+                <button class="botao-style">VER MAIS</button>
+            </div>
+            <div class="card-produto">
+                <img src="img/camisetas/blusa-4.png" alt="">
+                <p>BLUSA "LUCK" SOMETIMES</p>
+                <p id="paragrafo-preco">R$119,90</p>
+                <button class="botao-style">VER MAIS</button>
+            </div>
+            <div class="card-produto">
+                <img src="img/sneakers/skate-1.png" alt="">
+                <p>ÖUS IMIGRANTE NOTÓRIO</p>
+                <p id="paragrafo-preco">R$297,90</p>
+                <button class="botao-style">VER MAIS</button>
+            </div>
+            <div class="card-produto">
+                <img src="img/decks/deck-1.png" style="height: 244px;" alt="">
+                <p>SHAPE "ROADSTER" PRIMITIVE</p>
+                <p id="paragrafo-preco">R$283,90</p>
+                <button class="botao-style">VER MAIS</button>
+            </div>
+        </section>
         <section>
-            <img src="img/thrasher.jpg" style="width: 100vw;" alt="">
+            <img src="img/thrasher.jpg" style="width: 100%;" alt="">
         </section>
     </main>
     <footer></footer>

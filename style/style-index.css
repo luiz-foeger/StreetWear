@@ -30,7 +30,7 @@
     align-items: center;
     justify-content: center;
     height: 50px;
-    width: 100vw;
+    width: 100%;
     background-color: #000000;
     font-family: "Inter", cursive;
     font-weight: 300;
@@ -121,7 +121,81 @@
 
 /* -------------------------------------------------------------------------------- */
 
+/* --------------------- */
 
+#container-produtos {
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.produtos-index {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.produtos-index .card-produto {
+    font-family: "Bree Serif", serif;
+    background-color: rgb(255, 255, 255);
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    margin: 20px 20px 50px 20px;
+    transition: ease 0.2s;
+}
+
+.produtos-index .card-produto:hover {
+    /* box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.21);
+    -webkit-box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.21);
+    -moz-box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.21); */
+    cursor: url('/icon/gta-pointer.cur'), auto;
+    box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.178);
+    -webkit-box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.178);
+    -moz-box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.178);
+}
+
+.produtos-index .card-produto img {
+    margin-top: 15px;
+    width: 270px;
+}
+
+.produtos-index .card-produto p {
+    padding: 10px 0px 3px 0px;
+}
+
+.produtos-index .card-produto #paragrafo-preco {
+    color: #144E84;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.produtos-index .botao-style {
+    width: 150px;
+    /* font-family: "Inter", sans-serif; */
+    font-weight: bold;
+    background-color: #0d0d0d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 20px;
+    transition: ease 0.2s;
+}
+
+.produtos-index .botao-style:hover {
+    /* background-color: #181e36ee; */
+    background-color: #0b0b0b;
+    text-shadow: 0 0 5px #ffffff56, 0 0 10px #ffffff56, 0 0 1px #ffffff56, 0 0 2px #ffffff56,
+    0 0 30px #ffffff56, 0 0 40px #ffffff56, 0 0 55px #ffffff56, 0 0 75px #ffffff56;
+}
 
 /* .section-botões {
     display: flex;

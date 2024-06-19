@@ -7,9 +7,12 @@
 }
 
 #carrinho {
-    background-color: #ffffff;
+    background-color: #fffffff7;
     color: #000000;
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     top: 0;
     right: 0px;
     height: 100vh;
@@ -22,7 +25,7 @@
     -moz-box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.21);
 }
 
-#cabecalho-carrinho {
+#carrinho #cabecalho-carrinho {
     font-family: "Mea Culpa", cursive;
     font-weight: 300;
     font-size: 30px;
@@ -30,11 +33,76 @@
     display: flex;
     justify-content: space-between;
     margin: 0px 15px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #d1d1d1;
 }
 
-#cabecalho-carrinho button {
-    background-color: #fff;
+#carrinho #cabecalho-carrinho button {
+    background-color: #ffffff00;
     color: #000000;
     border: none;
     cursor: pointer;
+}
+
+#carrinho #cabecalho-carrinho button:hover {
+    color: #808080;
+
+}
+
+#carrinho #conteudo-carrinho {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 15px;
+    background-color: #ffffffa6;
+    padding: 10px;
+    max-height: 700px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 27px -18px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 27px -18px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 27px -18px rgba(0,0,0,0.75);
+}
+
+#carrinho #conteudo-carrinho img {
+    margin-bottom: 10px;
+}
+
+#carrinho #conteudo-carrinho article {
+    display: flex;
+}
+
+#carrinho #conteudo-carrinho article button {
+    color: #000000;
+    border: none;
+    background-color: #fff;
+    right: 0;
+    margin-right: 10px
+}
+
+
+#carrinho #info-conteudo-carrinho {
+    margin-left: 15px;
+    width: 300px;
+}
+
+#carrinho #info-conteudo-carrinho p {
+    margin-top: 10px;
+}
+
+#carrinho #detalhes-carrinho {
+    display: flex;
+    bottom: 0;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 15px;
+    padding: 10px;
+    /* border-bottom: 1px solid #a1a1a1; */
+    border-top: 1px solid #d1d1d1;
+}
+
+#carrinho #detalhes-carrinho p {
+    margin-top: 10px;
+}
+
+#carrinho #detalhes-carrinho button {
+    font-size: 15px;
 }

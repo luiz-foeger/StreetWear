@@ -1,4 +1,4 @@
-const vetCatalogo = [
+export const vetCatalogo = [
     {
         id: 1,
         nome: 'CAMISETA "THINK" HIGH',
@@ -76,7 +76,7 @@ const vetCatalogo = [
         nome: 'BLUSA "LUCK" SOMETIMES ',
         preco: 119,
         imagem: 'blusa-4.png'
-    },
+    }, 
     {
         id: 14,
         nome: 'MOLETOM "DEATH ANGEL" DIAMOND ',
@@ -84,41 +84,3 @@ const vetCatalogo = [
         imagem: 'moletom-1.png'
     }
 ];
-
-
-function renderizarCatalogo() {
-    for (const produtoCatalogo of vetCatalogo) {
-        const cardProduto =
-            `<div id="card-produto-${produtoCatalogo.id}" class="card-produto">
-    <img src="../img/camisetas/${produtoCatalogo.imagem}" alt="">
-        <p>${produtoCatalogo.nome}</p>
-        <p id="paragrafo-preco">R$${produtoCatalogo.preco},90</p>
-        <button onclick="abrirCarrinho()" id='adicionar-${produtoCatalogo.id}' <i class="fa-solid fa-cart-plus botao-style" style="font-family=serif;"></i></button>
-</div>`;
-
-        document.getElementById("container-produtos").innerHTML += cardProduto; //innerHTML -> ver o html dentro do elemento
-    };
-
-    for (const produtoCatalogo of vetCatalogo) {
-        document.getElementById(`adicionar-${produtoCatalogo.id}`).addEventListener('click', () => adicionarAoCarrinho(produtoCatalogo.id));
-    };
-}
-
-function adicionarAoCarrinho(idProdutos) {
-    const produto = vetCatalogo.find(p => p.id === idProdutos);
-
-    // const produtosCarrinho = document.getElementById("conteudo-carrinho").innerHTML;
-
-    const produtoAdicionado =
-        `<article>
-            <img src="/img/camisetas/${produto.imagem}" style="width: 120px;" alt="">
-                <div id="info-conteudo-carrinho">
-                    <p>${produto.nome}</p>
-                    <p>ID: ${produto.id}</p>
-                    <p>R$${produto.preco},90</p>
-                </div>
-            <button onclick="" id="btn-fechar-carrinho"><i class="fa-solid fa-trash-can"></i></button>
-        </article>`;
-
-    document.getElementById("conteudo-carrinho").innerHTML += produtoAdicionado;
-}

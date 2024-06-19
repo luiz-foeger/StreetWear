@@ -11,7 +11,17 @@ const vetCatalogo = [
         preco: 109,
         imagem: 'touca-2.png'
     },
-
+    {
+        id: 3,
+        nome: 'TOUCA "BASKA" ÖUS',
+        preco: 79,
+        imagem: 'touca-3.png'
+    },{
+        id: 4,
+        nome: 'BONÉ VELUDO TUPODE',
+        preco: 129,
+        imagem: 'bone-1.png'
+    }
 ];
 
 for (produtoCatalogo of vetCatalogo) {

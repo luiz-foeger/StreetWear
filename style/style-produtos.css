@@ -19,7 +19,6 @@ body {
     margin-left: 90px;
     height: 90px;
     font-size: 18px;
-    width: 100vw;
     font-family: "Inter", cursive;
 }
 
@@ -82,7 +81,7 @@ body {
 
 .botao-style {
     width: 150px;
-    font-family: "Inter", sans-serif;
+    /* font-family: "Inter", sans-serif; */
     font-weight: bold;
     background-color: #0d0d0d;
     color: white;
@@ -91,14 +90,13 @@ body {
     font-size: 12px;
     cursor: pointer;
     border-radius: 10px;
-    margin: 12px;
+    margin: 20px;
     transition: ease 0.2s;
 }
 
 .botao-style:hover {
     /* background-color: #181e36ee; */
     background-color: #0b0b0b;
-    font-size: px;
     text-shadow: 0 0 5px #ffffff56, 0 0 10px #ffffff56, 0 0 1px #ffffff56, 0 0 2px #ffffff56,
     0 0 30px #ffffff56, 0 0 40px #ffffff56, 0 0 55px #ffffff56, 0 0 75px #ffffff56;
 }
