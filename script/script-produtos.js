@@ -56,13 +56,13 @@ const vetCatalogo = [
     {
         id: 10,
         nome: 'BLUSA "L.T.H.T" ALLGLORY',
-        preco: 205,
+        preco: 198,
         imagem: 'blusa-1.png'
     },
     {
         id: 11,
         nome: 'BLUSA "D ROSES" DIAMOND',
-        preco: 198,
+        preco: 176,
         imagem: 'blusa-2.png'
     },
     {
@@ -74,7 +74,7 @@ const vetCatalogo = [
     {
         id: 13,
         nome: 'BLUSA "LUCK" SOMETIMES ',
-        preco: 119,
+        preco: 121,
         imagem: 'blusa-4.png'
     },
     {
@@ -82,6 +82,18 @@ const vetCatalogo = [
         nome: 'MOLETOM "DEATH ANGEL" DIAMOND ',
         preco: 259,
         imagem: 'moletom-1.png'
+    },
+    {
+        id: 15,
+        nome: 'MOLETOM "CLASS INVERSO" CLASS ',
+        preco: 229,
+        imagem: 'moletom-2.png'
+    },
+    {
+        id: 16,
+        nome: 'MOLETOM "GOODS LOGO ÓRBITA" BC ',
+        preco: 259,
+        imagem: 'moletom-3.png'
     }
 ];
 

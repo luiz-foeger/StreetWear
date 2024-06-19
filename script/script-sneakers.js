@@ -32,7 +32,7 @@ const vetCatalogo = [
     {
         id: 6,
         nome: 'DC SHOES CONSTRUCT IMP',
-        preco: 509,
+        preco: 379,
         imagem: 'sneaker-4.png'
     },
     {
@@ -44,14 +44,20 @@ const vetCatalogo = [
     {
         id: 8,
         nome: 'DC X THRASHER TRUTH',
-        preco: 379,
+        preco: 529,
         imagem: 'sneaker-6.png'
     },
     {
         id: 9,
         nome: 'ADIDAS FORUM LOW',
-        preco: 379,
+        preco: 439,
         imagem: 'sneaker-7.png'
+    },
+    {
+        id: 10,
+        nome: 'REBOOK X BAW "REVENGE" CLUB C',
+        preco: 679,
+        imagem: 'sneaker-8.png'
     }
 ];
 
