@@ -11,6 +11,26 @@ body {
     font-weight: 400;
 }
 
+#indicador-pagina {
+    color: #000;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 90px;
+    height: 90px;
+    font-size: 18px;
+    width: 100vw;
+    font-family: "Inter", cursive;
+}
+
+#indicador-pagina ul li {
+    display: inline;
+}
+
+#indicador-pagina ul li a {
+    color: #5f5f5f;
+    text-decoration: none;
+}
 
 /* --------------------- */
 
@@ -28,7 +48,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 15px;
     margin: 20px;
     transition: ease 0.2s;
 }
@@ -37,6 +57,7 @@ body {
     /* box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.21);
     -webkit-box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.21);
     -moz-box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.21); */
+    cursor: url('/icon/gta-pointer.cur'), auto;
     box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.178);
     -webkit-box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.178);
     -moz-box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.178);

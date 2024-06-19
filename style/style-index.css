@@ -9,7 +9,6 @@
 .container-principal {
     display: flex;
     justify-content: space-between;
-
 }
 
 .container-principal img {
@@ -17,7 +16,8 @@
     width: 50%;
     height: auto;
     transition: transform .5s ease;
-    cursor: pointer;
+    cursor: url('/icon/gta-pointer.cur'), auto;
+
 }
 
 .container-principal img:hover {
@@ -25,9 +25,15 @@
 }
 
 #faixa {
-    height: 40px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
     width: 100vw;
     background-color: #000000;
+    font-family: "Inter", cursive;
+    font-weight: 300;
 }
 
 /* .section-botões {
@@ -105,7 +111,7 @@
 
 .container-botões a:hover {
     color: #fff;
-    background-color: #0b0b0b;
+    background-color: #030303;
     text-shadow: 0 0 5px #ffffff56, 0 0 10px #ffffff56, 0 0 1px #ffffff56, 0 0 2px #ffffff56,
         0 0 30px #ffffff56, 0 0 40px #ffffff56, 0 0 55px #ffffff56, 0 0 75px #ffffff56;
     box-shadow: 0px 0px 0px 0px #fff;

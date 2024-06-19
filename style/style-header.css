@@ -31,7 +31,7 @@
 
 .cabecalho .icons img {
     width: 20px;
-    margin-left: 15px;
+    margin-left: 20px;
     /* margin-left: 10px; */
     /* margin: 165px; */
 }
@@ -75,8 +75,8 @@
 }
 
 .itensHeader ul li a:hover {
-    text-decoration: none;
-    color: #96abcc;
+    color: #ffffff;
+    /* color: #96abcc; */
     /* color: #687ea0; */
     /* color: #a06868; */
 }
