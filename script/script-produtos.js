@@ -1,96 +1,96 @@
 const vetCatalogo = [
     {
-        id: 1,
+        id: "1",
         nome: 'CAMISETA "THINK" HIGH',
         preco: 142,
         imagem: 'camiseta-1.png'
     },
     {
-        id: 2,
+        id: "2",
         nome: 'CAMISETA "RAZOR" HIGH',
         preco: 142,
         imagem: 'camiseta-2.png'
     },
     {
-        id: 3,
+        id: "3",
         nome: 'CAMISETA "CELLPHONE" HIGH',
         preco: 142,
         imagem: 'camiseta-3.png'
     },
     {
-        id: 4,
+        id: "4",
         nome: 'CAMISETA "GOLF" HIGH',
         preco: 153,
         imagem: 'camiseta-4.png'
     },
     {
-        id: 5,
+        id: "5",
         nome: 'CAMISA POLO SPORT HIGH',
         preco: 168,
         imagem: 'camiseta-5.png'
     },
     {
-        id: 6,
+        id: "6",
         nome: 'CAMISETA "COMET" HIGH',
         preco: 142,
         imagem: 'camiseta-6.png'
     },
     {
-        id: 7,
+        id: "7",
         nome: 'CAMISETA "ACID LOVE" LOVE DELIVERY',
         preco: 127,
         imagem: 'camiseta-7.png'
     },
     {
-        id: 8,
+        id: "8",
         nome: 'CAMISETA "CINZEIRO" KUNX',
         preco: 139,
         imagem: 'camiseta-8.png'
     },
     {
-        id: 9,
+        id: "9",
         nome: 'CAMISETA "GRAFF" KUNX',
         preco: 131,
         imagem: 'camiseta-9.png'
     },
     {
-        id: 10,
+        id: "10",
         nome: 'BLUSA "L.T.H.T" ALLGLORY',
         preco: 198,
         imagem: 'blusa-1.png'
     },
     {
-        id: 11,
+        id: "11",
         nome: 'BLUSA "D ROSES" DIAMOND',
         preco: 176,
         imagem: 'blusa-2.png'
     },
     {
-        id: 12,
+        id: "12",
         nome: 'BLUSA "POSTING LESS" SOMETIMES',
         preco: 119,
         imagem: 'blusa-3.png'
     },
     {
-        id: 13,
+        id: "13",
         nome: 'BLUSA "LUCK" SOMETIMES ',
         preco: 121,
         imagem: 'blusa-4.png'
     },
     {
-        id: 14,
+        id: "14",
         nome: 'MOLETOM "DEATH ANGEL" DIAMOND ',
         preco: 259,
         imagem: 'moletom-1.png'
     },
     {
-        id: 15,
+        id: "15",
         nome: 'MOLETOM "CLASS INVERSO" CLASS ',
         preco: 229,
         imagem: 'moletom-2.png'
     },
     {
-        id: 16,
+        id: "16",
         nome: 'MOLETOM "GOODS LOGO ÓRBITA" BC ',
         preco: 259,
         imagem: 'moletom-3.png'
@@ -116,30 +116,82 @@ function renderizarCatalogo() {
     };
 }
 
-// const idQtdProduto = {
-// }
+//// LÓGICA DE MANIPULAÇÃO DA QUANTIDADE DE PRODUTOS NO CARRINHO
 
-function adicionarAoCarrinho(idProdutos) {
-    const produto = vetCatalogo.find(p => p.id === idProdutos);
+const qtdProdutoId = {};
 
-    // const produtosCarrinho = document.getElementById("conteudo-carrinho").innerHTML;
-
-    const produtoAdicionado =
-        `<article>
-            <img src="/img/camisetas/${produto.imagem}" style="width: 120px;" alt="Carrinho: ${produto.nome}">
-                <div id="info-conteudo-carrinho">
-                    <p>${produto.nome}</p>
-                    <p>ID: ${produto.id}</p>
-                    <p><strong>R$${produto.preco},90</strong></p>
-                </div>
-            <div id="quantidade-produto">
-                <button>-</button>
-                <p id='quantidade-${produto.id}'>2</p>
-                <button>+</button>
-            </div>
-            <button onclick="" id="btn-fechar-carrinho"><i class="fa-solid fa-trash-can"></i></button>
-        </article>`;
-
-    document.getElementById("conteudo-carrinho").innerHTML += produtoAdicionado;
+function addQtdProduto(idProdutos) {
+    qtdProdutoId[idProdutos]++;
+    atualizarQtdProduto(idProdutos);
 }
 
+function removeQtdProduto(idProdutos) {
+    if(qtdProdutoId[idProdutos] === 1){
+        removerProdutoCarrinho(idProdutos);
+        return;
+    }
+    qtdProdutoId[idProdutos]--;
+    atualizarQtdProduto(idProdutos);
+}
+
+function atualizarQtdProduto(idProdutos) {
+    document.getElementById(`quantidade-${idProdutos}`).innerText = qtdProdutoId[idProdutos];
+}
+
+function removerProdutoCarrinho(idProdutos) {
+    delete qtdProdutoId[idProdutos];
+    renderizarProdutosCarrinho();
+}
+
+//// LÓGICA DE GERAÇÃO DOS PRODUTOS NO CARRINHO
+
+function gerarProdutoCarrinho(idProdutos) {
+    const produto = vetCatalogo.find(p => p.id === idProdutos);
+
+    const containerProdutosCarrinho = document.getElementById("conteudo-carrinho");
+    const createArticleProduto = document.createElement('article'); //<article></article>
+
+    const produtoAdicionado =
+        `<img src="/img/camisetas/${produto.imagem}" style="width: 100px;" alt="Carrinho: ${produto.nome}">
+            <div id="info-conteudo-carrinho">
+                <p>${produto.nome}</p>
+                <p>ID: ${produto.id}</p>
+                <p><strong>R$${produto.preco},90</strong></p>
+            </div>
+            <div id="quantidade-produto">
+                <button id="btnRemoveQtd-${produto.id}">-</button>
+                <p id="quantidade-${produto.id}">${qtdProdutoId[produto.id]}</p>
+                <button id="btnAddQtd-${produto.id}">+</button>
+            </div>
+            <button onclick="" id="remover-item-${produto.id}"><i class="fa-solid fa-trash-can"></i></button>`;
+
+    createArticleProduto.innerHTML = produtoAdicionado;
+    containerProdutosCarrinho.appendChild(createArticleProduto);
+    // document.getElementById("conteudo-carrinho").innerHTML += produtoAdicionado;
+
+    //// ATRIBUIÇÃO DE AÇÕES AOS BOTÕES DO CARRINHO
+    document.getElementById(`btnRemoveQtd-${produto.id}`).addEventListener('click', () => removeQtdProduto(produto.id));
+    document.getElementById(`btnAddQtd-${produto.id}`).addEventListener('click', () => addQtdProduto(produto.id));
+    document.getElementById(`remover-item-${produto.id}`).addEventListener('click' , () => removerProdutoCarrinho(idProdutos));
+}
+
+/////////////////////////////////////////////
+
+function renderizarProdutosCarrinho() {
+    const containerProdutosCarrinho = document.getElementById("conteudo-carrinho");
+    containerProdutosCarrinho.innerHTML = '';
+
+    for(const idProduto in qtdProdutoId) {
+        gerarProdutoCarrinho(idProduto);
+    }
+}
+
+function adicionarAoCarrinho(idProdutos) {
+    if (idProdutos in qtdProdutoId) {
+        addQtdProduto(idProdutos);
+        return;
+    }
+    qtdProdutoId[idProdutos] = 1;
+
+    gerarProdutoCarrinho(idProdutos);
+}

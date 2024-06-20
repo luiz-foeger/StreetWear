@@ -11,7 +11,7 @@ function fecharCarrinho() {
   var sectionCarrinho = document.getElementById("carrinho");
   sectionCarrinho.style.display = "none";
 }
-
+  
 renderizarCatalogo()
 
 
