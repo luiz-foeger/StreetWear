@@ -3,9 +3,9 @@ function abrirCarrinho() {
   var sectionCarrinho = document.getElementById("carrinho");
   if (sectionCarrinho.style.display === "none") {
     sectionCarrinho.style.display = "block";
+        atualizarPrecoCarrinho();
   }
 }
-
 
 function fecharCarrinho() {
   var sectionCarrinho = document.getElementById("carrinho");
@@ -13,7 +13,7 @@ function fecharCarrinho() {
 }
   
 renderizarCatalogo()
-
+renderizarProdutosCarrinho();
 
 
 // function adicionarAoCarrinho() {

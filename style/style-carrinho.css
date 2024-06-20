@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Mea+Culpa&family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Mea+Culpa&family=Source+Code+Pro&family=Inter:wght@100..900&display=swap');
 
 * {
     margin: 0;
@@ -81,26 +81,43 @@
     border: none;
     background-color: #fff;
     right: 0;
-    margin-right: 10px;
     cursor: pointer;
 }
 
 #carrinho #conteudo-carrinho #quantidade-produto {
-    display: flex;
-    align-items: end;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
     position: absolute;
-    right: 50px;
-    bottom: 18px;
+    right: 45px;
+    bottom: 20px;
     border: solid 1px rgb(202, 202, 202);
-    padding: 5px 10px;
+    padding: 3px 0;
     border-radius: 10px;
-    
+    font-family: "Source Code Pro", monospace;
+    font-weight: 900;
+    min-width: 80px;
 }
 
 #carrinho #conteudo-carrinho #quantidade-produto p {
-    padding: 0px 10px 0px 7px;
-    /* border: solid 1px rgb(202, 202, 202); */
+margin: 0 5px;
 }
+
+#carrinho #conteudo-carrinho #quantidade-produto button {
+    display: flex;
+    align-items: center;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 900;
+    font-size: 16px;
+    padding: 0 10px;
+    background-color: #ffffff00;
+}
+
+
+/* #carrinho #conteudo-carrinho #quantidade-produto p {
+    padding: 0px 10px 0px 7px;
+    border: solid 1px rgb(202, 202, 202);
+} */
 
 #carrinho #info-conteudo-carrinho {
     margin-left: 15px;

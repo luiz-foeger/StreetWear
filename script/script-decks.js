@@ -20,13 +20,13 @@ const vetCatalogo = [
     {
         id: 4,
         nome: 'SHAPE "M. INFERNO" CREATURE',
-        preco: 271,
+        preco: 298,
         imagem: 'deck-4.png'
     },
     {
         id: 5,
         nome: 'SHAPE "CATACOMB" CREATURE',
-        preco: 271,
+        preco: 242,
         imagem: 'deck-5.png'
     }
 ];

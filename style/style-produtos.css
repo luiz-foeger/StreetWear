@@ -100,3 +100,8 @@ body {
     text-shadow: 0 0 5px #ffffff56, 0 0 10px #ffffff56, 0 0 1px #ffffff56, 0 0 2px #ffffff56,
     0 0 30px #ffffff56, 0 0 40px #ffffff56, 0 0 55px #ffffff56, 0 0 75px #ffffff56;
 }
+
+#detalhes-carrinho .botao-style {
+    width: 200px;
+    font-weight: bold;
+}

@@ -116,22 +116,27 @@ function renderizarCatalogo() {
     };
 }
 
-//// LÓGICA DE MANIPULAÇÃO DA QUANTIDADE DE PRODUTOS NO CARRINHO
+//// LÓGICA DE MANIPULAÇÃO DA QUANTIDADE / PREÇO DE PRODUTOS NO CARRINHO
 
-const qtdProdutoId = {};
+const qtdProdutoId = lerInfoSalva('carrinho') ?? {};
 
 function addQtdProduto(idProdutos) {
     qtdProdutoId[idProdutos]++;
+    salvarInfo("carrinho", qtdProdutoId);
     atualizarQtdProduto(idProdutos);
+    atualizarPrecoCarrinho();
 }
 
 function removeQtdProduto(idProdutos) {
-    if(qtdProdutoId[idProdutos] === 1){
+    if (qtdProdutoId[idProdutos] === 1) {
+        alert("ESTE ITEM SERÁ REMOVIDO DO SEU CARRINHO!")
         removerProdutoCarrinho(idProdutos);
         return;
     }
     qtdProdutoId[idProdutos]--;
+    salvarInfo("carrinho", qtdProdutoId);
     atualizarQtdProduto(idProdutos);
+    atualizarPrecoCarrinho();
 }
 
 function atualizarQtdProduto(idProdutos) {
@@ -140,13 +145,35 @@ function atualizarQtdProduto(idProdutos) {
 
 function removerProdutoCarrinho(idProdutos) {
     delete qtdProdutoId[idProdutos];
+    salvarInfo("carrinho", qtdProdutoId);
     renderizarProdutosCarrinho();
+    atualizarPrecoCarrinho();
+}
+
+function atualizarPrecoCarrinho() {
+    let total = 0;
+
+    for (const idProdutos in qtdProdutoId) {
+        total += vetCatalogo.find((produto) => produto.id === idProdutos).preco * qtdProdutoId[idProdutos]; //parseInt
+    }
+    document.getElementById("preco-carrinho").innerText = `TOTAL: R$${total}`;
+}
+
+function salvarInfo(chave,informacao) {
+    localStorage.setItem(chave, JSON.stringify(informacao));
+    // localStorage.setItem("qtdProdutoId", JSON.stringify(qtdProdutoId));
+}
+
+function lerInfoSalva(chave) {
+    return JSON.parse(localStorage.getItem(chave));
+    // return JSON.parse(localStorage.getItem("qtdProdutoId"));
+    // qtdProdutoId = JSON.parse(localStorage.getItem("qtdProdutoId")) || {};
 }
 
 //// LÓGICA DE GERAÇÃO DOS PRODUTOS NO CARRINHO
 
 function gerarProdutoCarrinho(idProdutos) {
-    const produto = vetCatalogo.find(p => p.id === idProdutos);
+    const produto = vetCatalogo.find(produto => produto.id === idProdutos);
 
     const containerProdutosCarrinho = document.getElementById("conteudo-carrinho");
     const createArticleProduto = document.createElement('article'); //<article></article>
@@ -156,7 +183,7 @@ function gerarProdutoCarrinho(idProdutos) {
             <div id="info-conteudo-carrinho">
                 <p>${produto.nome}</p>
                 <p>ID: ${produto.id}</p>
-                <p><strong>R$${produto.preco},90</strong></p>
+                <p style="font-size: 16px">R$${produto.preco},90</p>
             </div>
             <div id="quantidade-produto">
                 <button id="btnRemoveQtd-${produto.id}">-</button>
@@ -172,7 +199,7 @@ function gerarProdutoCarrinho(idProdutos) {
     //// ATRIBUIÇÃO DE AÇÕES AOS BOTÕES DO CARRINHO
     document.getElementById(`btnRemoveQtd-${produto.id}`).addEventListener('click', () => removeQtdProduto(produto.id));
     document.getElementById(`btnAddQtd-${produto.id}`).addEventListener('click', () => addQtdProduto(produto.id));
-    document.getElementById(`remover-item-${produto.id}`).addEventListener('click' , () => removerProdutoCarrinho(idProdutos));
+    document.getElementById(`remover-item-${produto.id}`).addEventListener('click', () => removerProdutoCarrinho(idProdutos));
 }
 
 /////////////////////////////////////////////
@@ -181,7 +208,7 @@ function renderizarProdutosCarrinho() {
     const containerProdutosCarrinho = document.getElementById("conteudo-carrinho");
     containerProdutosCarrinho.innerHTML = '';
 
-    for(const idProduto in qtdProdutoId) {
+    for (const idProduto in qtdProdutoId) {
         gerarProdutoCarrinho(idProduto);
     }
 }
@@ -194,4 +221,7 @@ function adicionarAoCarrinho(idProdutos) {
     qtdProdutoId[idProdutos] = 1;
 
     gerarProdutoCarrinho(idProdutos);
+    salvarInfo("carrinho", qtdProdutoId);
+    atualizarPrecoCarrinho();
+
 }
