@@ -2,7 +2,7 @@ const vetCatalogo = [
     {
         id: 1,
         nome: 'NIKE "LX WHITE" BLAZER MID 77',
-        preco: 483,
+        preco: 384,
         imagem: 'sneaker-1.png'
     },
     {
@@ -25,7 +25,7 @@ const vetCatalogo = [
     },
     {
         id: 5,
-        nome: 'TESLA COIL WHITE&PURPLE',
+        nome: 'TESLA COIL WHITE PURPLE',
         preco: 410,
         imagem: 'skate-2.png'
     },

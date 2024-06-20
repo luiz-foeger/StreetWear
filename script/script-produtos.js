@@ -102,7 +102,7 @@ function renderizarCatalogo() {
     for (const produtoCatalogo of vetCatalogo) {
         const cardProduto =
             `<div id="card-produto-${produtoCatalogo.id}" class="card-produto">
-    <img src="../img/camisetas/${produtoCatalogo.imagem}" alt="">
+    <img src="../img/camisetas/${produtoCatalogo.imagem}" alt="Imagem de ${produtoCatalogo.nome}">
         <p>${produtoCatalogo.nome}</p>
         <p id="paragrafo-preco">R$${produtoCatalogo.preco},90</p>
         <button onclick="abrirCarrinho()" id='adicionar-${produtoCatalogo.id}' <i class="fa-solid fa-cart-plus botao-style" style="font-family=serif;"></i></button>
@@ -116,6 +116,9 @@ function renderizarCatalogo() {
     };
 }
 
+// const idQtdProduto = {
+// }
+
 function adicionarAoCarrinho(idProdutos) {
     const produto = vetCatalogo.find(p => p.id === idProdutos);
 
@@ -123,14 +126,20 @@ function adicionarAoCarrinho(idProdutos) {
 
     const produtoAdicionado =
         `<article>
-            <img src="/img/camisetas/${produto.imagem}" style="width: 120px;" alt="">
+            <img src="/img/camisetas/${produto.imagem}" style="width: 120px;" alt="Carrinho: ${produto.nome}">
                 <div id="info-conteudo-carrinho">
                     <p>${produto.nome}</p>
                     <p>ID: ${produto.id}</p>
-                    <p>R$${produto.preco},90</p>
+                    <p><strong>R$${produto.preco},90</strong></p>
                 </div>
+            <div id="quantidade-produto">
+                <button>-</button>
+                <p id='quantidade-${produto.id}'>2</p>
+                <button>+</button>
+            </div>
             <button onclick="" id="btn-fechar-carrinho"><i class="fa-solid fa-trash-can"></i></button>
         </article>`;
 
     document.getElementById("conteudo-carrinho").innerHTML += produtoAdicionado;
 }
+
