@@ -65,8 +65,8 @@
 
 .itensHeader ul li {
     font-size: 16px;
-    display: inline;
-    margin-right: 40px;
+    display: inline-flex;
+    margin: 20px;
 }
 
 .itensHeader ul li a {
@@ -80,3 +80,48 @@
     /* color: #687ea0; */
     /* color: #a06868; */
 }
+
+
+#opcao-dropdown {
+    padding: 40px 20px;
+}
+
+ .dropdown-produtos ul{
+    display: flex;
+}
+
+ul li ul.dropdown-produtos li {
+    display: block;
+}
+
+ul li ul.dropdown-produtos {
+    top: 90px;
+    /* left: 0;
+    width: 100%; */
+    margin: auto;
+    background-color: #ffffffec;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    text-align: center;
+}
+
+ul li ul.dropdown-produtos a {
+    color: #0d0d0d;
+}
+
+ul li ul.dropdown-produtos a:hover {
+    color: #b9b9b9;
+}
+
+ul li ul.dropdown-produtos ul li {
+    display: flex;
+}
+
+ul li:hover ul.dropdown-produtos {
+    display: block;
+}
+
+/* ul.dropdown-produtos:hover {
+    background-color: #ff0000;
+} */

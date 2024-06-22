@@ -3,97 +3,113 @@ const vetCatalogo = [
         id: "1",
         nome: 'CAMISETA "THINK" HIGH',
         preco: 142,
-        imagem: 'camiseta-1.png'
+        imagem: 'camiseta-1.png',
+        moletom: false,
     },
     {
         id: "2",
         nome: 'CAMISETA "RAZOR" HIGH',
         preco: 142,
-        imagem: 'camiseta-2.png'
+        imagem: 'camiseta-2.png',
+        moletom: false,
     },
     {
         id: "3",
         nome: 'CAMISETA "CELLPHONE" HIGH',
         preco: 142,
-        imagem: 'camiseta-3.png'
+        imagem: 'camiseta-3.png',
+        moletom: false,
     },
     {
         id: "4",
         nome: 'CAMISETA "GOLF" HIGH',
         preco: 153,
-        imagem: 'camiseta-4.png'
+        imagem: 'camiseta-4.png',
+        moletom: false,
     },
     {
         id: "5",
         nome: 'CAMISA POLO SPORT HIGH',
         preco: 168,
-        imagem: 'camiseta-5.png'
+        imagem: 'camiseta-5.png',
+        moletom: false,
     },
     {
         id: "6",
         nome: 'CAMISETA "COMET" HIGH',
         preco: 142,
-        imagem: 'camiseta-6.png'
+        imagem: 'camiseta-6.png',
+        moletom: false,
     },
     {
         id: "7",
         nome: 'CAMISETA "ACID LOVE" LOVE DELIVERY',
         preco: 127,
-        imagem: 'camiseta-7.png'
+        imagem: 'camiseta-7.png',
+        moletom: false,
     },
     {
         id: "8",
         nome: 'CAMISETA "CINZEIRO" KUNX',
         preco: 139,
-        imagem: 'camiseta-8.png'
+        imagem: 'camiseta-8.png',
+        moletom: false,
     },
     {
         id: "9",
         nome: 'CAMISETA "GRAFF" KUNX',
         preco: 131,
-        imagem: 'camiseta-9.png'
+        imagem: 'camiseta-9.png',
+        moletom: false,
     },
     {
         id: "10",
         nome: 'BLUSA "L.T.H.T" ALLGLORY',
         preco: 198,
-        imagem: 'blusa-1.png'
+        imagem: 'blusa-1.png',
+        moletom: false,
     },
     {
         id: "11",
         nome: 'BLUSA "D ROSES" DIAMOND',
         preco: 176,
-        imagem: 'blusa-2.png'
+        imagem: 'blusa-2.png',
+        moletom: false,
     },
     {
         id: "12",
         nome: 'BLUSA "POSTING LESS" SOMETIMES',
         preco: 119,
-        imagem: 'blusa-3.png'
+        imagem: 'blusa-3.png',
+        moletom: false,
     },
     {
         id: "13",
         nome: 'BLUSA "LUCK" SOMETIMES ',
         preco: 121,
-        imagem: 'blusa-4.png'
+        imagem: 'blusa-4.png',
+        moletom: false,
     },
     {
         id: "14",
         nome: 'MOLETOM "DEATH ANGEL" DIAMOND ',
         preco: 259,
-        imagem: 'moletom-1.png'
+        imagem: 'moletom-1.png',
+        moletom: true,
     },
     {
         id: "15",
         nome: 'MOLETOM "CLASS INVERSO" CLASS ',
         preco: 229,
-        imagem: 'moletom-2.png'
+        imagem: 'moletom-2.png',
+        moletom: true,
     },
     {
         id: "16",
         nome: 'MOLETOM "GOODS LOGO ÓRBITA" BC ',
         preco: 259,
-        imagem: 'moletom-3.png'
+        imagem: 'moletom-3.png',
+        moletom: true,
     }
 ];
 
@@ -101,7 +117,7 @@ const vetCatalogo = [
 function renderizarCatalogo() {
     for (const produtoCatalogo of vetCatalogo) {
         const cardProduto =
-            `<div id="card-produto-${produtoCatalogo.id}" class="card-produto">
+            `<div id="card-produto-${produtoCatalogo.id}" class="card-produto ${produtoCatalogo.moletom ? 'moletom' : 'camiseta'}">
     <img src="../img/camisetas/${produtoCatalogo.imagem}" alt="Imagem de ${produtoCatalogo.nome}">
         <p>${produtoCatalogo.nome}</p>
         <p id="paragrafo-preco">R$${produtoCatalogo.preco},90</p>
@@ -129,7 +145,7 @@ function addQtdProduto(idProdutos) {
 
 function removeQtdProduto(idProdutos) {
     if (qtdProdutoId[idProdutos] === 1) {
-        alert("ESTE ITEM SERÁ REMOVIDO DO SEU CARRINHO!")
+        alert(`ESTE ITEM SERÁ REMOVIDO DO SEU CARRINHO!`)
         removerProdutoCarrinho(idProdutos);
         return;
     }

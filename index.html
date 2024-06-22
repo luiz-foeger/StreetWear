@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/icon/icon-logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style/style-index.css">
     <link rel="stylesheet" href="style/style-carrinho.css">
     <link rel="stylesheet" href="style/style-header.css">
@@ -37,7 +38,15 @@
                     <a href="index.html">LOJA</a>
                 </li>
                 <li>
-                    <a href="#">PRODUTOS</a>
+                    <a href="#" id="opcao-dropdown">PRODUTOS<i style="color: #dddddd; margin-left: 5px;"
+                            class="fa-solid fa-angle-down"></i></a></i>
+                    <ul class="dropdown-produtos">
+                        <li><a href="html/acessorios.html">TOUCAS</a></li>
+                        <li><a onclick="mostrarCamiseta()" href="/html/produtos.html">CAMISETAS</a></li>
+                        <li><a onclick="mostrarMoletom()" href="/html/produtos.html">MOLETONS</a></li>
+                        <li><a href="/html/sneakers.html">TÊNIS</a></li>
+                        <li><a href="html/decks.html">DECKS</a></li>
+                    </ul>
                 </li>
                 <li>
                     <a href="#">SOBRE</a>
@@ -90,7 +99,7 @@
                 <button class="botao-style">VER MAIS</button>
             </div>
         </section>
-        
+
         <!-- <section>
             <img src="img/thrasher.jpg" style="width: 100%;" alt="">
         </section> -->

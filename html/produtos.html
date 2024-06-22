@@ -41,7 +41,15 @@
                     <a href="/index.html">LOJA</a>
                 </li>
                 <li>
-                    <a href="#">PRODUTOS</a>
+                    <a href="#" id="opcao-dropdown">PRODUTOS<i style="color: #dddddd; margin-left: 5px;"
+                            class="fa-solid fa-angle-down"></i></a></i>
+                    <ul class="dropdown-produtos">
+                        <li><a href="acessorios.html">TOUCAS</a></li>
+                        <li><a onclick="mostrarCamiseta()" href="produtos.html">CAMISETAS</a></li>
+                        <li><a onclick="mostrarMoletom()" href="produtos.html">MOLETONS</a></li>
+                        <li><a href="sneakers.html">TÊNIS</a></li>
+                        <li><a href="decks.html">DECKS</a></li>
+                    </ul>
                 </li>
                 <li>
                     <a href="#">SOBRE</a>
@@ -62,7 +70,22 @@
                 <li>/ Camisetas</li>
             </ul>
         </div>
+        <section id="filtros-produtos">
+            <div>
+                <input onclick="exibirTodos()" id="exibir-todos" type="radio" name="filtro" checked>
+                <label for="exibir-todos">Todos</label>
+            </div>
+            <div>
+                <input onclick="mostrarMoletom()" id="exibir-moletom" type="radio" name="filtro">
+                <label for="exibir-moletom">Moletons</label>
+            </div>
+            <div>
+                <input onclick="mostrarCamiseta()" id="exibir-camiseta" type="radio" name="filtro">
+                <label for="exibir-camiseta">Camiseta</label>
+            </div>
+        </section>
         <section id="container-produtos">
+
         </section>
     </main>
 
@@ -70,6 +93,7 @@
 
     <script src="../script/script-produtos.js"></script>
     <script src="../script/script-carrinho.js"></script>
+    <script src="../script/script-filtros.js"></script>
 </body>
 
 </html>

@@ -33,6 +33,28 @@ body {
 
 /* --------------------- */
 
+#filtros-produtos {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    user-select: none;
+}
+
+/* #filtros-produtos input {
+    visibility: hidden;
+} */
+
+#filtros-produtos div {
+margin: 10px;
+}
+
+.escondido {
+    display: "none";
+    background-color: #000;
+}
+
+/* --------------------- */
+
 #container-produtos {
     margin: 0 auto;
     padding: 20px;

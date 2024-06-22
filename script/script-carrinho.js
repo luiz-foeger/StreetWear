@@ -14,6 +14,9 @@ function fecharCarrinho() {
   
 renderizarCatalogo()
 renderizarProdutosCarrinho();
+atualizarPrecoCarrinho();
+atualizarQtdProduto();
+inicializarFiltros();
 
 
 // function adicionarAoCarrinho() {
