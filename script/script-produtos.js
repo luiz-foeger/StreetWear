@@ -5,6 +5,7 @@ const vetCatalogo = [
         preco: 142,
         imagem: 'camiseta-1.png',
         moletom: false,
+        modelo: 'camiseta'
     },
     {
         id: "2",
@@ -12,6 +13,7 @@ const vetCatalogo = [
         preco: 142,
         imagem: 'camiseta-2.png',
         moletom: false,
+        modelo: 'camiseta'
     },
     {
         id: "3",
@@ -19,6 +21,7 @@ const vetCatalogo = [
         preco: 142,
         imagem: 'camiseta-3.png',
         moletom: false,
+        modelo: 'camiseta'
     },
     {
         id: "4",
@@ -26,6 +29,7 @@ const vetCatalogo = [
         preco: 153,
         imagem: 'camiseta-4.png',
         moletom: false,
+        modelo: 'camiseta'
     },
     {
         id: "5",
@@ -33,6 +37,7 @@ const vetCatalogo = [
         preco: 168,
         imagem: 'camiseta-5.png',
         moletom: false,
+        modelo: 'camiseta'
     },
     {
         id: "6",
@@ -40,6 +45,7 @@ const vetCatalogo = [
         preco: 142,
         imagem: 'camiseta-6.png',
         moletom: false,
+        modelo: 'camiseta'
     },
     {
         id: "7",
@@ -47,6 +53,7 @@ const vetCatalogo = [
         preco: 127,
         imagem: 'camiseta-7.png',
         moletom: false,
+        modelo: 'camiseta'
     },
     {
         id: "8",
@@ -54,6 +61,7 @@ const vetCatalogo = [
         preco: 139,
         imagem: 'camiseta-8.png',
         moletom: false,
+        modelo: 'camiseta'
     },
     {
         id: "9",
@@ -61,6 +69,7 @@ const vetCatalogo = [
         preco: 131,
         imagem: 'camiseta-9.png',
         moletom: false,
+        modelo: 'camiseta'
     },
     {
         id: "10",
@@ -68,6 +77,7 @@ const vetCatalogo = [
         preco: 198,
         imagem: 'blusa-1.png',
         moletom: false,
+        modelo: 'blusa'
     },
     {
         id: "11",
@@ -75,6 +85,7 @@ const vetCatalogo = [
         preco: 176,
         imagem: 'blusa-2.png',
         moletom: false,
+        modelo: 'blusa'
     },
     {
         id: "12",
@@ -82,6 +93,7 @@ const vetCatalogo = [
         preco: 119,
         imagem: 'blusa-3.png',
         moletom: false,
+        modelo: 'blusa'
     },
     {
         id: "13",
@@ -89,6 +101,7 @@ const vetCatalogo = [
         preco: 121,
         imagem: 'blusa-4.png',
         moletom: false,
+        modelo: 'blusa'
     },
     {
         id: "14",
@@ -96,6 +109,7 @@ const vetCatalogo = [
         preco: 259,
         imagem: 'moletom-1.png',
         moletom: true,
+        modelo: 'moletom'
     },
     {
         id: "15",
@@ -103,6 +117,7 @@ const vetCatalogo = [
         preco: 229,
         imagem: 'moletom-2.png',
         moletom: true,
+        modelo: 'moletom'
     },
     {
         id: "16",
@@ -110,6 +125,7 @@ const vetCatalogo = [
         preco: 259,
         imagem: 'moletom-3.png',
         moletom: true,
+        modelo: 'moletom'
     }
 ];
 
@@ -117,7 +133,7 @@ const vetCatalogo = [
 function renderizarCatalogo() {
     for (const produtoCatalogo of vetCatalogo) {
         const cardProduto =
-            `<div id="card-produto-${produtoCatalogo.id}" class="card-produto ${produtoCatalogo.moletom ? 'moletom' : 'camiseta'}">
+            `<div id="card-produto-${produtoCatalogo.id}" class="card-produto modelo ${produtoCatalogo.moletom ? 'moletom' : 'camiseta'}">
     <img src="../img/camisetas/${produtoCatalogo.imagem}" alt="Imagem de ${produtoCatalogo.nome}">
         <p>${produtoCatalogo.nome}</p>
         <p id="paragrafo-preco">R$${produtoCatalogo.preco},90</p>
@@ -175,7 +191,7 @@ function atualizarPrecoCarrinho() {
     document.getElementById("preco-carrinho").innerText = `TOTAL: R$${total}`;
 }
 
-function salvarInfo(chave,informacao) {
+function salvarInfo(chave, informacao) {
     localStorage.setItem(chave, JSON.stringify(informacao));
     // localStorage.setItem("qtdProdutoId", JSON.stringify(qtdProdutoId));
 }

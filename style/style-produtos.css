@@ -35,29 +35,55 @@ body {
 
 #filtros-produtos {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     font-size: 18px;
     user-select: none;
+    margin-left: 20px;
+    /* position: fixed; */
 }
 
-/* #filtros-produtos input {
+#filtros-produtos label {
+    display: flex;
+    cursor: pointer;
+    font-family: 'Inter';
+}
+/* 
+#filtros-produtos ul li {
+    display: flex;
+    cursor: pointer;
+    font-family: 'Inter';
+}
+
+#filtros-produtos button {
+    display: flex;
+    cursor: pointer;
+    font-family: 'Inter';
+}
+ */
+
+
+
+#filtros-produtos input {
     visibility: hidden;
-} */
+}
 
 #filtros-produtos div {
-margin: 10px;
+    margin: 10px;
+}
+
+#container-geral {
+    display: flex;
 }
 
 .escondido {
     display: "none";
-    background-color: #000;
 }
 
 /* --------------------- */
 
 #container-produtos {
     margin: 0 auto;
-    padding: 20px;
+    /* padding: 20px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -120,7 +146,7 @@ margin: 10px;
     /* background-color: #181e36ee; */
     background-color: #0b0b0b;
     text-shadow: 0 0 5px #ffffff56, 0 0 10px #ffffff56, 0 0 1px #ffffff56, 0 0 2px #ffffff56,
-    0 0 30px #ffffff56, 0 0 40px #ffffff56, 0 0 55px #ffffff56, 0 0 75px #ffffff56;
+        0 0 30px #ffffff56, 0 0 40px #ffffff56, 0 0 55px #ffffff56, 0 0 75px #ffffff56;
 }
 
 #detalhes-carrinho .botao-style {

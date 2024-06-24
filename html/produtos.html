@@ -45,10 +45,9 @@
                             class="fa-solid fa-angle-down"></i></a></i>
                     <ul class="dropdown-produtos">
                         <li><a href="acessorios.html">TOUCAS</a></li>
-                        <li><a onclick="mostrarCamiseta()" href="produtos.html">CAMISETAS</a></li>
-                        <li><a onclick="mostrarMoletom()" href="produtos.html">MOLETONS</a></li>
+                        <li><a href="produtos.html">VESTUÁRIO</a></li>
                         <li><a href="sneakers.html">TÊNIS</a></li>
-                        <li><a href="decks.html">DECKS</a></li>
+                        <li><a href="decks.html">SKATE</a></li>
                     </ul>
                 </li>
                 <li>
@@ -70,22 +69,41 @@
                 <li>/ Camisetas</li>
             </ul>
         </div>
-        <section id="filtros-produtos">
-            <div>
-                <input onclick="exibirTodos()" id="exibir-todos" type="radio" name="filtro" checked>
-                <label for="exibir-todos">Todos</label>
-            </div>
-            <div>
-                <input onclick="mostrarMoletom()" id="exibir-moletom" type="radio" name="filtro">
-                <label for="exibir-moletom">Moletons</label>
-            </div>
-            <div>
-                <input onclick="mostrarCamiseta()" id="exibir-camiseta" type="radio" name="filtro">
-                <label for="exibir-camiseta">Camiseta</label>
-            </div>
-        </section>
-        <section id="container-produtos">
+        <section id="container-geral">
+            <section id="filtros-produtos">
+                <div>
+                    <input onclick="exibirTodos()" id="exibir-todos" type="radio" name="filtro" checked>
+                    <label for="exibir-todos">Todos</label>
+                </div>
+                <div>
+                    <input onclick="mostrarMoletom()" id="exibir-moletom" type="radio" name="filtro">
+                    <label for="exibir-moletom">Moletons</label>
+                </div>
+                <div>
+                    <input onclick="mostrarCamiseta()" id="exibir-camiseta" type="radio" name="filtro">
+                    <label for="exibir-camiseta">Camisetas</label>
+                </div>
+                <div>
+                    <input id="exibir-camiseta" type="radio" name="filtro">
+                    <label for="exibir-camiseta">Blusas</label>
+                </div>
+            </section>
 
+            <!--                     <input onclick="exibirTodos()" id="exibir-todos" value="tudo" type="radio" name="radio" checked>
+                    <label for="exibir-todos">Tudo</label>
+
+                    <input onclick="filtrarPorModelo(this.value)" id="exibir-moletom" value="moletom" type="radio" name="filtro">
+                    <label for="exibir-moletom">Moletons</label>
+
+                    <input onclick="filtrarPorModelo(this.value)" id="exibir-camiseta" value="camiseta" type="radio" name="filtro">
+                    <label for="exibir-camiseta">Camisetas</label>
+
+                    <input onclick="filtrarPorModelo(this.value)" id="exibir-camiseta" value="blusa" type="radio" name="filtro">
+                    <label for="exibir-blusa">Blusas</label>
+ -->
+            <section id="container-produtos">
+
+            </section>
         </section>
     </main>
 

@@ -43,3 +43,15 @@ function mostrarCamiseta() {
     }
 }
 
+
+// function filtrarPorModelo('modeloSelect') {
+//     const produtos = document.querySelectorAll(input);
+
+//     produtos.forEach((produto) => {
+//         if (produto.classList.contains(modelo)) {
+//             produto.style.display = 'block';
+//         } else {
+//             produto.style.display = 'none';
+//         }
+//     });
+// }
