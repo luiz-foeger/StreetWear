@@ -36,3 +36,32 @@ for (produtoCatalogo of vetCatalogo) {
     document.getElementById("container-produtos").innerHTML += cardProduto; //innerHTML -> ver o html dentro do elemento
 };
 
+//////////////////////////////////////////
+
+function gerarProdutoCheckout(idProdutos, idContainerHtml, qtdProdutoCheckout) {
+    const produto = vetCatalogo.find(produto => produto.id === idProdutos);
+
+    const containerProdutosCarrinho = document.getElementById("idContainerHtml");
+    const createArticleProduto = document.createElement('article'); //<article></article>
+
+    const produtoAdicionado =
+        `<img src="/img/camisetas/${produto.imagem}" style="width: 100px;" alt="Carrinho: ${produto.nome}">
+            <div id="info-conteudo-carrinho">
+                <p>${produto.nome}</p>
+                <p>ID: ${produto.id}</p>
+                <p style="font-size: 16px">R$${produto.preco},90</p>
+            </div>
+            <div id="quantidade-produto">
+                <p id="quantidade-${produto.id}">${qtdProdutoCheckout}</p>
+            </div>
+            <button onclick="" id="remover-item-${produto.id}"><i class="fa-solid fa-trash-can"></i></button>`;
+
+    createArticleProduto.innerHTML = produtoAdicionado;
+    containerProdutosCarrinho.appendChild(createArticleProduto);
+    // document.getElementById("conteudo-carrinho").innerHTML += produtoAdicionado;
+
+    //// ATRIBUIÇÃO DE AÇÕES AOS BOTÕES DO CARRINHO
+    document.getElementById(`btnRemoveQtd-${produto.id}`).addEventListener('click', () => removeQtdProduto(produto.id));
+    document.getElementById(`btnAddQtd-${produto.id}`).addEventListener('click', () => addQtdProduto(produto.id));
+    document.getElementById(`remover-item-${produto.id}`).addEventListener('click', () => removerProdutoCarrinho(idProdutos));
+}
