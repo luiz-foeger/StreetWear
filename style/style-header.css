@@ -36,6 +36,12 @@
     /* margin: 165px; */
 }
 
+.cabecalho .icons img:hover  {
+    filter: brightness(200%);
+    /* margin-left: 10px; */
+    /* margin: 165px; */
+}
+
 .cabecalho .icons button {
     display: flex;
     align-items: center;
