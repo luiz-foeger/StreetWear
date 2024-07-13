@@ -132,7 +132,7 @@ ul li:hover ul.dropdown-produtos {
     background-color: #ff0000;
 } */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 670px) {
     .cabecalho {
         position: fixed;
         top: 0;
