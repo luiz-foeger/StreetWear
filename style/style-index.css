@@ -191,8 +191,20 @@
     /* background-color: #181e36ee; */
     background-color: #0b0b0b;
     text-shadow: 0 0 5px #ffffff56, 0 0 10px #ffffff56, 0 0 1px #ffffff56, 0 0 2px #ffffff56,
-    0 0 30px #ffffff56, 0 0 40px #ffffff56, 0 0 55px #ffffff56, 0 0 75px #ffffff56;
+        0 0 30px #ffffff56, 0 0 40px #ffffff56, 0 0 55px #ffffff56, 0 0 75px #ffffff56;
 }
+
+@media screen and (max-width: 1900px) {
+    .produtos-index .card-produto img {
+        width: 250px;
+    }
+
+    .container-botões a {
+        font-size: 40px;
+        width: 280px;
+    }
+}
+
 
 /* .section-botões {
     display: flex;
@@ -200,7 +212,8 @@
     align-items: center;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.078);
     height: 300px;
-    font-family: "Mea Culpa", cursive;
+    font-family: "Mea Culpa",
+    cursive;
     font-weight: 300;
 }
 
@@ -223,10 +236,6 @@
     font-size: 60px;
     text-decoration: none;
     color: #000000;
-} */
-
-/*
-    width: 150px;
     font-family: "Inter", sans-serif;
     font-weight: bold;
     background-color: #0d0d0d;
@@ -237,4 +246,4 @@
     border-radius: 10px;
     margin: 12px;
     transition: ease 0.2s;
-    */
+} */
