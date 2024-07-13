@@ -36,7 +36,7 @@
     /* margin: 165px; */
 }
 
-.cabecalho .icons img:hover  {
+.cabecalho .icons img:hover {
     filter: brightness(200%);
     /* margin-left: 10px; */
     /* margin: 165px; */
@@ -92,7 +92,7 @@
     padding: 40px 20px;
 }
 
- .dropdown-produtos ul{
+.dropdown-produtos ul {
     display: flex;
 }
 
@@ -131,3 +131,49 @@ ul li:hover ul.dropdown-produtos {
 /* ul.dropdown-produtos:hover {
     background-color: #ff0000;
 } */
+
+@media screen and (max-width: 400px) {
+    .cabecalho {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #0d0d0d;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.078);
+        height: 60px;
+        font-family: "Bree Serif", serif;
+        font-weight: 200;
+
+    }
+    
+    .cabecalho .logo img {
+        width: 65px;
+    }
+
+    .itensHeader ul li {
+        font-size: 12px;
+        margin: 5px;
+    }
+
+    .itensHeader ul li a {
+        display: none;
+    }
+
+
+    #opcao-dropdown {
+        display: block;
+        font-size: 13px;
+        padding: 40px 5px;
+    }
+
+    .cabecalho .icons img {
+        width: 13px;
+        margin: 0px     8px;
+        /* margin-left: 10px; */
+        /* margin: 165px; */
+    }
+
+
+}
