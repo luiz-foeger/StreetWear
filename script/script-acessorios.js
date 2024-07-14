@@ -24,17 +24,34 @@ const vetCatalogo = [
     }
 ];
 
-for (produtoCatalogo of vetCatalogo) {
-    const cardProduto =
-        `<div id="card-produto-${produtoCatalogo.id}" class="card-produto">
-    <img src="../img/acessorios/${produtoCatalogo.imagem}" alt="">
+// for (produtoCatalogo of vetCatalogo) {
+//     const cardProduto =
+//         `<div id="card-produto-${produtoCatalogo.id}" class="card-produto">
+//     <img src="../img/acessorios/${produtoCatalogo.imagem}" alt="">
+//         <p>${produtoCatalogo.nome}</p>
+//         <p id="paragrafo-preco">R$${produtoCatalogo.preco},90</p>
+//         <button onclick="abrirCarrinho()" id='adicionar-${produtoCatalogo.id}' <i class="fa-solid fa-cart-plus botao-style" style="font-family=serif;"></i></button></div>`;
+
+//     document.getElementById("container-produtos").innerHTML += cardProduto; //innerHTML -> ver o html dentro do elemento
+// };
+
+function renderizarCatalogo() {
+    for (const produtoCatalogo of vetCatalogo) {
+        const cardProduto =
+            `<div id="card-produto-${produtoCatalogo.id}" class="card-produto modelo ${produtoCatalogo.moletom ? 'moletom' : 'camiseta'}">
+    <img src="../img/acessorios/${produtoCatalogo.imagem}" alt="Imagem de ${produtoCatalogo.nome}">
         <p>${produtoCatalogo.nome}</p>
         <p id="paragrafo-preco">R$${produtoCatalogo.preco},90</p>
-        <button class="botao-style">ADICIONAR</button>
+        <button onclick="abrirCarrinho()" id='adicionar-${produtoCatalogo.id}' <i class="fa-solid fa-cart-plus botao-style" style="font-family=serif;"></i></button>
 </div>`;
 
-    document.getElementById("container-produtos").innerHTML += cardProduto; //innerHTML -> ver o html dentro do elemento
-};
+        document.getElementById("container-produtos").innerHTML += cardProduto; //innerHTML -> ver o html dentro do elemento
+    };
+
+    for (const produtoCatalogo of vetCatalogo) {
+        document.getElementById(`adicionar-${produtoCatalogo.id}`).addEventListener('click', () => adicionarAoCarrinho(produtoCatalogo.id));
+    };
+}
 
 //////////////////////////////////////////
 

@@ -13,21 +13,21 @@
 </head>
 
 <body>
-    <section id="carrinho" style="display: none;">
-        <div id="cabecalho-carrinho">
-            <p>Meu Carrinho</p>
-            <button onclick="fecharCarrinho()" id="btn-fechar-carrinho">
-                <i class="fa-solid fa-x"></i>
-            </button>
-        </div>
-        <section id="conteudo-carrinho">
+        <section id="carrinho" style="display: none;">
+            <div id="cabecalho-carrinho">
+                <p>Meu Carrinho</p>
+                <button onclick="fecharCarrinho()" id="btn-fechar-carrinho">
+                    <i class="fa-solid fa-x"></i>
+                </button>
+            </div>
+            <section id="conteudo-carrinho">
 
+            </section>
+            <div id="detalhes-carrinho">
+                <p style="font-size: 17px;" id="preco-carrinho"></p>
+                <button style="font-size: 17px;" class="botao-style">FINALIZAR</button>
+            </div>
         </section>
-        <div id="detalhes-carrinho">
-            <p style="font-size: 17px;" id="preco-carrinho"></p>
-            <button style="font-size: 17px;" class="botao-style">FINALIZAR</button>
-        </div>
-    </section>
     <!------------------------------------------------------------------------------------------->
     <header class="cabecalho">
         <div class="logo">
@@ -36,7 +36,7 @@
         <nav class="itensHeader">
             <ul>
                 <li>
-                    <a href="index.html" class="ankor-responsive">LOJA</a>
+                    <a href="index.html" class="ankor-responsive link-ativo">LOJA</a>
                 </li>
                 <li>
                     <a href="#" id="opcao-dropdown">PRODUTOS<i style="color: #dddddd; margin-left: 5px;"
@@ -54,8 +54,8 @@
             </ul>
         </nav>
         <div class="icons">
-            <button><img class="btn-abrir-carrinho" src="icon/search.png" alt=""></button>
-            <button><img class="btn-abrir-carrinho" src="icon/profile.png" alt=""></button>
+            <button><img class="btn-abrir-carrinho btn-pesquisa" src="icon/search.png" alt=""></button>
+            <button class="btn-abrir-carrinho"><img src="icon/profile.png" alt=""></button>
             <button onclick="abrirCarrinho()" class="btn-abrir-carrinho"><img src="icon/cart.png" alt=""></button>
         </div>
     </header>

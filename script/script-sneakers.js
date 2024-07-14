@@ -67,8 +67,8 @@ for (produtoCatalogo of vetCatalogo) {
     <img src="../img/sneakers/${produtoCatalogo.imagem}" alt="">
         <p>${produtoCatalogo.nome}</p>
         <p id="paragrafo-preco">R$${produtoCatalogo.preco},90</p>
-        <button class="botao-style">ADICIONAR</button>
-</div>`;
+        <button onclick="abrirCarrinho()" id='adicionar-${produtoCatalogo.id}' <i class="fa-solid fa-cart-plus botao-style" style="font-family=serif;"></i></button>
+        </div>`;
 
     document.getElementById("container-produtos").innerHTML += cardProduto; //innerHTML -> ver o html dentro do elemento
 };

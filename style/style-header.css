@@ -16,6 +16,7 @@
     height: 90px;
     font-family: "Bree Serif", serif;
     font-weight: 200;
+    z-index: 99;
 }
 
 .cabecalho .logo img {
@@ -87,6 +88,11 @@
     /* color: #a06868; */
 }
 
+.link-ativo {
+    color: #fff;
+    padding-bottom: 22.4px;
+    border-bottom: solid 3px rgb(255, 255, 255);
+}
 
 #opcao-dropdown {
     padding: 40px 20px;
@@ -131,6 +137,27 @@ ul li:hover ul.dropdown-produtos {
 /* ul.dropdown-produtos:hover {
     background-color: #ff0000;
 } */
+@media screen and (max-width: 1900px) {
+    .cabecalho {
+        height: 70px;
+    }
+
+    .cabecalho ul li {
+        font-size: 14px;
+    }
+
+    .cabecalho .logo img {
+        width: 90px;
+    }
+
+    .cabecalho .icons img {
+        width: 17px;
+    }
+
+    ul li ul.dropdown-produtos {
+        top: 70px;
+    }
+}
 
 @media screen and (max-width: 670px) {
     .cabecalho {
@@ -147,7 +174,7 @@ ul li:hover ul.dropdown-produtos {
         font-weight: 200;
 
     }
-    
+
     .cabecalho .logo img {
         width: 65px;
     }
@@ -169,47 +196,44 @@ ul li:hover ul.dropdown-produtos {
     }
 
     .cabecalho .icons img {
-        width: 13px;
-        margin: 0px     8px;
+        width: 14px;
+        margin: 0px 8px;
         /* margin-left: 10px; */
         /* margin: 165px; */
     }
-    
+
     .dropdown-produtos ul {
         display: flex;
     }
-    
+
     ul li ul.dropdown-produtos li {
         display: block;
     }
-    
+
     ul li ul.dropdown-produtos {
         top: 60px;
         left: 0;
         width: 100%;
         height: 155%;
-        margin: auto;
-        background-color: #ffffffec;
-        position: absolute;
-        z-index: 999;
-        display: none;
-        text-align: center;
-        flex-direction: row;
     }
-    
+
     ul li ul.dropdown-produtos a {
         color: #0d0d0d;
     }
-    
+
     ul li ul.dropdown-produtos a:hover {
         color: #b9b9b9;
     }
-    
+
     ul li ul.dropdown-produtos ul li {
         display: flex;
     }
-    
+
     ul li:hover ul.dropdown-produtos {
         display: block;
+    }
+    
+    .btn-pesquisa {
+        display: none;
     }
 }

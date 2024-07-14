@@ -18,15 +18,17 @@
     <section id="carrinho" style="display: none;">
         <div id="cabecalho-carrinho">
             <p>Meu Carrinho</p>
-            <button onclick="fecharCarrinho()" id="btn-fechar-carrinho"><i class="fa-solid fa-x"></i></button>
+            <button onclick="fecharCarrinho()" id="btn-fechar-carrinho">
+                <i class="fa-solid fa-x"></i>
+            </button>
         </div>
-        <section id="section-carrinho">
-            <p>Camisa High Razor</p>
-            <p>Camisa High Golf</p>
-            <p>Camisa High Polo</p>
+        <section id="conteudo-carrinho">
+
         </section>
-        <p id="preco-carrinho">R$353,90</p>
-        <button class="botao-style">FINALIZAR</button>
+        <div id="detalhes-carrinho">
+            <p style="font-size: 17px;" id="preco-carrinho"></p>
+            <button style="font-size: 17px;" class="botao-style">FINALIZAR</button>
+        </div>
     </section>
     <header class="cabecalho">
         <div class="logo">
@@ -54,9 +56,9 @@
             </ul>
         </nav>
         <div class="icons">
-            <button><img class="btn-abrir-carrinho" src="../icon/search.png" alt=""></button>
-            <button><img class="btn-abrir-carrinho" src="../icon/profile.png" alt=""></button>
-            <button onclick="abrirCarrinho()" class="btn-abrir-carrinho"><img src="../icon/cart.png" alt=""></button>
+            <button><img class="btn-abrir-carrinho btn-pesquisa" src="/icon/search.png" alt=""></button>
+            <button class="btn-abrir-carrinho"><img src="/icon/profile.png" alt=""></button>
+            <button onclick="abrirCarrinho()" class="btn-abrir-carrinho"><img src="/icon/cart.png" alt=""></button>
         </div>
     </header>
     <main>
@@ -88,6 +90,7 @@
     <footer></footer>
     <script src="../script/script-acessorios.js"></script>
     <script src="../script/script-carrinho.js"></script>
+    <script src="../script/script-produtos.js"></script>
 </body>
 
 </html>

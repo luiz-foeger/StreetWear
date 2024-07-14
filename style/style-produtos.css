@@ -72,6 +72,10 @@ body {
     margin: 10px;
 }
 
+#filtros-produtos-celular {
+    display: none;
+}
+
 #container-geral {
     display: flex;
 }
@@ -111,6 +115,15 @@ body {
     -moz-box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.178);
 }
 
+.card-produto:hover {
+    /* transform: scale(1.03); */
+    transition: ease 0.2s;
+}
+
+.card-produto:hover .botao-style {
+    background-color: #000000;
+}
+
 .card-produto img {
     margin-top: 15px;
     width: 270px;
@@ -118,6 +131,7 @@ body {
 
 .card-produto p {
     padding: 10px 0px 3px 0px;
+    text-align: center;
 }
 
 .card-produto #paragrafo-preco {
@@ -132,14 +146,14 @@ body {
     width: 150px;
     /* font-family: "Inter", sans-serif; */
     font-weight: bold;
-    background-color: #0d0d0d;
+    background-color: #ffffff;
     color: white;
     border: none;
     padding: 10px 20px;
     font-size: 12px;
     cursor: pointer;
     border-radius: 10px;
-    margin: 20px;
+    margin: 0px 15px 20px 15px;
     transition: ease 0.2s;
 }
 
@@ -157,30 +171,44 @@ body {
 
 @media screen and (max-width: 1900px) {
     .card-produto {
-        width: 260px;
+        width: 230px;
         margin: 10px;
     }
 
     .card-produto img {
-        width: 230px;
+        /* width: 210px; */
+        height: 192px;
+        width: auto;
     }
 
     .card-produto p {
-        font-size: 15px;
+        font-size: 14px;
+        text-align: center;
         padding: 10px 0px 3px 0px;
+        max-width: 220px;
     }
 
     .card-produto #paragrafo-preco {
         color: #144E84;
         font-family: "Inter", sans-serif;
         font-weight: bold;
-        font-size: 18px;
+        font-size: 17px;
     }
 
     .botao-style {
         width: 120px;
         font-size: 11px;
-        margin: 16px;
+        margin: 10px;
+    }
+
+    #indicador-pagina {
+        margin-left: 60px;
+        font-size: 16px;
+    }
+
+    #filtros-produtos {
+        font-size: 16px;
+        /* position: fixed; */
     }
 }
 
@@ -201,6 +229,30 @@ body {
         display: none;
     }
 
+    #filtros-produtos-celular {
+        display: flex;
+        font-size: 15px;
+        user-select: none;
+        justify-content: center;
+        align-items: center;
+        /* position: fixed; */
+        
+    }
+    
+    #filtros-produtos-celular label {
+        display: flex;
+        cursor: pointer;
+        font-family: 'Inter';
+    }
+
+    #filtros-produtos-celular input {
+        visibility: hidden;
+    }
+    
+    #filtros-produtos-celular div {
+        margin: 13px;
+    }
+
     .card-produto {
         width: 170px;
         margin: 5px;
@@ -208,12 +260,14 @@ body {
 
     .card-produto img {
         width: 150px;
+        height: auto;
     }
 
     .card-produto p {
         font-size: 12px;
         text-align: center;
         padding: 10px 0px 3px 0px;
+        max-width: 160px;
     }
 
     .card-produto #paragrafo-preco {
@@ -224,6 +278,7 @@ body {
     }
 
     .botao-style {
+        background-color: #000;
         width: 100px;
         font-size: 9px;
         margin: 16px;

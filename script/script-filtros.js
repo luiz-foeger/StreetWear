@@ -11,6 +11,7 @@ function exibirTodos() {     // fetch('https://api-ecommerce-frontend.herokuapp.
     for (const produto of moletom) {
         // produto.classList.remove("escondido");
         produto.style.display = "flex";
+        
     }
 }
 
