@@ -1,13 +1,13 @@
 const vetCatalogo = [
     {
         id: 1,
-        nome: 'NIKE "LX WHITE" BLAZER MID 77',
+        nome: 'NIKE "ORANGE MARINE" DUNK LOW SP',
         preco: 384,
         imagem: 'sneaker-1.png'
     },
     {
         id: 2,
-        nome: 'NIKE "ORANGE MARINE" DUNK LOW SP',
+        nome: 'NIKE "LX WHITE" BLAZER MID 77',
         preco: 461,
         imagem: 'sneaker-2.png'
     },
