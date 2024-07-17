@@ -13,3 +13,10 @@ footer {
     font-family: Inter, sans serif;
     bottom: 0;
 }
+
+@media screen and (max-width: 670px) {
+    footer {
+        height: 80px;
+        font-size: 10px;
+    }
+}
