@@ -27,7 +27,7 @@ inicializarFiltros();
 //                 <img src="/img/camisetas/blusa-2.png" style="width: 120px;" alt="">
 //                 <div id="info-conteudo-carrinho">
 //                     <p>BLUSA "D ROSES" DIAMOND</p>
-//                     <p>R$198,90</p>
+//                     <p>R$198,00</p>
 //                 </div>
 //                 <button onclick="" id="btn-fechar-carrinho"><i class="fa-solid fa-trash-can"></i></button>
 //             </article>`

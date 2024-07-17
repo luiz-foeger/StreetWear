@@ -66,7 +66,7 @@ const vetCatalogo = [
 //         `<div id="card-produto-${produtoCatalogo.id}" class="card-produto">
 //     <img src="../img/acessorios/${produtoCatalogo.imagem}" alt="">
 //         <p>${produtoCatalogo.nome}</p>
-//         <p id="paragrafo-preco">R$${produtoCatalogo.preco},90</p>
+//         <p id="paragrafo-preco">R$${produtoCatalogo.preco},00</p>
 //         <button onclick="abrirCarrinho()" id='adicionar-${produtoCatalogo.id}' <i class="fa-solid fa-cart-plus botao-style" style="font-family=serif;"></i></button></div>`;
 
 //     document.getElementById("container-produtos").innerHTML += cardProduto; //innerHTML -> ver o html dentro do elemento
@@ -78,7 +78,7 @@ function renderizarCatalogo() {
             `<div id="card-produto-${produtoCatalogo.id}" class="card-produto modelo ${produtoCatalogo.moletom ? 'moletom' : 'camiseta'}">
     <img src="../img/acessorios/${produtoCatalogo.imagem}" alt="Imagem de ${produtoCatalogo.nome}">
         <p>${produtoCatalogo.nome}</p>
-        <p id="paragrafo-preco">R$${produtoCatalogo.preco},90</p>
+        <p id="paragrafo-preco">R$${produtoCatalogo.preco},00</p>
         <button onclick="abrirCarrinho()" id='adicionar-${produtoCatalogo.id}' <i class="fa-solid fa-cart-plus botao-style" style="font-family=serif;"></i></button>
 </div>`;
 
@@ -103,7 +103,7 @@ function gerarProdutoCheckout(idProdutos, idContainerHtml, qtdProdutoCheckout) {
             <div id="info-conteudo-carrinho">
                 <p>${produto.nome}</p>
                 <p>ID: ${produto.id}</p>
-                <p style="font-size: 16px">R$${produto.preco},90</p>
+                <p style="font-size: 16px">R$${produto.preco},00</p>
             </div>
             <div id="quantidade-produto">
                 <p id="quantidade-${produto.id}">${qtdProdutoCheckout}</p>

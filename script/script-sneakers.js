@@ -66,7 +66,7 @@ for (produtoCatalogo of vetCatalogo) {
         `<div id="card-produto-${produtoCatalogo.id}" class="card-produto">
     <img src="../img/sneakers/${produtoCatalogo.imagem}" alt="">
         <p>${produtoCatalogo.nome}</p>
-        <p id="paragrafo-preco">R$${produtoCatalogo.preco},90</p>
+        <p id="paragrafo-preco">R$${produtoCatalogo.preco},00</p>
         <button onclick="abrirCarrinho()" id='adicionar-${produtoCatalogo.id}' <i class="fa-solid fa-cart-plus botao-style" style="font-family=serif;"></i></button>
         </div>`;
 

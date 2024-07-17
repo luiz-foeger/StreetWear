@@ -46,6 +46,30 @@ const vetCatalogo = [
         nome: 'SHAPE "PREDICTIONS" FUCKING AWESOME',
         preco: 289,
         imagem: 'deck-8.png'
+    },
+    {
+        id: 9,
+        nome: 'LIXA ULTRAGRIP JESSUP',
+        preco: 89,
+        imagem: 'lixa-1.png'
+    },
+    {
+        id: 10,
+        nome: 'LIXA "OG SPRAY" SHAKE JUNT',
+        preco: 189,
+        imagem: 'lixa-2.png'
+    },
+    {
+        id: 11,
+        nome: 'LIXA "STAMP PRINT" GRIZZLY',
+        preco: 189,
+        imagem: 'lixa-3.png'
+    },
+    {
+        id: 12,
+        nome: 'LIXA "BIGHEAD INFERNO" SPITFIRE',
+        preco: 199,
+        imagem: 'lixa-4.png'
     }
 ];
 
@@ -54,7 +78,7 @@ for (produtoCatalogo of vetCatalogo) {
         `<div id="card-produto-${produtoCatalogo.id}" class="card-produto">
     <img src="../img/decks/${produtoCatalogo.imagem}" alt="">
         <p>${produtoCatalogo.nome}</p>
-        <p id="paragrafo-preco">R$${produtoCatalogo.preco},90</p>
+        <p id="paragrafo-preco">R$${produtoCatalogo.preco},00</p>
         <button onclick="abrirCarrinho()" id='adicionar-${produtoCatalogo.id}' <i class="fa-solid fa-cart-plus botao-style" style="font-family=serif;"></i></button>
 </div>`;
 
