@@ -123,7 +123,7 @@
 
 #carrinho #info-conteudo-carrinho {
     margin-left: 15px;
-    width: 300px;
+    width: 100%;
 }
 
 #carrinho #info-conteudo-carrinho p {
@@ -153,9 +153,11 @@
 
 #carrinho #detalhes-carrinho button {
     font-size: 15px;
+    margin-top: 10px;
+    background-color: #000000;
 }
 
-@media screen and (max-width: 1900px) {
+@media screen and (max-width: 1500px) {
     #carrinho {
         width: 450px;
     }
@@ -167,9 +169,14 @@
 
 @media screen and (max-width: 670px) {
     #carrinho {
+        margin-top: 60px; 
         width: 100%;
         border-radius: 0px;
     }
+
+    /* #carrinho #conteudo-carrinho {
+        min-height: 90vh;
+    } */
 
     #carrinho #cabecalho-carrinho {
         font-size: 20px;
@@ -177,6 +184,14 @@
 
     #carrinho #conteudo-carrinho {
         margin: 15px 5px;
+    }
+
+    #carrinho #conteudo-carrinho article button {
+        color: #000000;
+        border: none;
+        background-color: #fff;
+        right: 0;
+        cursor: pointer;
     }
 
     #carrinho #detalhes-carrinho {
@@ -189,7 +204,7 @@
 
     #carrinho #info-conteudo-carrinho {
         margin-left: 15px;
-        width: 300px;
+        width: 100%;
     }
 
     #carrinho #conteudo-carrinho img {

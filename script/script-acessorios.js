@@ -2,13 +2,13 @@ const vetCatalogo = [
     {
         id: 1,
         nome: 'TOUCA SOMETIMES',
-        preco: 99,
+        preco: 84,
         imagem: 'touca-1.png'
     },
     {
         id: 2,
         nome: 'TOUCA "GOODS LOGO CLASSIC" BCREW',
-        preco: 109,
+        preco: 89,
         imagem: 'touca-2.png'
     },
     {
@@ -16,11 +16,48 @@ const vetCatalogo = [
         nome: 'TOUCA "BASKA" ÖUS',
         preco: 79,
         imagem: 'touca-3.png'
-    },{
+    },
+    // {
+    //     id: 4,
+    //     nome: 'TOUCA CUFFLESS "GROOVY" HIGH',
+    //     preco: 99,
+    //     imagem: 'touca-4.png'
+    // },
+    {
         id: 4,
-        nome: 'BONÉ VELUDO TUPODE',
+        nome: 'TOUCA THRASHER',
+        preco: 99,
+        imagem: 'touca-4.png'
+    },
+    {
+        id: 5,
+        nome: 'BONÉ "BARRA CAMO" BCREW',
         preco: 129,
         imagem: 'bone-1.png'
+    },
+    {
+        id: 6,
+        nome: 'BONÉ "LOGO AREIA" BCREW',
+        preco: 98,
+        imagem: 'bone-2.png'
+    },
+    {
+        id: 7,
+        nome: 'BONÉ VELUDO TUPODE',
+        preco: 119,
+        imagem: 'bone-3.png'
+    },
+    {
+        id: 8,
+        nome: 'BONÉ "DOGGY STYLE®" BOLOVO',
+        preco: 124,
+        imagem: 'bone-4.png'
+    },
+    {
+        id: 9,
+        nome: 'BONÉ UTILITY BAW',
+        preco: 129,
+        imagem: 'bone-5.png'
     }
 ];
 

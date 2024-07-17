@@ -49,8 +49,8 @@ const vetCatalogo = [
     },
     {
         id: "7",
-        nome: 'CAMISETA "ACID LOVE" LOVE DELIVERY',
-        preco: 127,
+        nome: 'CAMISETA BAW x SMILEY NICE DAY',
+        preco: 151,
         imagem: 'camiseta-7.png',
         moletom: false,
         modelo: 'camiseta'
@@ -66,13 +66,53 @@ const vetCatalogo = [
     {
         id: "9",
         nome: 'CAMISETA "GRAFF" KUNX',
-        preco: 131,
+        preco: 136,
         imagem: 'camiseta-9.png',
         moletom: false,
         modelo: 'camiseta'
     },
     {
         id: "10",
+        nome: 'CAMISETA "ASSINATURA" BCREW',
+        preco: 129,
+        imagem: 'camiseta-10.png',
+        moletom: false,
+        modelo: 'camiseta'
+    },
+    {
+        id: "11",
+        nome: 'CAMISETA "B TRIBAL" BCREW ',
+        preco: 141,
+        imagem: 'camiseta-11.png',
+        moletom: false,
+        modelo: 'camiseta'
+    },
+    {
+        id: "12",
+        nome: 'CAMISETA "B GARÇA REMIX" BCREW',
+        preco: 136,
+        imagem: 'camiseta-12.png',
+        moletom: false,
+        modelo: 'camiseta'
+    },
+    {
+        id: "13",
+        nome: 'CAMISETA "BERÇO B" BCREW',
+        preco: 136,
+        imagem: 'camiseta-13.png',
+        moletom: false,
+        modelo: 'camiseta'
+    },
+    {
+        id: "14",
+        nome: 'CAMISETA "ACID LOVE" LOVE DELIVERY',
+        preco: 129,
+        imagem: 'camiseta-14.png',
+        moletom: false,
+        modelo: 'camiseta'
+    },
+    {
+        id: "15",
         nome: 'BLUSA "L.T.H.T" ALLGLORY',
         preco: 198,
         imagem: 'blusa-1.png',
@@ -80,7 +120,7 @@ const vetCatalogo = [
         modelo: 'blusa'
     },
     {
-        id: "11",
+        id: "16",
         nome: 'BLUSA "D ROSES" DIAMOND',
         preco: 176,
         imagem: 'blusa-2.png',
@@ -88,7 +128,7 @@ const vetCatalogo = [
         modelo: 'blusa'
     },
     {
-        id: "12",
+        id: "17",
         nome: 'BLUSA "POSTING LESS" SOMETIMES',
         preco: 119,
         imagem: 'blusa-3.png',
@@ -96,7 +136,7 @@ const vetCatalogo = [
         modelo: 'blusa'
     },
     {
-        id: "13",
+        id: "18",
         nome: 'BLUSA "LUCK" SOMETIMES ',
         preco: 121,
         imagem: 'blusa-4.png',
@@ -104,7 +144,7 @@ const vetCatalogo = [
         modelo: 'blusa'
     },
     {
-        id: "14",
+        id: "19",
         nome: 'MOLETOM "DEATH ANGEL" DIAMOND ',
         preco: 259,
         imagem: 'moletom-1.png',
@@ -112,7 +152,7 @@ const vetCatalogo = [
         modelo: 'moletom'
     },
     {
-        id: "15",
+        id: "20",
         nome: 'MOLETOM "CLASS INVERSO" CLASS ',
         preco: 229,
         imagem: 'moletom-2.png',
@@ -120,10 +160,18 @@ const vetCatalogo = [
         modelo: 'moletom'
     },
     {
-        id: "16",
-        nome: 'MOLETOM "GOODS LOGO ÓRBITA" BC ',
+        id: "21",
+        nome: 'MOLETOM "GOODS LOGO ÓRBITA" BCREW ',
         preco: 259,
         imagem: 'moletom-3.png',
+        moletom: true,
+        modelo: 'moletom'
+    },
+    {
+        id: "22",
+        nome: 'MOLETOM "BREAKING & ENTERING" DEATHWISH ',
+        preco: 259,
+        imagem: 'moletom-4.png',
         moletom: true,
         modelo: 'moletom'
     }

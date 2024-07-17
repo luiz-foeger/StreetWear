@@ -6,10 +6,9 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: "Bree Serif", serif;
-    font-weight: 400;
-}
+/* main {
+    min-height: 800px;
+} */
 
 #indicador-pagina {
     color: #000;
@@ -139,6 +138,7 @@ body {
     font-family: "Inter", sans-serif;
     font-weight: bold;
     font-size: 20px;
+    margin-bottom: 5px;
 }
 
 
@@ -169,7 +169,7 @@ body {
     font-weight: bold;
 }
 
-@media screen and (max-width: 1900px) {
+@media screen and (max-width: 1500px) {
     .card-produto {
         width: 230px;
         margin: 10px;

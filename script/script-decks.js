@@ -28,6 +28,24 @@ const vetCatalogo = [
         nome: 'SHAPE "CATACOMB" CREATURE',
         preco: 242,
         imagem: 'deck-5.png'
+    },
+    {
+        id: 6,
+        nome: 'SHAPE "AP OG LOGO" APRIL',
+        preco: 275,
+        imagem: 'deck-6.png'
+    },
+    {
+        id: 7,
+        nome: 'SHAPE "JEANNE" HOCKEY',
+        preco: 275,
+        imagem: 'deck-7.png'
+    },
+    {
+        id: 8,
+        nome: 'SHAPE "PREDICTIONS" FUCKING AWESOME',
+        preco: 289,
+        imagem: 'deck-8.png'
     }
 ];
 

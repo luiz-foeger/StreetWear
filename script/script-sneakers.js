@@ -43,7 +43,7 @@ const vetCatalogo = [
     },
     {
         id: 8,
-        nome: 'DC X THRASHER TRUTH',
+        nome: 'DC x THRASHER TRUTH',
         preco: 529,
         imagem: 'sneaker-6.png'
     },
@@ -55,7 +55,7 @@ const vetCatalogo = [
     },
     {
         id: 10,
-        nome: 'REBOOK X BAW "REVENGE" CLUB C',
+        nome: 'REBOOK x BAW "REVENGE" CLUB C',
         preco: 679,
         imagem: 'sneaker-8.png'
     }
