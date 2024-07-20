@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Mea+Culpa&family=Inter:wght@100..900&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Mea+Culpa&family=Inter:wght&display=swap');
 
 * {
     margin: 0;
@@ -32,7 +32,7 @@
     height: 50px;
     width: 100%;
     background-color: #000000;
-    font-family: "Roboto", cursive;
+    font-family: "Inter", cursive;
     font-weight: 300;
 }
 
@@ -123,9 +123,9 @@
 article {
     text-align: center;
     font-size: 20px;
-    color: #000000b9;
-    font-family: "Hind Siliguri", sans-serif;
-    font-weight: 100;
+    color: #00000091;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
 }
 
 
@@ -264,13 +264,15 @@ article {
     }
 
     .container-botões {
-        height: 170px;
+        height: auto;
         flex-wrap: wrap;
+        margin: 8px 0px 30px 0px;
     }
 
     .container-botões a {
-        font-size: 30px;
-        width: 180px;
+        font-size: 35px;
+        width: 100%;
+        margin: 8px 15px;
         box-shadow: 0px 0px 42px 11px rgba(91, 91, 91, 0.171);
         -webkit-box-shadow: 0px 0px 42px 11px rgba(139, 139, 139, 0.171);
         -moz-box-shadow: 0px 0px 42px 11px rgba(77, 77, 77, 0.171)
@@ -279,6 +281,10 @@ article {
     .container-botões a:hover {
         background-color: #fff;
         color: #030303;
+    }
+
+    article {
+        font-size: 16px;
     }
 
     .produtos-index {

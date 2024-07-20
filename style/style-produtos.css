@@ -213,6 +213,10 @@
 }
 
 @media screen and (max-width: 670px) {
+    #container-produtos {
+        justify-content: space-evenly;
+    }
+
     #indicador-pagina {
         margin-top: 60px;
         color: #000;
