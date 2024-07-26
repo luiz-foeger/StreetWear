@@ -2,7 +2,7 @@
 <h4 align="center">https://street-wear.vercel.app</h4>
 
 ㅤ
-![image](https://github.com/luiz-foeger/StreetWear-Project/assets/136458609/40f7f54e-c4b2-4b45-91d4-e06dd004c513)
+![image](https://github.com/user-attachments/assets/d503a408-236a-4581-bc9b-326483f13e92)
 
 
 <h2>💻 Tecnologias utilizadas</h2>
