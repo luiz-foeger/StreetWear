@@ -288,6 +288,8 @@ article {
         font-size: 16px;
     }
 
+    #thrasher {}
+
     .produtos-index {
         display: flex;
         flex-wrap: wrap;

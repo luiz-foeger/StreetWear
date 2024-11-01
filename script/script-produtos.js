@@ -306,7 +306,6 @@ function adicionarAoCarrinho(idProdutos) {
 
 }
 
-
 //////////////////////////////////////////
 
 function gerarProdutoCheckout(idProdutos, idContainerHtml, qtdProdutoCheckout) {
