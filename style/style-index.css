@@ -143,6 +143,7 @@ article {
 .produtos-index {
     display: flex;
     justify-content: space-evenly;
+    text-align: center;
 }
 
 .produtos-index .card-produto {
