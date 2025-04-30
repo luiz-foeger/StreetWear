@@ -1,0 +1,136 @@
+.header {
+    background-color: #0d0d0d;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-self: center;
+    height: 75px;
+    width: 100%;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+}
+
+.logo {
+    height: 75%;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-weight: 100;
+
+}
+
+.nav a {
+    font-size: 17px;
+    text-decoration: none;
+    color: #ddd;
+    margin: 0 20px;
+    transition: ease 0.2s;
+}
+
+h3 {
+    display: flex;
+}
+
+.nav a:hover {
+    color: #fff;
+}
+
+.opcaoDropdown {
+    position: relative;
+    margin: 0 0 0 15px;
+}
+
+.dropdownProdutos {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    background-color: #0d0d0de1;
+    /* background-color: #ffffffec; */
+    z-index: 999;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0;
+    list-style: none;
+}
+
+.dropdownProdutos li {
+    list-style: none;
+    margin: 5px 0;
+}
+
+.dropdownProdutos a {
+    display: block;
+    padding: 1px 0;
+    color: #ffffffec;
+    text-decoration: none;
+}
+
+.dropdownProdutos a:hover {
+    color: #6c6c6c;
+    /* cursor: url('/assets/cursor/gta-pointer.cur'), auto; */
+}
+
+.opcaoDropdown:hover .dropdownProdutos {
+    display: flex;
+}
+
+
+
+/* ---------- */
+
+@media screen and (max-width: 670px) {
+    .logo {
+        height: 25%;
+        margin-top: 20px;
+    }
+
+    .logo:nth-child(3) {
+        display: none;
+    }
+
+    .header {
+        flex-direction: column;
+        height: 115px;
+    }
+
+    .nav a {
+        font-size: 20px;
+        margin: 0 18px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .logo {
+        height: 25%;
+        margin-top: 15px;
+    }   
+
+    .header {
+        height: 105px;
+    }
+
+    .nav a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .logo {
+        display: none;
+    }
+
+    .header {
+        height: 50px;
+    }
+
+    .nav a {
+        font-size: 16px;
+    }
+}

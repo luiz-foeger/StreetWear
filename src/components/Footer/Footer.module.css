@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+footer {
+    height: 130px;
+    background: #0d0d0d;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cal sans', sans serif;
+    bottom: 0;
+}
+
+@media screen and (max-width: 460px) {
+    footer {
+        height: 80px;
+        font-size: 10px;
+    }
+}
