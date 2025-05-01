@@ -1,14 +1,14 @@
-import { Route, Routes } from 'react-router-dom'; // import dos componentes da biblioteca de rotas 
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Carrinho from './components/Cart/Cart';
+// import { CarrinhoProvider } from './context/CarrinhoContext';
 
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 
 import Home from './pages/Home';
-
-// import Home from './pages/Home'; // import do componente Home
+import Erro from './components/404/Erro';
 
 import './App.css';
-import Erro from './components/404/Erro';
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/sacola" element={<Carrinho />} />
         <Route path="*" element={<Erro />} />
       </Routes>
       <Footer />

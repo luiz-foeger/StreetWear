@@ -1,42 +1,31 @@
-import React from 'react'
-import estilos from './Cart.module.css';
+import { useCarrinho } from '../../context/CarrinhoContext';
 
-const Cart = () => {
+function Carrinho() {
+    const { carrinho, removerDoCarrinho, limparCarrinho } = useCarrinho();
 
-
-    function abrirCarrinho() {
-        var sectionCarrinho = document.getElementById("carrinho");
-        if (sectionCarrinho.style.display === "none") {
-            sectionCarrinho.style.display = "block";
-            // atualizarPrecoCarrinho();
-        }
-    }
-
-    function fecharCarrinho() {
-        var sectionCarrinho = document.getElementById("carrinho");
-        sectionCarrinho.style.display = "none";
-    }
-
-    // renderizarCatalogo()
-    // renderizarProdutosCarrinho();
-    // atualizarPrecoCarrinho();
-    // atualizarQtdProduto();
-    // inicializarFiltros();
+    const total = carrinho.reduce((acc, item) => acc + item.preco * item.quantidade, 0);
 
     return (
-        <section id={estilos.carrinho} style={{ display: "none" }}>
-            <div id={estilos.cabecalhoCarrinho}>
-                <p>Carrinho</p>
-                <button onclick="fecharCarrinho()" id={estilos.btnFecharCarrinho}>X</button>
-            </div>
-            <section id={estilos.conteudoCarrinho}>
-
-            </section>
-            <div id={estilos.detalhesCarrinho}>
-                <p style={{ fontSize: "17px" }} id={estilos.precoCarrinho}></p>
-                <button style={{ fontSize: "17px" }} class={estilos.botaoStyle}>FINALIZAR</button>
-            </div>
-        </section>)
+        <div>
+            <h1>Seu Carrinho</h1>
+            {carrinho.length === 0 ? (
+                <p>Carrinho vazio</p>
+            ) : (
+                <ul>
+                    {carrinho.map(item => (
+                        <li key={item.id}>
+                            <img src={item.imagem} alt={item.nome} width={80} />
+                            <p>{item.nome}</p>
+                            <p>R$ {item.preco} x {item.quantidade}</p>
+                            <button onClick={() => removerDoCarrinho(item.id)}>Remover</button>
+                        </li>
+                    ))}
+                </ul>
+            )}
+            <h2>Total: R$ {total.toFixed(2)}</h2>
+            <button onClick={limparCarrinho}>Limpar Carrinho</button>
+        </div>
+    );
 }
 
-export default Cart
+export default Carrinho;

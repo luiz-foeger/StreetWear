@@ -31,6 +31,14 @@
     transition: ease 0.2s;
 }
 
+path {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d4d4d4;
+    transform: rotateX('180deg');
+}
+
 h3 {
     display: flex;
 }
@@ -73,7 +81,7 @@ h3 {
 }
 
 .dropdownProdutos a:hover {
-    color: #6c6c6c;
+    color: #a0a0a0;
     /* cursor: url('/assets/cursor/gta-pointer.cur'), auto; */
 }
 
@@ -81,7 +89,12 @@ h3 {
     display: flex;
 }
 
-
+.icone {
+    width: 25px;
+    height: 25px;
+    margin: 0 5px;
+    color: #d4d4d4;
+}
 
 /* ---------- */
 
