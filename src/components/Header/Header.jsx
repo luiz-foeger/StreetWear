@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { RiArrowDownSLine } from "react-icons/ri";
 import { IoBagHandle } from "react-icons/io5";
+// import icone de menu mobile 
+import { IoMenu } from "react-icons/io5";
 
 import estilos from './Header.module.css';
 
