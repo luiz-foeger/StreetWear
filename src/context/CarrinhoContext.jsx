@@ -1,11 +1,17 @@
 // CarrinhoContext.jsx
-
-import { createContext, useContext, useState } from 'react';
+import { createContext, useContext, useEffect, useState } from 'react';
 
 const CarrinhoContext = createContext();
 
 export function CarrinhoProvider({ children }) {
-  const [carrinho, setCarrinho] = useState([]);
+  const [carrinho, setCarrinho] = useState(() => {
+    const carrinhoSalvo = localStorage.getItem('carrinho');
+    return carrinhoSalvo ? JSON.parse(carrinhoSalvo) : [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem('carrinho', JSON.stringify(carrinho));
+  }, [carrinho]);
 
   const adicionarAoCarrinho = (produto) => {
     setCarrinho((prevCarrinho) => {
@@ -39,7 +45,7 @@ export function CarrinhoProvider({ children }) {
         .map(item =>
           item.id === id ? { ...item, quantidade: item.quantidade - 1 } : item
         )
-        .filter(item => item.quantidade > 0) // remove se chegar a 0
+        .filter(item => item.quantidade > 0)
     );
   };
 
