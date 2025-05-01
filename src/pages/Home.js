@@ -1,12 +1,16 @@
 import React from 'react'
-import Buttons from '../components/Buttons/Buttons' // import do componente Home
-import ListaProdutos from '../components/ListaProdutos/ListaProdutos'
+
+import Buttons from '../components/Buttons/Buttons';
+
+import Camisetas from '../pages/PageCamisetas';
+import Blusas from '../pages/PageBlusas';
 
 const Home = () => {
     return (
         <>
             <Buttons />
-            <ListaProdutos />
+            {/* <Camisetas /> */}
+            <Blusas />
         </>
     )
 }

@@ -2,7 +2,7 @@ export const vetCamisetas = [
     {
         id: "1",
         nome: 'PRESENTÉ',
-        preco: 142,
+        preco: 162,
         imagem: '/assets/images/produtos/camiseta/camiseta-1.png',
         marca: 'BARRA',
         modelo: 'CAMISETA',
@@ -10,7 +10,7 @@ export const vetCamisetas = [
     {
         id: "2",
         nome: 'ASSINATURA',
-        preco: 142,
+        preco: 162,
         imagem: '/assets/images/produtos/camiseta/camiseta-2.png',
         marca: 'BARRA',
         modelo: 'CAMISETA',
@@ -18,7 +18,7 @@ export const vetCamisetas = [
     {
         id: "3",
         nome: 'BERÇO B',
-        preco: 142,
+        preco: 162,
         imagem: '/assets/images/produtos/camiseta/camiseta-3.png',
         marca: 'BARRA',
         modelo: 'CAMISETA',
@@ -26,7 +26,7 @@ export const vetCamisetas = [
     {
         id: "4",
         nome: 'B GARÇA',
-        preco: 153,
+        preco: 189,
         imagem: '/assets/images/produtos/camiseta/camiseta-4.png',
         marca: 'BARRA',
         modelo: 'CAMISETA',
@@ -34,7 +34,7 @@ export const vetCamisetas = [
     {
         id: "5",
         nome: 'B TRIBAL SOLAR',
-        preco: 168,
+        preco: 139,
         imagem: '/assets/images/produtos/camiseta/camiseta-5.png',
         marca: 'BARRA',
         modelo: 'CAMISETA',
@@ -44,7 +44,7 @@ export const vetCamisetas = [
         nome: 'AHLMA TRIBAL',
         preco: 142,
         imagem: '/assets/images/produtos/camiseta/camiseta-6.png',
-        marca: 'HIGH',
+        marca: 'BARRA',
         modelo: 'CAMISETA',
     },
     {
@@ -58,7 +58,7 @@ export const vetCamisetas = [
     {
         id: "8",
         nome: 'PÉ DE FEIJÃO',
-        preco: 139,
+        preco: 151,
         imagem: '/assets/images/produtos/camiseta/camiseta-8.png',
         marca: 'MAD',
         modelo: 'CAMISETA',
@@ -66,7 +66,7 @@ export const vetCamisetas = [
     {
         id: "9",
         nome: 'RPG',
-        preco: 136,
+        preco: 151,
         imagem: '/assets/images/produtos/camiseta/camiseta-9.png',
         marca: 'MAD',
         modelo: 'CAMISETA',
@@ -74,7 +74,7 @@ export const vetCamisetas = [
     {
         id: "10",
         nome: 'THINK',
-        preco: 129,
+        preco: 142,
         imagem: '/assets/images/produtos/camiseta/camiseta-10.png',
         marca: 'HIGH',
         modelo: 'CAMISETA',
@@ -82,7 +82,7 @@ export const vetCamisetas = [
     {
         id: "11",
         nome: 'RAZOR',
-        preco: 141,
+        preco: 142,
         imagem: '/assets/images/produtos/camiseta/camiseta-11.png',
         marca: 'HIGH',
         modelo: 'CAMISETA',
@@ -91,7 +91,7 @@ export const vetCamisetas = [
         id: "12",
         nome: 'GOLF',
         nome: 'CELLPHONE',
-        preco: 136,
+        preco: 142,
         imagem: '/assets/images/produtos/camiseta/camiseta-12.png',
         marca: 'HIGH',
         modelo: 'CAMISETA',
@@ -99,7 +99,7 @@ export const vetCamisetas = [
     {
         id: "13",
         nome: 'GOLF',
-        preco: 136,
+        preco: 149,
         imagem: '/assets/images/produtos/camiseta/camiseta-13.png',
         marca: 'HIGH',
         modelo: 'CAMISETA',
@@ -107,7 +107,7 @@ export const vetCamisetas = [
     {
         id: "14",
         nome: 'COMET',
-        preco: 129,
+        preco: 142,
         imagem: '/assets/images/produtos/camiseta/camiseta-14.png',
         marca: 'HIGH',
         modelo: 'CAMISETA',
@@ -115,7 +115,7 @@ export const vetCamisetas = [
     {
         id: "15",
         nome: 'X-HIGH',
-        preco: 129,
+        preco: 149,
         imagem: '/assets/images/produtos/camiseta/camiseta-15.png',
         marca: 'HIGH',
         modelo: 'CAMISETA',
@@ -123,7 +123,7 @@ export const vetCamisetas = [
     {
         id: "16",
         nome: 'SQUADRON',
-        preco: 129,
+        preco: 142,
         imagem: '/assets/images/produtos/camiseta/camiseta-16.png',
         marca: 'HIGH',
         modelo: 'CAMISETA',
@@ -200,316 +200,264 @@ export const vetBlusas = [
 export const vetAcessorios = [
     {
         id: "1",
-        nome: 'CAMISETA "THINK" HIGH',
-        preco: 142,
-        imagem: 'camiseta-1.png',
-        moletom: false,
-        modelo: 'camiseta'
+        nome: '',
+        preco: 89,
+        imagem: '/assets/images/produtos/touca/touca-1.png',
+        marca: 'SOMETIMES ONLINE',
+        modelo: 'TOUCA'
     },
     {
         id: "2",
-        nome: 'CAMISETA "RAZOR" HIGH',
-        preco: 142,
-        imagem: 'camiseta-2.png',
-        moletom: false,
-        modelo: 'camiseta'
+        nome: 'GOODS LOGO CLASSIC',
+        preco: 96,
+        imagem: '/assets/images/produtos/touca/touca-2.png',
+        marca: 'BARRA',
+        modelo: 'TOUCA'
     },
     {
         id: "3",
-        nome: 'CAMISETA "CELLPHONE" HIGH',
-        preco: 142,
-        imagem: 'camiseta-3.png',
-        moletom: false,
-        modelo: 'camiseta'
+        nome: 'BASKA',
+        preco: 89,
+        imagem: '/assets/images/produtos/touca/touca-3.png',
+        marca: 'ÖUS',
+        modelo: 'TOUCA'
     },
     {
         id: "4",
-        nome: 'CAMISETA "GOLF" HIGH',
-        preco: 153,
-        imagem: 'camiseta-4.png',
-        moletom: false,
-        modelo: 'camiseta'
+        nome: 'OUTLINED',
+        preco: 99,
+        imagem: '/assets/images/produtos/touca/touca-4.png',
+        marca: 'THRASHER',
+        modelo: 'TOUCA'
     },
     {
         id: "5",
-        nome: 'CAMISA POLO SPORT HIGH',
-        preco: 168,
-        imagem: 'camiseta-5.png',
-        moletom: false,
-        modelo: 'camiseta'
+        nome: 'CAMO',
+        preco: 239,
+        imagem: '/assets/images/produtos/bone/bone-1.png',
+        marca: 'BARRA',
+        modelo: 'BONÉ'
     },
     {
         id: "6",
-        nome: 'CAMISETA "COMET" HIGH',
-        preco: 142,
-        imagem: 'camiseta-6.png',
-        moletom: false,
-        modelo: 'camiseta'
+        nome: 'LOGO AREIA',
+        preco: 139,
+        imagem: '/assets/images/produtos/bone/bone-2.png',
+        marca: 'BARRA',
+        modelo: 'BONÉ'
     },
     {
         id: "7",
-        nome: 'CAMISETA BAW x SMILEY NICE DAY',
-        preco: 151,
-        imagem: 'camiseta-7.png',
-        moletom: false,
-        modelo: 'camiseta'
+        nome: 'VELUDO',
+        preco: 142,
+        imagem: '/assets/images/produtos/bone/bone-3.png',
+        marca: 'TUPODE',
+        modelo: 'BONÉ'
     },
     {
         id: "8",
-        nome: 'CAMISETA "CINZEIRO" KUNX',
-        preco: 139,
-        imagem: 'camiseta-8.png',
-        moletom: false,
-        modelo: 'camiseta'
+        nome: 'DOGGY STYLE®',
+        preco: 159,
+        imagem: '/assets/images/produtos/bone/bone-4.png',
+        marca: 'BOLOVO',
+        modelo: 'BONÉ'
     },
     {
         id: "9",
-        nome: 'CAMISETA "GRAFF" KUNX',
-        preco: 136,
-        imagem: 'camiseta-9.png',
-        moletom: false,
-        modelo: 'camiseta'
+        nome: 'UTILITY',
+        preco: 168,
+        imagem: '/assets/images/produtos/bone/bone-5.png',
+        marca: 'BAW',
+        modelo: 'BONÉ'
     },
     {
         id: "10",
-        nome: 'CAMISETA "ASSINATURA" BCREW',
-        preco: 129,
-        imagem: 'camiseta-10.png',
-        moletom: false,
-        modelo: 'camiseta'
+        nome: 'FIRE DAD HAT',
+        preco: 142,
+        imagem: '/assets/images/produtos/bone/bone-6.png',
+        marca: 'CARNAN',
+        modelo: 'BONÉ'
     },
-    {
-        id: "11",
-        nome: 'CAMISETA "B TRIBAL" BCREW ',
-        preco: 141,
-        imagem: 'camiseta-11.png',
-        moletom: false,
-        modelo: 'camiseta'
-    },
-    {
-        id: "12",
-        nome: 'CAMISETA "B GARÇA REMIX" BCREW',
-        preco: 136,
-        imagem: 'camiseta-12.png',
-        moletom: false,
-        modelo: 'camiseta'
-    },
-    {
-        id: "13",
-        nome: 'CAMISETA "BERÇO B" BCREW',
-        preco: 136,
-        imagem: 'camiseta-13.png',
-        moletom: false,
-        modelo: 'camiseta'
-    },
-    {
-        id: "14",
-        nome: 'CAMISETA "ACID LOVE" LOVE DELIVERY',
-        preco: 129,
-        imagem: 'camiseta-14.png',
-        moletom: false,
-        modelo: 'camiseta'
-    },
-    {
-        id: "15",
-        nome: 'BLUSA "L.T.H.T" ALLGLORY',
-        preco: 198,
-        imagem: 'blusa-1.png',
-        moletom: false,
-        modelo: 'blusa'
-    },
-    {
-        id: "16",
-        nome: 'BLUSA "D ROSES" DIAMOND',
-        preco: 176,
-        imagem: 'blusa-2.png',
-        moletom: false,
-        modelo: 'blusa'
-    },
-    {
-        id: "17",
-        nome: 'BLUSA "POSTING LESS" SOMETIMES',
-        preco: 119,
-        imagem: 'blusa-3.png',
-        moletom: false,
-        modelo: 'blusa'
-    },
-    {
-        id: "18",
-        nome: 'BLUSA "LUCK" SOMETIMES ',
-        preco: 121,
-        imagem: 'blusa-4.png',
-        moletom: false,
-        modelo: 'blusa'
-    },
-    {
-        id: "19",
-        nome: 'MOLETOM "DEATH ANGEL" DIAMOND ',
-        preco: 259,
-        imagem: 'moletom-1.png',
-        moletom: true,
-        modelo: 'moletom'
-    },
-    {
-        id: "20",
-        nome: 'MOLETOM "CLASS INVERSO" CLASS ',
-        preco: 229,
-        imagem: 'moletom-2.png',
-        moletom: true,
-        modelo: 'moletom'
-    },
-    {
-        id: "21",
-        nome: 'MOLETOM "GOODS LOGO ÓRBITA" BCREW ',
-        preco: 259,
-        imagem: 'moletom-3.png',
-        moletom: true,
-        modelo: 'moletom'
-    },
-    {
-        id: "22",
-        nome: 'MOLETOM "BREAKING & ENTERING" DEATHWISH ',
-        preco: 259,
-        imagem: 'moletom-4.png',
-        moletom: true,
-        modelo: 'moletom'
-    }
 ];
 
 export const vetSneakers = [
     {
         id: 1,
-        nome: 'NIKE "ORANGE MARINE" DUNK LOW SP',
+        nome: 'ORANGE MARINE',
         preco: 384,
-        imagem: 'sneaker-1.png'
+        imagem: '/assets/images/produtos/sneaker/sneaker-1.png',
+        marca: '',
+        modelo: 'NIKE DUNK LOW SP',
     },
     {
         id: 2,
-        nome: 'NIKE "LX WHITE" BLAZER MID 77',
+        nome: 'LX WHITE',
         preco: 461,
-        imagem: 'sneaker-2.png'
+        imagem: '/assets/images/produtos/sneaker/sneaker-2.png',
+        marca: '',
+        modelo: 'NIKE BLAZER MID 77',
     },
     {
         id: 3,
-        nome: 'ÖUS IMIGRANTE NOTÓRIO',
+        nome: 'WHITE PURPLE',
         preco: 297,
-        imagem: 'skate-1.png'
+        imagem: '/assets/images/produtos/sneaker/sneaker-3.png',
+        marca: 'TESLA COIL',
+        modelo: '',
     },
     {
         id: 4,
-        nome: 'SÖUSA NBA NY KNICKS ',
+        nome: 'IMIGRANTE NOTÓRIO',
         preco: 629,
-        imagem: 'sneaker-3.png'
+        imagem: '/assets/images/produtos/sneaker/sneaker-4.png',
+        marca: 'ÖUS',
+        modelo: '',
     },
     {
         id: 5,
-        nome: 'TESLA COIL WHITE PURPLE',
+        nome: '',
         preco: 410,
-        imagem: 'skate-2.png'
+        imagem: '/assets/images/produtos/sneaker/sneaker-5.png',
+        marca: '',
+        modelo: 'SÖUSA NBA NY KNICKS',
     },
     {
         id: 6,
-        nome: 'DC SHOES CONSTRUCT IMP',
+        nome: 'CONSTRUCT IMP',
         preco: 379,
-        imagem: 'sneaker-4.png'
+        imagem: '/assets/images/produtos/sneaker/sneaker-6.png',
+        marca: 'DC SHOES',
+        modelo: '',
     },
     {
         id: 7,
-        nome: 'DC SHOES KALYNX ZERO IMP',
+        nome: 'KALYNX ZERO IMP',
         preco: 350,
-        imagem: 'sneaker-5.png'
+        imagem: '/assets/images/produtos/sneaker/sneaker-7.png',
+        marca: 'DC SHOES',
+        modelo: '',
     },
     {
         id: 8,
-        nome: 'DC x THRASHER TRUTH',
+        nome: 'BLACK CAMO',
         preco: 529,
-        imagem: 'sneaker-6.png'
+        imagem: '/assets/images/produtos/sneaker/sneaker-8.png',
+        marca: 'DC SHOES x THRASHER TRUTH',
+        modelo: '',
     },
     {
         id: 9,
-        nome: 'ADIDAS FORUM LOW',
+        nome: '',
         preco: 439,
-        imagem: 'sneaker-7.png'
+        imagem: '/assets/images/produtos/sneaker/sneaker-9.png',
+        marca: '',
+        modelo: 'ADIDAS FORUM LOW',
     },
     {
         id: 10,
-        nome: 'REBOOK x BAW "REVENGE" CLUB C',
+        nome: 'CLUB C REVENGE',
         preco: 679,
-        imagem: 'sneaker-8.png'
-    }
+        imagem: '/assets/images/produtos/sneaker/sneaker-10.png',
+        marca: 'REBOOK x BAW',
+        modelo: '',
+    },
 ];
 
-const vetDecks = [
+export const vetDecks = [
     {
         id: 1,
-        nome: 'SHAPE "ROADSTER" PRIMITIVE',
+        nome: 'ROADSTER',
         preco: 283,
-        imagem: 'deck-1.png'
+        imagem: '/assets/images/produtos/deck/deck-1.png',
+        marca: 'PRIMITIVE',
+        modelo: 'SHAPE',
     },
     {
         id: 2,
-        nome: 'SHAPE "FOREVER TEAM" PRIMITIVE',
+        nome: 'FOREVER TEAM',
         preco: 283,
-        imagem: 'deck-2.png'
+        imagem: '/assets/images/produtos/deck/deck-2.png',
+        marca: 'PRIMITIVE',
+        modelo: 'SHAPE',
     },
     {
         id: 3,
-        nome: 'SHAPE "THIS WAY" DEATHWISH',
+        nome: 'THIS WAY',
         preco: 271,
-        imagem: 'deck-3.png'
+        imagem: '/assets/images/produtos/deck/deck-3.png',
+        marca: 'DEATHWISH',
+        modelo: 'SHAPE',
     },
     {
         id: 4,
-        nome: 'SHAPE "M. INFERNO" CREATURE',
+        nome: 'M. INFERNO',
         preco: 298,
-        imagem: 'deck-4.png'
+        imagem: '/assets/images/produtos/deck/deck-4.png',
+        marca: 'CREATURE',
+        modelo: 'SHAPE',
     },
     {
         id: 5,
-        nome: 'SHAPE "CATACOMB" CREATURE',
+        nome: 'CATACOMB',
         preco: 242,
-        imagem: 'deck-5.png'
+        imagem: '/assets/images/produtos/deck/deck-5.png',
+        marca: 'CREATURE',
+        modelo: 'SHAPE',
     },
     {
         id: 6,
-        nome: 'SHAPE "AP OG LOGO" APRIL',
+        nome: 'AP OG LOGO',
         preco: 275,
-        imagem: 'deck-6.png'
+        imagem: '/assets/images/produtos/deck/deck-6.png',
+        marca: 'APRIL',
+        modelo: 'SHAPE',
     },
     {
         id: 7,
-        nome: 'SHAPE "JEANNE" HOCKEY',
+        nome: 'JEANNE',
         preco: 275,
-        imagem: 'deck-7.png'
+        imagem: '/assets/images/produtos/deck/deck-7.png',
+        marca: 'HOCKEY',
+        modelo: 'SHAPE',
     },
     {
         id: 8,
-        nome: 'SHAPE "PREDICTIONS" FUCKING AWESOME',
+        nome: 'PREDICTIONS',
         preco: 289,
-        imagem: 'deck-8.png'
+        imagem: '/assets/images/produtos/deck/deck-8.png',
+        marca: 'FUCKING AWESOME',
+        modelo: 'SHAPE',
     },
     {
         id: 9,
-        nome: 'LIXA ULTRAGRIP JESSUP',
+        nome: 'ULTRAGRIP',
         preco: 89,
-        imagem: 'lixa-1.png'
+        imagem: '/assets/images/produtos/lixa/lixa-1.png',
+        marca: 'JESSUP',
+        modelo: 'LIXA',
     },
     {
         id: 10,
-        nome: 'LIXA "OG SPRAY" SHAKE JUNT',
+        nome: 'OG SPRAY',
         preco: 189,
-        imagem: 'lixa-2.png'
+        imagem: '/assets/images/produtos/lixa/lixa-2.png',
+        marca: 'SHAKE JUNT',
+        modelo: 'LIXA',
     },
     {
         id: 11,
-        nome: 'LIXA "STAMP PRINT" GRIZZLY',
-        preco: 189,
-        imagem: 'lixa-3.png'
+        nome: 'STAMP PRINT',
+        preco: 179,
+        imagem: '/assets/images/produtos/lixa/lixa-3.png',
+        marca: 'GRIZZLY',
+        modelo: 'LIXA',
     },
     {
         id: 12,
-        nome: 'LIXA "BIGHEAD INFERNO" SPITFIRE',
+        nome: 'BIGHEAD INFERNO',
         preco: 199,
-        imagem: 'lixa-4.png'
-    }
+        imagem: '/assets/images/produtos/lixa/lixa-4.png',
+        marca: 'SPITFIRE',
+        modelo: 'LIXA',
+    },
 ];

@@ -1,15 +1,20 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// import { CarrinhoProvider } from './context/CarrinhoContext';
 
+// Import Components
 import Carrinho from './components/Cart/Cart';
-// import Carrinho from './components/cart/Cart';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 
-import Home from './pages/Home';
-import Erro from './components/404/Erro';
-
 import './App.css';
+
+// Import Pages
+import Erro from './components/404/Erro';
+import Home from './pages/Home';
+import Camisetas from './pages/PageCamisetas';
+import Blusas from './pages/PageBlusas';
+import Acessorios from './pages/PageAcessorios';
+import Sneakers from './pages/PageSneakers';
+import SkateItens from './pages/PageSkate';
 
 function App() {
   return (
@@ -18,6 +23,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sacola" element={<Carrinho />} />
+        <Route path="/produtos/vestuario" element={<Camisetas />} />
+        {/* <Route path="/produtos/vestuario/camisetas" element={<Camisetas />} /> */}
+        {/* <Route path="/produtos/vestuario/blusas" element={<Blusas />} /> */}
+        <Route path="/produtos/acessorios" element={<Acessorios />} />
+        <Route path="/produtos/sneakers" element={<Sneakers />} />
+        <Route path="/produtos/skateboard" element={<SkateItens />} />
         <Route path="*" element={<Erro />} />
       </Routes>
       <Footer />
