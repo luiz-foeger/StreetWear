@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Carrinho from './components/Cart/Cart';
 // import { CarrinhoProvider } from './context/CarrinhoContext';
 
+// import Carrinho from './components/Cart/Cart';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 
@@ -16,7 +16,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/sacola" element={<Carrinho />} />
+        {/* <Route path="/sacola" element={<Carrinho />} /> */}
         <Route path="*" element={<Erro />} />
       </Routes>
       <Footer />

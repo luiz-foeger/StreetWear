@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { RiArrowDownSLine } from "react-icons/ri";
-import { FaShoppingBag } from "react-icons/fa"; 
+import { IoBagHandle } from "react-icons/io5";
 
 import estilos from './Header.module.css';
 
@@ -25,7 +25,7 @@ function Header() {
                     <Link to="/sobre-nos">Sobre</Link>
                 </h3>
             </nav>
-            <Link className={estilos.icone} to="/sacola"><FaShoppingBag /></Link>
+            <Link className={estilos.icone} to="/sacola"><IoBagHandle /></Link>
         </header>
     );
 }

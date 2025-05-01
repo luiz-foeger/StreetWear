@@ -1,4 +1,4 @@
-import { useCarrinho } from '../../context/CarrinhoContext';
+import { useCarrinho } from '../../../context/CarrinhoContext';
 
 function Carrinho() {
     const { carrinho, removerDoCarrinho, limparCarrinho } = useCarrinho();

@@ -9,8 +9,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Cal sans', sans serif;
-    bottom: 0;
+    font-family: 'Lexend', sans serif;
 }
 
 @media screen and (max-width: 460px) {
