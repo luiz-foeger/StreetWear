@@ -16,8 +16,8 @@ function ProdutoCard({ id, imagem, nome, preco, marca, modelo }) {
             <img src={imagem} alt={nome} className={estilos.imagem} />
             <h2 className={estilos.nome}>{modelo} {marca} {nome}</h2>
             <p className={estilos.preco}>R$ {preco}</p>
-            <button className={estilos.icone} onClick={() => adicionarAoCarrinho({ id, nome, preco, imagem })}>
-               <IoBagAdd />
+            <button className={estilos.icone} onClick={() => adicionarAoCarrinho({ id, imagem, nome, preco, marca, modelo })}>
+                <IoBagAdd />
             </button>
         </div>
         // </Link>
