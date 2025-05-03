@@ -461,3 +461,12 @@ export const vetDecks = [
         modelo: 'LIXA',
     },
 ];
+
+export const vetCatalogo = [
+    ...vetCamisetas,
+    ...vetBlusas,
+    ...vetAcessorios,
+    ...vetSneakers,
+    ...vetDecks,
+  ];
+  

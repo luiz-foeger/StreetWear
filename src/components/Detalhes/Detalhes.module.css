@@ -1,0 +1,154 @@
+.cardDetalhes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.detalhes {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    font-family: 'Lexend', sans-serif;
+}
+
+.cardDetalhes img {
+    max-width: 600px;
+    border-radius: 8px;
+    margin: 0 40px 0 0;
+}
+
+.detalhes a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 200;
+    width: 100%;
+}
+
+.detalhes h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #000;
+    font-weight: 400;
+}
+
+.detalhes h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #000;
+    font-weight: 200;
+    margin: 10px 0;
+}
+
+.detalhes h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: #000;
+    margin-top: 20px;
+    font-weight: 300;
+    /* padding-bottom: 2.5px;
+    border-bottom: 1px solid #000; */
+}
+
+.detalhes p {
+    font-size: 17px;
+    margin-bottom: 20px;
+    color: #000000BF;
+    font-weight: 200;
+}
+
+select {
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #828282;
+    margin-bottom: 20px;
+    text-align: center;
+    height: 40px;
+    width: 200px;
+    font-weight: 200;
+}
+
+.option {
+    font-size: 15px;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+    color: #000;
+}
+
+.botao {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 200;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    transition: all 0.3s ease-out;
+}
+
+.botao:hover {
+    cursor: pointer;
+    scale: 1.05;
+    background-color: rgba(0, 0, 0, 0.756);
+}
+
+.detalhes div {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 8px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    width: 100%;
+    padding: 5px 15px;
+    border: 1px solid #828282;
+    font-weight: 200;
+}
+
+input[type="text"]:focus {
+    border-color: #ff0000;
+    /* cor da borda quando selecionado */
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+    /* brilho ao redor */
+    /* border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); */
+}
+
+.detalhes div button {
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px 15px;
+    border: 1px solid #828282;
+    border-left: none;
+    background-color: transparent;
+    font-weight: 200;
+}
+
+.indicadorPagina {
+    color: #000;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 90px;
+    height: 90px;
+    margin-bottom: -30px;
+    font-size: 17px;
+    font-family: 'Inter', cursive;
+}

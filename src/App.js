@@ -11,24 +11,25 @@ import './App.css';
 import Erro from './components/404/Erro';
 import Home from './pages/Home';
 import Camisetas from './pages/PageCamisetas';
-import Blusas from './pages/PageBlusas';
 import Acessorios from './pages/PageAcessorios';
 import Sneakers from './pages/PageSneakers';
 import SkateItens from './pages/PageSkate';
+import ProdutoDetalhes from './components/Detalhes/Detalhes';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <div className="App">
       <Header />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sacola" element={<Carrinho />} />
         <Route path="/produtos/vestuario" element={<Camisetas />} />
-        {/* <Route path="/produtos/vestuario/camisetas" element={<Camisetas />} /> */}
-        {/* <Route path="/produtos/vestuario/blusas" element={<Blusas />} /> */}
         <Route path="/produtos/acessorios" element={<Acessorios />} />
         <Route path="/produtos/sneakers" element={<Sneakers />} />
         <Route path="/produtos/skateboard" element={<SkateItens />} />
+        <Route path="/detalhes/produto/:modelo/:marca/:id" element={<ProdutoDetalhes />} />
         <Route path="*" element={<Erro />} />
       </Routes>
       <Footer />
