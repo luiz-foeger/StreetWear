@@ -2,16 +2,18 @@ import React from 'react'
 
 import Buttons from '../components/Buttons/Buttons';
 
-import Camisetas from '../pages/PageCamisetas';
-import Blusas from '../pages/PageBlusas';
 import Banner from '../components/Banner/Banner';
+import ListaProdutos from '../components/ListaProdutos/ListaProdutos';
+import { vetCatalogo } from '../data/vetCatalogo';
 
 const Home = () => {
     return (
         <>
             <Banner />
             <Buttons />
-            <Blusas />
+            <div>
+                <ListaProdutos produtos={vetCatalogo} />
+            </div>
         </>
     )
 }

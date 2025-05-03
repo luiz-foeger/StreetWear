@@ -1,6 +1,6 @@
 export const vetCamisetas = [
     {
-        id: "1",
+        id: 1,
         nome: 'PRESENTÉ',
         preco: 162,
         imagem: '/assets/images/produtos/camiseta/camiseta-1.png',
@@ -282,7 +282,7 @@ export const vetAcessorios = [
 
 export const vetSneakers = [
     {
-        id: 1,
+        id: "1",
         nome: 'ORANGE MARINE',
         preco: 384,
         imagem: '/assets/images/produtos/sneaker/sneaker-1.png',
@@ -290,82 +290,82 @@ export const vetSneakers = [
         modelo: 'NIKE DUNK LOW SP',
     },
     {
-        id: 2,
+        id: "2",
         nome: 'LX WHITE',
         preco: 461,
         imagem: '/assets/images/produtos/sneaker/sneaker-2.png',
-        marca: '',
+        marca: 'ADSASD',
         modelo: 'NIKE BLAZER MID 77',
     },
     {
-        id: 3,
+        id: "3",
         nome: 'WHITE PURPLE',
         preco: 297,
         imagem: '/assets/images/produtos/sneaker/sneaker-3.png',
         marca: 'TESLA COIL',
-        modelo: '',
+        modelo: 'ASDSD',
     },
     {
-        id: 4,
+        id: "4",
         nome: 'IMIGRANTE NOTÓRIO',
         preco: 629,
         imagem: '/assets/images/produtos/sneaker/sneaker-4.png',
         marca: 'ÖUS',
-        modelo: '',
+        modelo: 'ASDSD',
     },
     {
-        id: 5,
+        id: "5",
         nome: '',
         preco: 410,
         imagem: '/assets/images/produtos/sneaker/sneaker-5.png',
-        marca: '',
+        marca: 'AMDSD',
         modelo: 'SÖUSA NBA NY KNICKS',
     },
     {
-        id: 6,
+        id: "6",
         nome: 'CONSTRUCT IMP',
         preco: 379,
         imagem: '/assets/images/produtos/sneaker/sneaker-6.png',
         marca: 'DC SHOES',
-        modelo: '',
+        modelo: 'ASDSD',
     },
     {
-        id: 7,
+        id: "7",
         nome: 'KALYNX ZERO IMP',
         preco: 350,
         imagem: '/assets/images/produtos/sneaker/sneaker-7.png',
         marca: 'DC SHOES',
-        modelo: '',
+        modelo: 'ADOKSD',
     },
     {
-        id: 8,
+        id: "8",
         nome: 'BLACK CAMO',
         preco: 529,
         imagem: '/assets/images/produtos/sneaker/sneaker-8.png',
         marca: 'DC SHOES x THRASHER TRUTH',
-        modelo: '',
+        modelo: 'FAOKSD',
     },
     {
-        id: 9,
+        id: "9",
         nome: '',
         preco: 439,
         imagem: '/assets/images/produtos/sneaker/sneaker-9.png',
-        marca: '',
+        marca: 'ALSDPASD',
         modelo: 'ADIDAS FORUM LOW',
     },
     {
-        id: 10,
+        id: "10",
         nome: 'CLUB C REVENGE',
         preco: 679,
         imagem: '/assets/images/produtos/sneaker/sneaker-10.png',
         marca: 'REBOOK x BAW',
-        modelo: '',
+        modelo: 'PASDP',
     },
 ];
 
 export const vetDecks = [
     {
-        id: 1,
+        id: "1",
         nome: 'ROADSTER',
         preco: 283,
         imagem: '/assets/images/produtos/deck/deck-1.png',
@@ -373,7 +373,7 @@ export const vetDecks = [
         modelo: 'SHAPE',
     },
     {
-        id: 2,
+        id: "2",
         nome: 'FOREVER TEAM',
         preco: 283,
         imagem: '/assets/images/produtos/deck/deck-2.png',
@@ -381,7 +381,7 @@ export const vetDecks = [
         modelo: 'SHAPE',
     },
     {
-        id: 3,
+        id: "3",
         nome: 'THIS WAY',
         preco: 271,
         imagem: '/assets/images/produtos/deck/deck-3.png',
@@ -389,7 +389,7 @@ export const vetDecks = [
         modelo: 'SHAPE',
     },
     {
-        id: 4,
+        id: "4",
         nome: 'M. INFERNO',
         preco: 298,
         imagem: '/assets/images/produtos/deck/deck-4.png',
@@ -397,7 +397,7 @@ export const vetDecks = [
         modelo: 'SHAPE',
     },
     {
-        id: 5,
+        id: "5",
         nome: 'CATACOMB',
         preco: 242,
         imagem: '/assets/images/produtos/deck/deck-5.png',
@@ -405,7 +405,7 @@ export const vetDecks = [
         modelo: 'SHAPE',
     },
     {
-        id: 6,
+        id: "6",
         nome: 'AP OG LOGO',
         preco: 275,
         imagem: '/assets/images/produtos/deck/deck-6.png',
@@ -413,7 +413,7 @@ export const vetDecks = [
         modelo: 'SHAPE',
     },
     {
-        id: 7,
+        id: "7",
         nome: 'JEANNE',
         preco: 275,
         imagem: '/assets/images/produtos/deck/deck-7.png',
@@ -421,7 +421,7 @@ export const vetDecks = [
         modelo: 'SHAPE',
     },
     {
-        id: 8,
+        id: "8",
         nome: 'PREDICTIONS',
         preco: 289,
         imagem: '/assets/images/produtos/deck/deck-8.png',
@@ -429,7 +429,7 @@ export const vetDecks = [
         modelo: 'SHAPE',
     },
     {
-        id: 9,
+        id: "9",
         nome: 'ULTRAGRIP',
         preco: 89,
         imagem: '/assets/images/produtos/lixa/lixa-1.png',
@@ -437,7 +437,7 @@ export const vetDecks = [
         modelo: 'LIXA',
     },
     {
-        id: 10,
+        id: "10",
         nome: 'OG SPRAY',
         preco: 189,
         imagem: '/assets/images/produtos/lixa/lixa-2.png',
@@ -445,7 +445,7 @@ export const vetDecks = [
         modelo: 'LIXA',
     },
     {
-        id: 11,
+        id: "11",
         nome: 'STAMP PRINT',
         preco: 179,
         imagem: '/assets/images/produtos/lixa/lixa-3.png',
@@ -453,7 +453,7 @@ export const vetDecks = [
         modelo: 'LIXA',
     },
     {
-        id: 12,
+        id: "12",
         nome: 'BIGHEAD INFERNO',
         preco: 199,
         imagem: '/assets/images/produtos/lixa/lixa-4.png',
@@ -463,10 +463,9 @@ export const vetDecks = [
 ];
 
 export const vetCatalogo = [
-    ...vetCamisetas,
     ...vetBlusas,
+    ...vetCamisetas,
     ...vetAcessorios,
     ...vetSneakers,
     ...vetDecks,
-  ];
-  
+];

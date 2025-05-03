@@ -6,9 +6,9 @@ const Buttons = () => {
         <div className={estilos.sectionButtons}>
             <ul className={estilos.buttons}>
                 <li><Link to="/produtos/acessorios">Acessórios</Link></li>
-                <li><Link to="/produtos/vestuario/camisetas">Camisetas</Link></li>
+                <li><Link to="/produtos/vestuario">Camisetas</Link></li>
                 <li><Link to="/produtos/sneakers">Sneakers</Link></li>
-                <li><Link to="/produtos/skateboard/decks">Decks</Link></li>
+                <li><Link to="/produtos/skateboard">Decks</Link></li>
             </ul>
         </div>
     )
