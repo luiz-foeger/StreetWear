@@ -1,14 +1,25 @@
 import { Link } from 'react-router-dom';
+import { useEffect, useState } from "react";
+
+// Import Icons
 import { RiArrowDownSLine } from "react-icons/ri";
-import { IoBagHandle } from "react-icons/io5";
-// import icone de menu mobile 
-import { IoMenu } from "react-icons/io5";
+import { IoBagHandle, IoMenu } from "react-icons/io5";
 
 import estilos from './Header.module.css';
 
 function Header() {
+    const [rolado, setRolado] = useState(false);
+
+    useEffect(() => {
+        const aoRolar = () => {
+            setRolado(window.scrollY > 50);
+        };
+        window.addEventListener("scroll", aoRolar);
+        return () => window.removeEventListener("scroll", aoRolar);
+    }, []);
+
     return (
-        <header className={estilos.header}>
+        <header className={`${estilos.header} ${rolado ? estilos.rolado : ""}`}>
             <img to="/" className={estilos.logo} src="/assets/images/logos/logo.png" alt="Logo" />
             <nav className={estilos.nav}>
                 <h3>
@@ -31,6 +42,5 @@ function Header() {
         </header>
     );
 }
-
 
 export default Header;
