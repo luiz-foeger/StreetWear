@@ -22,7 +22,7 @@ function Header() {
         <header className={`${estilos.header} ${rolado ? estilos.rolado : ""}`}>
             <img to="/" className={estilos.logo} src="/assets/images/logos/logo.png" alt="Logo" />
             <nav className={estilos.nav}>
-                <h3>
+                <h3 className={estilos.menu}>
                     <Link to="/">Início</Link>
 
                     <div className={estilos.opcaoDropdown}>

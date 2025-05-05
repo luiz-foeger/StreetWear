@@ -143,6 +143,10 @@ h3 {
         font-size: 20px;
         margin: 0 18px;
     }
+
+    h3 {
+        color: red;
+    }
 }
 
 @media screen and (max-width: 460px) {
