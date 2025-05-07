@@ -1,8 +1,9 @@
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-
 import { useCarrinho } from '../../context/CarrinhoContext';
 import { vetCatalogo } from '../../data/vetCatalogo';
+
+import Erro from '../404/Erro';
 
 import estilos from './Detalhes.module.css';
 
@@ -15,10 +16,6 @@ function ProdutoDetalhes() {
         adicionarAoCarrinho,
     } = useCarrinho();
 
-    // const item = vetCatalogo.find(p =>
-    //     String(p.id) === id && p.modelo === modelo && p.marca === marca
-    // );
-
     const item = vetCatalogo.find(p =>
         p.id === id &&
         p.modelo.toLowerCase() === modelo &&
@@ -30,8 +27,7 @@ function ProdutoDetalhes() {
         return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
     }
 
-
-    if (!item) return <h2>Produto não encontrado</h2>;
+    if (!item) return <Erro />;
 
     return (
         <>
