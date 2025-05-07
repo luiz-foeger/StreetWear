@@ -15,12 +15,12 @@ function ProdutoCard({ id, imagem, nome, preco, marca, modelo }) {
                 <p className={estilos.preco}>R$ {preco}</p>
             </Link>
 
-            <button
+            {/* <button
                 className={estilos.icone}
                 onClick={() => adicionarAoCarrinho({ id, imagem, nome, preco, marca, modelo })}
             >
                 <IoBagAdd />
-            </button>
+            </button> */}
         </div>
     );
 }

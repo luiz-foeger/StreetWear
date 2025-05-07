@@ -2,8 +2,8 @@
     background-color: #ffffff;
     text-align: center;
     transition: transform 0.3s ease;
-    padding-bottom: 10px;
     transition: all 0.3s ease-out;
+    min-width: 300px;
 }
 
 .card a {
@@ -30,29 +30,22 @@
 }
 
 .nome {
-    font-size: 16px;
+    font-size: 18px;
     margin: 8px 0;
     font-weight: 300;
     color: #333;
 }
 
 .preco {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 20px;
     font-weight: 200;
     color: #000000bf;
 }
 
-.descricao {
-    font-size: 16px;
-    color: #6c6c6c;
-    margin: 4px 0 10px;
-    font-weight: 300;
-}
-
-path {
+/* path {
     fill: #fff;
-}
+} 
 
 .icone {
     width: 120px;
@@ -74,6 +67,23 @@ path {
     scale: 1.05;
     text-shadow: 0 0 5px #ffffff56, 0 0 10px #ffffff56, 0 0 1px #ffffff56, 0 0 2px #ffffff56,
         0 0 30px #ffffff56, 0 0 40px #ffffff56, 0 0 55px #ffffff56, 0 0 75px #ffffff56;
+}*/
+
+@media screen and (max-width: 1300px) {
+
+    .card {
+        background-color: #ffffff;
+        text-align: center;
+        transition: transform 0.3s ease;
+        transition: all 0.3s ease-out;
+    }
+
+    .card .imagem {
+        width: 100%;
+        height: auto;
+        max-height: 100%;
+        object-fit: cover;
+    }
 }
 
 
