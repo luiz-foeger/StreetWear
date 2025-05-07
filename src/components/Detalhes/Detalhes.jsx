@@ -1,13 +1,17 @@
 import { useParams } from 'react-router-dom';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
+
 import { useCarrinho } from '../../context/CarrinhoContext';
 import { vetCatalogo } from '../../data/vetCatalogo';
+import { TfiClose } from "react-icons/tfi";
 
 import Erro from '../404/Erro';
 
 import estilos from './Detalhes.module.css';
 
 function ProdutoDetalhes() {
+    const [mostrarModal, setMostrarModal] = useState(false);
     const { id, modelo, marca } = useParams();
     const {
         // aumentarQuantidade,
@@ -38,7 +42,7 @@ function ProdutoDetalhes() {
                 </span>
             </div>
             <div className={estilos.cardDetalhes}>
-                <img src={item.imagem} alt={item.nome} />
+                <img src={item.imagem} alt={item.nome} onClick={() => setMostrarModal(true)} />
                 <div className={estilos.detalhes}>
                     <h1>{item.modelo} {item.marca} {item.nome}</h1>
                     <h2>R$ {item.preco}</h2>
@@ -56,12 +60,24 @@ function ProdutoDetalhes() {
                         <option style={{ fontWeight: '200' }} value="GG">GG</option>
                     </select>
                     <Link to="/sacola"><button className={estilos.botao} onClick={() => adicionarAoCarrinho(item)}>Adicionar ao Carrinho</button></Link>
-                    <div>
+                    <div className={estilos.inputDetalhes}>
                         <input type="text" placeholder='Digite seu CUPOM' />
                         <button onClick={() => alert('CUPOM NÃO ENCONTRADO!')}>CALCULAR</button>
                     </div>
                 </div>
-            </div>
+            </div>             {
+                mostrarModal && (
+                    <div className={estilos.modalOverlay} onClick={() => setMostrarModal(false)}>
+                        <div className={estilos.modalContent} onClick={(e) => e.stopPropagation()}>
+                            <div >
+                                <img className={estilos.modalImagem} src={item.imagem} alt={item.nome} />
+
+                            </div>
+                        </div>
+                        <button className={estilos.botaoFechar} onClick={() => setMostrarModal(false)}><TfiClose /></button>
+                    </div>
+                )
+            }
         </>
     );
 }

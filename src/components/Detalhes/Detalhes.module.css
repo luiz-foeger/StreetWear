@@ -1,3 +1,17 @@
+.indicadorPagina {
+    color: #000;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 90px;
+    height: 90px;
+    margin-bottom: -30px;
+    font-size: 17px;
+    font-family: 'Inter', cursive;
+}
+
+/* -------------------- */
+
 .cardDetalhes {
     display: flex;
     flex-direction: row;
@@ -15,12 +29,88 @@
     align-items: start;
     justify-content: center;
     font-family: 'Lexend', sans-serif;
+    margin: 0 0 0 40px;
 }
 
+/* -------------------- */
+
 .cardDetalhes img {
-    max-width: 800px;
+    height: 800px;
+    width: 800px;
+    object-fit: contain;
     border-radius: 8px;
     margin: 0 40px 0 0;
+    cursor: zoom-in;
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.822);
+    /* background: rgba(0, 0, 0, 0.6); */
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 100vh;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.modalContent path {
+    fill: #000;
+}
+
+.modalContent .nome {
+    font-size: 20px;
+}
+
+.modalContent .preco {
+    font-size: 42px;
+}
+
+.modalContent .botaoContato {
+    font-size: 20px;
+}
+
+/* -------------------- */
+
+.botaoFechar {
+    color: #b1b1b1;
+    font-size: 30px;
+    top: 25px;
+    right: 25px;
+    max-width: 30px;
+    max-height: 30px;
+    margin-top: -10px;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.botaoFechar:hover {
+    scale: 1.05;
+}
+
+.modalImagem {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    object-fit: cover;
 }
 
 .detalhes a {
@@ -32,6 +122,7 @@
 
 .detalhes h1 {
     font-size: 35px;
+    width: 555px;
     margin-bottom: 10px;
     color: #000;
     font-weight: 400;
@@ -60,6 +151,8 @@
     font-weight: 200;
 }
 
+/* -------------------- */
+
 select {
     font-size: 20px;
     border-radius: 5px;
@@ -69,6 +162,8 @@ select {
     height: 40px;
     width: 200px;
     font-weight: 200;
+    color: #000000BF;
+    background-color: transparent;
 }
 
 .option {
@@ -108,6 +203,8 @@ select {
     margin-top: 20px;
 }
 
+/* -------------------- */
+
 input[type="text"] {
     border: 1px solid #ccc;
     outline: none;
@@ -116,8 +213,10 @@ input[type="text"] {
     width: 100%;
     padding: 5px 15px;
     border: 1px solid #828282;
+    background-color: transparent;
     font-weight: 200;
     font-size: 20px;
+    color: #000000BF;
 }
 
 input[type="text"]:focus {
@@ -132,6 +231,7 @@ input[type="text"]:focus {
     border: 1px solid #828282;
     border-left: none;
     background-color: transparent;
+    color: #000000BF;
     font-weight: 200;
 }
 
@@ -176,14 +276,30 @@ input[type="text"]:focus {
     }
 }
 
-.indicadorPagina {
-    color: #000;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    margin-left: 90px;
-    height: 90px;
-    margin-bottom: -30px;
-    font-size: 17px;
-    font-family: 'Inter', cursive;
+@media screen and (max-width: 545px) {
+    .cardDetalhes {
+        flex-direction: column;
+        padding: 20px;
+        width: 100vw;
+    }
+
+    .detalhes {
+        display: flex;
+        width: 100%;
+        margin: 0;
+    }
+
+    .detalhes h1 {
+        width: 100%;
+    }
+
+    .cardDetalhes img {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
 }
+
+@media screen and (max-width: 460px) {}
+
+@media screen and (max-width: 370px) {}
