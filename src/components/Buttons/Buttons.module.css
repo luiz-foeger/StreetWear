@@ -29,9 +29,15 @@
     transition: ease-in-out 0.2s;
 }
 
-/* .buttons a:hover {
+.buttons a:hover {
     z-index: -1;
-    box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.171);
-    -webkit-box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.171);
-    -moz-box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.171);
-} */
+    box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.050);
+    -webkit-box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.050);
+    -moz-box-shadow: 0px 0px 42px 11px rgba(0, 0, 0, 0.050);
+}
+
+@media screen and (max-width: 545px) {
+    .buttons {
+        display: none;
+    }
+}
