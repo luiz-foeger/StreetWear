@@ -2,7 +2,7 @@
     background-color: #0d0d0d;
     position: fixed;
     display: flex;
-    z-index: 999;
+    z-index: 998;
     top: 0;
     justify-content: space-around;
     align-items: center;
@@ -14,13 +14,23 @@
     transition: ease 0.5s;
 }
 
-.rolado {
-    height: 60px;
+.header:hover {
+    height: 75px;
 }
 
+.divLogo {
+    min-width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .logo {
-    height: 75%;
+    height: 100%;
+}
+
+.logoMobile {
+    display: none;
 }
 
 .nav {
@@ -58,21 +68,27 @@ h3 {
 }
 
 .icone {
-    font-size: 20px;
-    width: 25px;
-    height: 25px;
-    margin: 0 15px 8px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 30px;
     color: #d4d4d4;
     transition: ease 0.2s;
 }
 
-.icone:hover {
+.iconeMobile {
+    display: none;
+}
+
+/* .icone:hover {
     transform: translateY(-2px);
 }
 
 .icone:active {
     transform: translateY(2px);
-}
+} */
 
 .header path:hover {
     margin-top: -5px;
@@ -85,6 +101,10 @@ h3 {
 .opcaoDropdown {
     position: relative;
     margin: -2.3px 0 0 15px;
+}
+
+.opcaoDropdown:hover .dropdownProdutos {
+    display: flex;
 }
 
 .dropdownProdutos {
@@ -118,34 +138,132 @@ h3 {
     color: #a0a0a0;
 }
 
-.opcaoDropdown:hover .dropdownProdutos {
-    display: flex;
-}
-
 /* ---------- */
 
-@media screen and (max-width: 670px) {
-    .logo {
-        height: 25%;
-        margin-top: 20px;
+@media screen and (max-width: 1300px) {
+    .rolado {
+        height: 60px;
     }
+}
 
-    .logo:nth-child(3) {
+@media screen and (max-width: 545px) {
+    .logo {
         display: none;
     }
 
-    .header {
+    .icone {
+        font-size: 25px;
+    }
+
+    .logoMobile {
+        display: flex;
+        height: 50px;
+    }
+
+    .iconeMobile {
+        font-size: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 75px;
+        height: 30px;
+        color: #d4d4d4;
+        transition: ease 0.2s;
+    }
+
+    .menuOverlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding-top: 80px;
+        height: 100%;
+        font-family: 'Lexend', sans-serif;
+        color: #000;
+        display: flex;
         flex-direction: column;
-        height: 115px;
+        align-items: center;
+        justify-content: start;
+        /* background-color: #0d0d0de1; */
+        z-index: 999;
     }
 
-    .nav a {
-        font-size: 20px;
-        margin: 0 18px;
+    .menuContent {
+        max-width: 100vh;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .menuContent ul {
+        background-color: #0d0d0de1;
+        list-style: none;
+        color: #ffffffc3;
+        padding: 0;
+        align-items: start;
+        justify-content: start;
+    }
+    
+    .menuContent li {
+        list-style: none;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        border-bottom: solid 1px white;
+    }
+    
+    .menuContent li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 28px 100%;
+        font-size: 30px;
+        margin: 0;
     }
 
-    h3 {
-        color: red;
+    .menuMobile {
+        display: flex;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        background-color: #0d0d0de1;
+        z-index: 1000;
+        flex-direction: column;
+        text-align: center;
+        list-style: none;
+    }
+
+    /* .menuMobile li {
+        list-style: none;
+        margin: 5px 0;
+    }
+
+    .menuMobile a {
+        display: block;
+        padding: 1px 0;
+        color: #000000ec;
+        text-decoration: none;
+    }
+
+    .menuMobile a:hover {
+        color: #a0a0a0;
+    } */
+
+    .header {
+        /* flex-direction: column; */
+        height: 80px;
+    }
+
+    .header:hover {
+        height: 80px;
+    }
+
+    .rolado {
+        height: 70px;
+    }
+
+    .nav {
+        display: none;
     }
 }
 
