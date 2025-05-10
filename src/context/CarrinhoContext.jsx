@@ -5,12 +5,21 @@ const CarrinhoContext = createContext();
 
 export function CarrinhoProvider({ children }) {
   const [carrinho, setCarrinho] = useState(() => {
-    const carrinhoSalvo = localStorage.getItem('carrinho');
-    return carrinhoSalvo ? JSON.parse(carrinhoSalvo) : [];
+    try {
+      const carrinhoSalvo = localStorage.getItem('carrinho');
+      return carrinhoSalvo ? JSON.parse(carrinhoSalvo) : [];
+    } catch (error) {
+      console.error("Erro ao recuperar carrinho do localStorage:", error);
+      return [];
+    }
   });
 
   useEffect(() => {
-    localStorage.setItem('carrinho', JSON.stringify(carrinho));
+    try {
+      localStorage.setItem('carrinho', JSON.stringify(carrinho));
+    } catch (error) {
+      console.error("Erro ao salvar carrinho no localStorage:", error);
+    }
   }, [carrinho]);
 
   const adicionarAoCarrinho = (produto) => {
@@ -28,11 +37,11 @@ export function CarrinhoProvider({ children }) {
   };
 
   const removerDoCarrinho = (id) => {
-    setCarrinho((prevCarrinho) => prevCarrinho.filter(item => item.id !== id));
+    setCarrinho(prevCarrinho => prevCarrinho.filter(item => item.id !== id));
   };
 
   const aumentarQuantidade = (id) => {
-    setCarrinho((prevCarrinho) =>
+    setCarrinho(prevCarrinho =>
       prevCarrinho.map(item =>
         item.id === id ? { ...item, quantidade: item.quantidade + 1 } : item
       )
@@ -40,7 +49,7 @@ export function CarrinhoProvider({ children }) {
   };
 
   const diminuirQuantidade = (id) => {
-    setCarrinho((prevCarrinho) =>
+    setCarrinho(prevCarrinho =>
       prevCarrinho
         .map(item =>
           item.id === id ? { ...item, quantidade: item.quantidade - 1 } : item
@@ -73,5 +82,9 @@ export function CarrinhoProvider({ children }) {
 }
 
 export function useCarrinho() {
-  return useContext(CarrinhoContext);
+  const context = useContext(CarrinhoContext);
+  if (!context) {
+    throw new Error("useCarrinho deve ser usado dentro de um CarrinhoProvider");
+  }
+  return context;
 }
