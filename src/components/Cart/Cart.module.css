@@ -161,6 +161,10 @@
     max-width: 200px; */
 }
 
+.qtdProdutoMobile {
+    display: none;
+}
+
 .qtdProduto {
     display: flex;
     flex-direction: row;
@@ -217,6 +221,20 @@
     scale: 1.03;
 }
 
+.sectionCarrinho .botao:nth-child(3) {
+    width: 200px;
+    background-color: transparent;
+    margin: 5px 0 0 800px;
+    border: solid 1px black;
+    color: #000;
+}
+
+.sectionCarrinho .botao:nth-child(3):hover {
+    scale: 1;
+    background-color: #000;
+    color: #fff;
+}
+
 /* ---------- */
 
 .indicadorPagina {
@@ -252,6 +270,105 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        max-width: 165px;
+        max-width: 220px;
+    }
+
+    .sectionCarrinho .botao:nth-child(3) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .precoTotal,
+    .itemId {
+        display: none;
+    }
+
+    .sectionCarrinho .icone {
+        width: 65px;
+    }
+
+    .sectionCarrinho .botao {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .itemCard .cardInfo {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: end;
+        height: 100px;
+        padding: 0;
+    }
+
+    .sectionCarrinho .icone {
+        font-size: 19px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-weight: 200;
+        height: 50px;
+        width: 70px;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    /* .cardInfo p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 180px;
+    } */
+
+    .cardInfo p {
+        white-space: nowrap;
+        overflow: scroll;
+        text-overflow: unset;
+        max-width: 180px;
+    }
+
+    .cardInfo p::-webkit-scrollbar {
+        display: none;
+    }
+
+    .sectionCarrinho {
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 455px) {
+    .cardInfo p {
+        max-width: 170px;
+    }
+
+    .sectionCarrinho {
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 455px) {
+    .cardInfo p {
+        max-width: 160px;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .cardInfo p {
+        max-width: 140px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .cardInfo p {
+        max-width: 135px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .cardInfo p {
+        max-width: 130px;
     }
 }
