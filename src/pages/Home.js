@@ -4,7 +4,7 @@ import Buttons from '../components/Buttons/Buttons';
 
 import Banner from '../components/Banner/Banner';
 import ListaProdutos from '../components/ListaProdutos/ListaProdutos';
-import { vetCatalogo } from '../data/vetCatalogo';
+import { vetCatalogo } from '../data/products';
 
 const Home = () => {
     return (

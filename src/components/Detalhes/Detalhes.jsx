@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import { useCarrinho } from '../../context/CarrinhoContext';
-import { vetCatalogo } from '../../data/vetCatalogo';
+import { vetCatalogo } from '../../data/products';
 import { TfiClose } from "react-icons/tfi";
 
 import Erro from '../404/Erro';

@@ -1,8 +1,9 @@
-import { vetDecks } from '../data/vetCatalogo';
 import { Link } from 'react-router-dom';
 
 import estilos from '../components/ListaProdutos/ListaProdutos.module.css';
 import ListaProdutos from '../components/ListaProdutos/ListaProdutos';
+
+import { skateItens } from '../data/products';
 
 function SkateItens() {
   return (
@@ -13,7 +14,7 @@ function SkateItens() {
           / Skateboard
         </span>
       </div>
-      <ListaProdutos produtos={vetDecks} />
+      <ListaProdutos produtos={skateItens} />
     </div>
   );
 }

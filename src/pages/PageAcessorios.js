@@ -1,8 +1,9 @@
-import { vetAcessorios } from '../data/vetCatalogo';
 import { Link } from 'react-router-dom';
 
 import estilos from '../components/ListaProdutos/ListaProdutos.module.css';
 import ListaProdutos from '../components/ListaProdutos/ListaProdutos';
+
+import { accessories	 } from '../data/products';
 
 function Acessorios() {
   return (
@@ -13,7 +14,7 @@ function Acessorios() {
           / Acessórios
         </span>
       </div>
-      <ListaProdutos produtos={vetAcessorios} />
+      <ListaProdutos produtos={accessories} />
     </div >
   );
 }

@@ -1,8 +1,9 @@
-import { vetSneakers } from '../data/vetCatalogo';
 import { Link } from 'react-router-dom';
 
 import estilos from '../components/ListaProdutos/ListaProdutos.module.css';
 import ListaProdutos from '../components/ListaProdutos/ListaProdutos';
+
+import { sneakers } from '../data/products';
 
 function Sneakers() {
   return (
@@ -13,7 +14,7 @@ function Sneakers() {
           / Sneakers
         </span>
       </div>
-      <ListaProdutos produtos={vetSneakers} />
+      <ListaProdutos produtos={sneakers} />
     </div>
   );
 }

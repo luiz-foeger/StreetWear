@@ -1,8 +1,9 @@
-import { vetCamisetas } from '../data/vetCatalogo';
 import { Link } from 'react-router-dom';
 
 import estilos from '../components/ListaProdutos/ListaProdutos.module.css';
 import ListaProdutos from '../components/ListaProdutos/ListaProdutos';
+
+import { shirts } from '../data/products';
 
 function Camisetas() {
   return (
@@ -13,7 +14,7 @@ function Camisetas() {
           / Camisetas
         </span>
       </div>
-      <ListaProdutos produtos={vetCamisetas} />
+      <ListaProdutos produtos={shirts} />
     </div>
   );
 }

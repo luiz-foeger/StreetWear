@@ -1,4 +1,4 @@
-export const vetCamisetas = [
+export const shirts = [
     {
         id: "1",
         nome: 'PRESENTÉ',
@@ -67,7 +67,7 @@ export const vetCamisetas = [
         id: "9",
         nome: 'RPG',
         preco: 151,
-        imagem: 'https://res.cloudinary.com/dsmx8c5ug/image/upload/v1746902810/camiseta-9_jyl6ku.png',
+        imagem: 'https://res.cloudinary.com/dsmx8c5ug/image/upload/v1746918196/7096c0b9-50da-45b5-80c1-1ef47ba46ef3.png',
         marca: 'MAD',
         modelo: 'CAMISETA',
     },
@@ -107,7 +107,7 @@ export const vetCamisetas = [
         id: "14",
         nome: 'COMET',
         preco: 142,
-        imagem: 'https://res.cloudinary.com/dsmx8c5ug/image/upload/v1746902811/camiseta-14_iqj8nt.png',
+        imagem: 'https://res.cloudinary.com/dsmx8c5ug/image/upload/v1746920098/bde05e9d-a3a6-477e-a5c5-c66fdc6203ea.png',
         marca: 'HIGH',
         modelo: 'CAMISETA',
     },
@@ -121,15 +121,32 @@ export const vetCamisetas = [
     },
     {
         id: "16",
-        nome: 'SQUADRON',
+        nome: 'F*CK MONEY',
         preco: 142,
-        imagem: 'https://res.cloudinary.com/dsmx8c5ug/image/upload/v1746902813/camiseta-16_mve8uh.png',
-        marca: 'HIGH',
+        imagem: 'https://res.cloudinary.com/dsmx8c5ug/image/upload/v1746919188/715de7af-4d0e-4574-8621-ba4369bea4ce.png',
+        marca: 'SUPREME',
+        modelo: 'CAMISETA',
+    },
+    {
+        id: "17",
+        nome: 'RTG',
+        preco: 142,
+        imagem: 'https://res.cloudinary.com/dsmx8c5ug/image/upload/v1746919383/dfd0e9f0-0801-49e8-bbaf-c2c5846a5b86.png',
+        marca: 'SUPREME & THE NORTH FACE',
+        modelo: 'CAMISETA',
+    },
+    
+    {
+        id: "18",
+        nome: 'CROUCHING PANTER',
+        preco: 142,
+        imagem: 'https://res.cloudinary.com/dsmx8c5ug/image/upload/v1746918153/d1253783-52e3-42da-bbf6-9c60e81e740e.png',
+        marca: 'ED HARDY',
         modelo: 'CAMISETA',
     },
 ]
 
-export const vetAcessorios = [
+export const accessories = [
     {
         id: "1",
         nome: '',
@@ -228,7 +245,7 @@ export const vetAcessorios = [
     },
 ];
 
-export const vetSneakers = [
+export const sneakers = [
     {
         id: "1",
         nome: 'HALLOWEEN SYMBIOTE',
@@ -329,7 +346,7 @@ export const vetSneakers = [
     },
 ];
 
-export const vetDecks = [
+export const skateItens = [
     {
         id: "1",
         nome: 'ROADSTER',
@@ -429,8 +446,8 @@ export const vetDecks = [
 ];
 
 export const vetCatalogo = [
-    ...vetCamisetas,
-    ...vetAcessorios,
-    ...vetSneakers,
-    ...vetDecks,
+    ...shirts,
+    ...accessories,
+    ...sneakers,
+    ...skateItens,
 ];
