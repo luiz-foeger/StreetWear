@@ -41,7 +41,9 @@ function Carrinho() {
                     <section key={item.id} className={estilos.itemCard}>
                         <div className={estilos.cardInfo}>
                             <div className={estilos.infoProduto}>
-                                <Link to={`/detalhes/produto/${item.modelo.toLowerCase()}/${item.marca.toLowerCase()}/${item.id}`}>
+                                <Link
+                                    to={`/detalhes/produto/${(item.modelo || '').toLowerCase()}/${(item.marca || '').toLowerCase()}/${item.id}`}
+                                >
                                     <img
                                         src={item.imagem}
                                         alt={item.nome}

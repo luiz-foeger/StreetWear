@@ -22,23 +22,53 @@ export function CarrinhoProvider({ children }) {
     }
   }, [carrinho]);
 
+  // ---------------------- FUNÇÕES PARA MANIPULAR CARRINHO ----------------------
+
   const adicionarAoCarrinho = (produto) => {
+
+    const {
+      id,
+      nome = '',
+      modelo = '',
+      marca = '',
+      imagem = '',
+      preco = 0
+    } = produto;
+
+    if (!id) {
+      console.error("Produto inválido: ID ausente", produto);
+      return;
+    }
+
     setCarrinho((prevCarrinho) => {
-      const itemExistente = prevCarrinho.find(item => item.id === produto.id);
+      const itemExistente = prevCarrinho.find(item => item.id === id);
       if (itemExistente) {
         return prevCarrinho.map(item =>
-          item.id === produto.id
+          item.id === id
             ? { ...item, quantidade: item.quantidade + 1 }
             : item
         );
       }
-      return [...prevCarrinho, { ...produto, quantidade: 1 }];
+      return [
+        ...prevCarrinho,
+        {
+          id,
+          nome,
+          modelo,
+          marca,
+          imagem,
+          preco,
+          quantidade: 1
+        }
+      ];
     });
   };
 
   const removerDoCarrinho = (id) => {
     setCarrinho(prevCarrinho => prevCarrinho.filter(item => item.id !== id));
   };
+
+  // ---------------------- FUNÇÕES DE QUANTIDADE ----------------------
 
   const aumentarQuantidade = (id) => {
     setCarrinho(prevCarrinho =>
@@ -58,8 +88,9 @@ export function CarrinhoProvider({ children }) {
     );
   };
 
-  const limparCarrinho = () => setCarrinho([]);
+  // ---------------------- FINALIZAÇÃO ----------------------
 
+  const limparCarrinho = () => setCarrinho([]);
   const totalItens = carrinho.reduce((acc, item) => acc + item.quantidade, 0);
   const totalPreco = carrinho.reduce((acc, item) => acc + item.preco * item.quantidade, 0);
 
@@ -81,6 +112,7 @@ export function CarrinhoProvider({ children }) {
   );
 }
 
+// ---------------------- HOOK CUSTOMIZADO ----------------------
 export function useCarrinho() {
   const context = useContext(CarrinhoContext);
   if (!context) {
