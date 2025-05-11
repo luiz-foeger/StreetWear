@@ -310,6 +310,7 @@ input[type="text"]:focus {
         flex-direction: column;
         padding: 20px;
         width: 100vw;
+        height: 100%;
     }
 
     .detalhes {
@@ -325,6 +326,7 @@ input[type="text"]:focus {
     .cardDetalhes img {
         height: 100%;
         width: 100%;
+        max-width: 100%;
         margin: 0;
     }
 }
