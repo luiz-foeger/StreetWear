@@ -37,7 +37,7 @@ function ProdutoDetalhes() {
         <>
             <div className={estilos.indicadorPagina}>
                 <span style={{ fontWeight: '300' }}>
-                    <Link style={{ fontWeight: '300', color: '#5F5F5F', textDecoration: 'none' }} to="/">Produtos </Link>
+                    <Link style={{ fontWeight: '300', color: '#5F5F5F', textDecoration: 'none' }} to="/">Home </Link>
                     /   <Link style={{ fontWeight: '300', color: '#5F5F5F', textDecoration: 'none' }} onClick={() => window.history.back()}>{capitalize(item.modelo)}s</Link> / {item.nome} {/* {capitalize(item.nome)} */}
                 </span>
             </div>

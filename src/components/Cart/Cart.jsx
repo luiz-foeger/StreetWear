@@ -51,7 +51,7 @@ function Carrinho() {
                                         className={estilos.imagemProduto}
                                     />
                                 </Link>
-                                <div style={{ height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-around' }}>
+                                <div style={{ height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-around', borderLeft: '1px solid #E6E6E6', paddingLeft: '20px' }}>
                                     <p style={{ fontWeight: '200' }}>{item.modelo} {item.nome}</p>
                                     <p style={{ fontWeight: '200', color: '#000000bf' }}>{item.marca}</p>
                                     <p style={{ fontWeight: '200', color: '#000000bf' }}>
@@ -117,7 +117,7 @@ function Carrinho() {
                 ))}
 
                 <button
-                    className={estilos.botao}
+                    className={estilos.botaoEsvaziar}
                     onClick={limparCarrinho}
                 >
                     Esvaziar Sacola

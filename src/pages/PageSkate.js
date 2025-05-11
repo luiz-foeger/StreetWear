@@ -10,7 +10,7 @@ function SkateItens() {
     <div>
       <div className={estilos.indicadorPagina}>
         <span style={{ fontWeight: '300' }}>
-          <Link style={{ fontWeight: '300' }} to="/">Produtos </Link>
+          <Link style={{ fontWeight: '300' }} to="/">Home </Link>
           / Skateboard
         </span>
       </div>
