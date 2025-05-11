@@ -157,7 +157,7 @@ h3 {
 
     .logoMobile {
         display: flex;
-        height: 50px;
+        height: 40px;
     }
 
     .iconeMobile {
@@ -193,16 +193,19 @@ h3 {
         width: 100%;
         text-align: center;
     }
-    
+
     .menuContent ul {
         background-color: #0d0d0de1;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(9.7px);
+        -webkit-backdrop-filter: blur(9.7px);
         list-style: none;
         color: #ffffffc3;
         padding: 0;
         align-items: start;
         justify-content: start;
     }
-    
+
     .menuContent li {
         list-style: none;
         height: 100px;
@@ -212,12 +215,12 @@ h3 {
         margin: 0;
         border-bottom: solid 1px white;
     }
-    
+
     .menuContent li a {
         color: #fff;
         text-decoration: none;
         padding: 28px 100%;
-        font-size: 30px;
+        font-size: 25px;
         margin: 0;
     }
 

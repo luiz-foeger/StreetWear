@@ -54,13 +54,14 @@ function Header() {
                     <div className={estilos.menuOverlay} onClick={() => setMostrarModal(false)}>
                         <div className={estilos.menuContent} onClick={(e) => e.stopPropagation()}>
                             <ul onClick={() => setMostrarModal(false)}>
+                                <li><Link to="/">Início</Link></li>
                                 <li><Link to="/produtos/acessorios">Acessórios</Link></li>
                                 <li><Link to="/produtos/vestuario">Vestuário</Link></li>
                                 <li><Link to="/produtos/sneakers">Sneakers</Link></li>
                                 <li><Link to="/produtos/skateboard">Skate</Link></li>
                             </ul>
                         </div>
-                            {/* <button className={estilos.botaoFechar} onClick={() => setMostrarModal(false)}>Fechar</button> */}
+                        {/* <button className={estilos.botaoFechar} onClick={() => setMostrarModal(false)}>Fechar</button> */}
                     </div>
                 )
             }
