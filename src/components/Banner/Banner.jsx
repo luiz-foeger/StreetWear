@@ -8,7 +8,7 @@ function Banner() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="/assets/images/banner/banner-1.png"
+          src="https://res.cloudinary.com/dsmx8c5ug/image/upload/v1747064973/banner-3_t22pah.png"
           alt="Imagem 1"
           style={{ height: '80vh', objectFit: 'cover' }}
         />
@@ -17,7 +17,7 @@ function Banner() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="/assets/images/banner/banner-2.png"
+          src="https://res.cloudinary.com/dsmx8c5ug/image/upload/v1747064976/banner-2_nexjo1.png"
           alt="Imagem 2"
           style={{ height: '80vh', objectFit: 'cover' }}
         />
@@ -26,7 +26,7 @@ function Banner() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="/assets/images/banner/banner-3.png"
+          src="https://res.cloudinary.com/dsmx8c5ug/image/upload/v1747064977/banner-1_mwoc3x.png"
           alt="Imagem 3"
           style={{ height: '80vh', objectFit: 'cover' }}
         />
