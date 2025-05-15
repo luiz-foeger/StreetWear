@@ -7,15 +7,20 @@
     justify-content: space-around;
     align-items: center;
     justify-self: center;
-    height: 75px;
+    height: 80px;
     width: 100%;
     font-family: 'Lexend', sans-serif;
     font-weight: 400;
     transition: ease 0.5s;
 }
 
+.rolado {
+    height: 70px;
+}
+
+
 .header:hover {
-    height: 75px;
+    height: 80px;
 }
 
 .divLogo {
@@ -141,8 +146,16 @@ h3 {
 /* ---------- */
 
 @media screen and (max-width: 1300px) {
+    .header {
+        height: 75px;
+    }
+
     .rolado {
         height: 60px;
+    }
+
+    .header:hover {
+        height: 75px;
     }
 }
 
