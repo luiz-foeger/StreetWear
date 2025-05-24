@@ -1,0 +1,14 @@
+/* variaveis globais */
+:root {
+    --primary-color: #000;
+    --background-color: #fff;
+    --text-color-dark: #000;
+    --text-color-light: #fff;
+    --font-family: 'Lexend', sans-serif;
+    --font-small-size: 1rem;
+    --font-medium-size: 1.125rem;
+    --font-large-size: 1.5rem;
+    --font-bold: 300;
+    --font-semibold: 200;
+    --font-fine: 100;
+}

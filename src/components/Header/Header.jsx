@@ -3,8 +3,10 @@ import { useEffect, useState } from "react";
 
 // Import Icons
 import { RiArrowDownSLine } from "react-icons/ri";
-import { IoBagHandle, IoMenu } from "react-icons/io5";
-import { TfiClose } from "react-icons/tfi";
+import { IoMenu } from "react-icons/io5";
+import { HiOutlineShoppingBag } from "react-icons/hi";
+
+// import { TfiClose } from "react-icons/tfi";
 
 import estilos from './Header.module.css';
 
@@ -39,6 +41,7 @@ function Header() {
                                 <li><Link to="/produtos/camisetas">Camisetas</Link></li>
                                 <li><Link to="/produtos/moletons">Moletons</Link></li>
                                 <li><Link to="/produtos/bermudas">Bermudas / Shorts</Link></li>
+                                <li><Link to="/produtos/sneakers">Calçados</Link></li>
                             </ul>
                         </div>
 
@@ -59,11 +62,11 @@ function Header() {
                             </ul>
                         </div>
 
-                        <Link to="/produtos/sneakers">Calçados</Link>
+                        {/* <Link to="/produtos/sneakers">Calçados</Link> */}
                     </h3>
                 </nav>
 
-                <Link className={`${estilos.icone} ${rolado ? estilos.rolado : ""}`} to="/sacola"><IoBagHandle /></Link>
+                <Link className={`${estilos.icone} ${rolado ? estilos.rolado : ""}`} to="/sacola"><HiOutlineShoppingBag /></Link>
             </header>
             {
                 mostrarModal && (

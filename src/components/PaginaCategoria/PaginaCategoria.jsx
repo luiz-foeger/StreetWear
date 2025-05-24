@@ -1,5 +1,7 @@
-import { useParams, Link } from 'react-router-dom';
 import { useState, useMemo, useEffect } from 'react';
+import { useParams, Link } from 'react-router-dom';
+
+import { TfiClose } from "react-icons/tfi";
 import { shirts, accessories, sneakers, skateItens } from '../../data/products';
 
 import ListaProdutos from '../ListaProdutos/ListaProdutos';
@@ -7,44 +9,38 @@ import estilos from '../ListaProdutos/ListaProdutos.module.css';
 
 function PaginaCategoria() {
     const { categoria } = useParams();
-
-    const categorias = {
-        camisetas: shirts,
-        gorros: accessories,
-        sneakers: sneakers,
-        shapes: skateItens
-    };
-
+    const categorias = { camisetas: shirts, gorros: accessories, sneakers: sneakers, shapes: skateItens };
     const todosProdutos = categorias[categoria?.toLowerCase()] || [];
 
-    // estados de filtro
+    // Estados de filtro
     const [filtroMarca, setFiltroMarca] = useState('');
-    const [filtroPreco, setFiltroPreco] = useState('');
-    // const [filtroGenero, setFiltroGenero] = useState('');
+    const [filtroPrecoMin, setFiltroPrecoMin] = useState(39);
+    const [filtroPrecoMax, setFiltroPrecoMax] = useState(599);
+    const [mostrarFiltros, setMostrarFiltros] = useState(false);
 
-    // Resetar filtros quando categoria mudar
+    // Verifica se a categoria é válida
     useEffect(() => {
         setFiltroMarca('');
-        setFiltroPreco('');
-        // setFiltroGenero('');
+        setFiltroPrecoMin(39);
+        setFiltroPrecoMax(599);
     }, [categoria]);
 
+    // Obter marcas únicas para o filtro ("useMemo" para otimizar o desempenho)
     const marcasUnicas = useMemo(() => [...new Set(todosProdutos.map(p => p.marca))], [todosProdutos]);
-    // const generosUnicos = useMemo(() => [...new Set(todosProdutos.map(p => p.genero))], [todosProdutos]);
 
+    // Filtrar produtos com base nos filtros selecionados
     const produtosFiltrados = todosProdutos.filter((produto) => {
         const porMarca = filtroMarca ? produto.marca === filtroMarca : true;
-        // const porGenero = filtroGenero ? produto.genero === filtroGenero : true;
-        const porPreco =
-            filtroPreco === 'baixo' ? produto.preco < 100 :
-                filtroPreco === 'medio' ? produto.preco >= 100 && produto.preco <= 300 :
-                    filtroPreco === 'alto' ? produto.preco > 300 :
-                        true;
-
-        // return porMarca && porGenero && porPreco;
+        const porPreco = produto.preco >= filtroPrecoMin && produto.preco <= filtroPrecoMax;
         return porMarca && porPreco;
     });
 
+    // Limpar os filtros e retornar aos valores padrão
+    function limparFiltros() {
+        setFiltroMarca('');
+        setFiltroPrecoMin(39);
+        setFiltroPrecoMax(599);
+    }
 
     function capitalize(str) {
         if (!str) return '';
@@ -56,40 +52,33 @@ function PaginaCategoria() {
             <div className={estilos.cabecalhoFiltros}>
                 <div className={estilos.indicadorPagina}>
                     <span style={{ fontWeight: '300' }}>
-                        <Link style={{ fontWeight: '300' }} to="/">Home </Link>
-                        / {capitalize(categoria)}
+                        <Link style={{ fontWeight: '300' }} to="/">Home </Link> / {capitalize(categoria)}
                     </span>
                 </div>
-                <div style={{ display: 'flex', gap: '1rem', marginBottom: '1rem' }}>
-                    <select value={filtroMarca} onChange={e => setFiltroMarca(e.target.value)}>
-                        <option value="">Todas as Marcas</option>
-                        {marcasUnicas.map((marca) => (
-                            <option key={marca} value={marca}>{marca}</option>
-                        ))}
-                    </select>
+                <button className={estilos.botaoFiltrar} onClick={() => setMostrarFiltros(!mostrarFiltros)} style={{ height: '100%' }}>
+                    FILTRAR
+                </button>
+            </div>
 
-                    {/* 
-                <select value={filtroGenero} onChange={e => setFiltroGenero(e.target.value)}>
-                    <option value="">Todos os Gêneros</option>
-                    {generosUnicos.map((genero) => (
-                        <option key={genero} value={genero}>{genero}</option>
+            <aside className={`${estilos.filtrosAside} ${mostrarFiltros ? estilos.filtrosVisivel : ''}`}>
+
+                <h5 style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>Filtros<button className={estilos.fecharAside} onClick={() => setMostrarFiltros(false)}><TfiClose /></button></h5>
+                <select value={filtroMarca} onChange={e => setFiltroMarca(e.target.value)}>
+                    <option value="">Todas as Marcas</option>
+                    {marcasUnicas.map((marca) => (
+                        <option key={marca} value={marca} >{marca}</option>
                     ))}
                 </select>
-                */}
-
-                    <select value={filtroPreco} onChange={e => setFiltroPreco(e.target.value)}>
-                        <option value="">Todos os Preços</option>
-                        <option value="baixo">Abaixo de R$100</option>
-                        <option value="medio">R$100 a R$300</option>
-                        <option value="alto">Acima de R$300</option>
-                    </select>
-                </div>
-            </div>
+                <label>Preço Mínimo: R$ {filtroPrecoMin}</label>
+                <input type="range" min="39" max="599" value={filtroPrecoMin} onChange={e => setFiltroPrecoMin(Number(e.target.value))} />
+                <label>Preço Máximo: R$ {filtroPrecoMax}</label>
+                <input type="range" min="39" max="599" value={filtroPrecoMax} onChange={e => setFiltroPrecoMax(Number(e.target.value))} />
+                <button className={estilos.botaoLimpar} onClick={limparFiltros}>Limpar Filtros</button>
+            </aside>
 
             {produtosFiltrados.length === 0 ? (
                 <div className={estilos.filtroVazio}>
                     <p>Nenhum produto encontrado com os filtros selecionados.</p>
-                    {/* <button className={estilos.botao} onClick={() => window.location.reload()}>LIMPAR FILTROS</button> */}
                 </div>
             ) : (
                 <ListaProdutos key={categoria} produtos={produtosFiltrados} />
