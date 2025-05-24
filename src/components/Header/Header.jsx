@@ -34,16 +34,32 @@ function Header() {
                         <Link to="/">Início</Link>
 
                         <div className={estilos.opcaoDropdown}>
-                            <Link to="#">Produtos <RiArrowDownSLine /></Link>
+                            <Link to="#">Vestuários <RiArrowDownSLine /></Link>
                             <ul className={estilos.dropdownProdutos}>
-                                <li><Link to="/produtos/acessorios" style={{ marginTop: "20px" }}>Acessórios</Link></li>
-                                <li><Link to="/produtos/vestuario">Vestuário</Link></li>
-                                <li><Link to="/produtos/sneakers">Sneakers</Link></li>
-                                <li><Link to="/produtos/skateboard">Skate</Link></li>
+                                <li><Link to="/produtos/camisetas">Camisetas</Link></li>
+                                <li><Link to="/produtos/moletons">Moletons</Link></li>
+                                <li><Link to="/produtos/bermudas">Bermudas / Shorts</Link></li>
                             </ul>
                         </div>
 
-                        <Link to="/sobre-nos">Sobre</Link>
+                        <div className={estilos.opcaoDropdown}>
+                            <Link to="#">Acessórios <RiArrowDownSLine /></Link>
+                            <ul className={estilos.dropdownProdutos}>
+                                <li><Link to="/produtos/gorros">Gorros</Link></li>
+                                <li><Link to="/produtos/bones">Bonés</Link></li>
+                                <li><Link to="/produtos/bags">Bags</Link></li>
+                            </ul>
+                        </div>
+
+                        <div className={estilos.opcaoDropdown}>
+                            <Link to="#">Skate <RiArrowDownSLine /></Link>
+                            <ul className={estilos.dropdownProdutos}>
+                                <li><Link to="/produtos/shapes">Shapes</Link></li>
+                                <li><Link to="/produtos/lixas">Lixas</Link></li>
+                            </ul>
+                        </div>
+
+                        <Link to="/produtos/sneakers">Calçados</Link>
                     </h3>
                 </nav>
 

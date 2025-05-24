@@ -19,11 +19,11 @@ function Carrinho() {
         return (
             <div className={estilos.carrinhoVazio}>
                 <p>Sua sacola está vazia!</p>
-                <div>
+                {/* <div>
                     <button className={estilos.botao} onClick={() => window.history.back()}>
                         RETORNAR PARA A LOJA
                     </button>
-                </div>
+                </div> */}
             </div>
         );
 

@@ -4,6 +4,7 @@
     transition: transform 0.3s ease;
     transition: all 0.3s ease-out;
     min-width: 300px;
+    max-width: 420px;
 }
 
 .card a {
@@ -93,6 +94,7 @@
     0% {
         background-position: -200% 0;
     }
+
     100% {
         background-position: 200% 0;
     }
@@ -118,6 +120,7 @@
         text-align: center;
         transition: transform 0.3s ease;
         transition: all 0.3s ease-out;
+        max-width: 350px;
     }
 
     .card .imagem {

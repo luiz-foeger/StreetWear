@@ -3,7 +3,6 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    margin-left: 90px;
     height: 90px;
     margin-bottom: -35px;
     padding-right: 30px;
@@ -24,7 +23,8 @@
 
 .lista {
     display: grid;
-    margin-top: 30px;
+    justify-items: center;
+    /* margin-top: 30px; */
     border-radius: 20px 20px 0 0;
     background-color: #fff;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -33,6 +33,48 @@
     font-family: 'Lexend', sans-serif;
 }
 
+.containerPagina {
+    padding: 1rem;
+}
+
+.cabecalhoFiltros {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 90px;
+}
+
+.containerPagina select {
+    margin: 1rem 0 0;
+}
+
+.filtroVazio {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    color: #000;
+}
+
+.filtroVazio .botao {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 200;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    transition: all 0.3s ease-out;
+}
 
 @media screen and (max-width: 1300px) {
     .lista {

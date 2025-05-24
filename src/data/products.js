@@ -163,7 +163,7 @@ export const shirts = [
         route: 'camiseta',
     },
     {
-        id: "1799",
+        id: "6919",
         nome: 'Think',
         preco: 142,
         imagem: 'https://res.cloudinary.com/dsmx8c5ug/image/upload/v1746902816/camiseta-10_qjmczx.png',
@@ -294,7 +294,7 @@ export const accessories = [
 
 export const sneakers = [
     {
-        id: "3699",
+        id: "4546",
         nome: 'Halloween Symbiote',
         preco: 473,
         imagem: 'https://res.cloudinary.com/dsmx8c5ug/image/upload/v1746910496/nike_dunk_halloween_k0e1tv.png',
