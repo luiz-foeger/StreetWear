@@ -1,10 +1,10 @@
 import React from 'react'
 
 import Buttons from '../components/Buttons/Buttons';
-
 import Banner from '../components/Banner/Banner';
-import ListaProdutos from '../components/ListaProdutos/ListaProdutos';
-import { vetCatalogo } from '../data/products';
+import Carrossel from '../components/Carrossel/Carrossel';
+
+import { shirts, accessories, sneakers, skateItens } from '../data/products';
 
 const Home = () => {
     return (
@@ -12,7 +12,26 @@ const Home = () => {
             <Banner />
             <Buttons />
             <div>
-                <ListaProdutos produtos={vetCatalogo} />
+                <Carrossel
+                    titulo="Camisetas"
+                    produtos={shirts}
+                    linkVerTudo="/produtos/acessorios"
+                />
+                <Carrossel
+                    titulo="Camisetas"
+                    produtos={accessories}
+                    linkVerTudo="/produtos/vestuario"
+                />
+                <Carrossel
+                    titulo="Camisetas"
+                    produtos={sneakers}
+                    linkVerTudo="/produtos/sneakers"
+                />
+                <Carrossel
+                    titulo="Camisetas"
+                    produtos={skateItens}
+                    linkVerTudo="/produtos/skaterboard"
+                />
             </div>
         </>
     )
