@@ -113,7 +113,7 @@ export const shirts = [
         nome: 'Pale Horse',
         preco: 142,
         imagem: 'https://res.cloudinary.com/dsmx8c5ug/image/upload/v1747342685/182cbb79-1933-465d-8ae2-8e23744e2ccd.png',
-        marca: 'Deathwish',
+        marca: '    ish',
         modelo: 'Camiseta',
         route: 'camiseta',
     },
@@ -182,7 +182,64 @@ export const shirts = [
     },
 ]
 
-export const accessories = [
+export const moletons = [
+    {
+        id: "8723",
+        nome: 'FCB Spray Logo ',
+        preco: 777,
+        imagem: 'https://res.cloudinary.com/dsmx8c5ug/image/upload/v1748182906/8ab0fc27-4a5b-4a97-bc58-66b933d65a38.png',
+        marca: 'Nike & Cactus Jack',
+        modelo: 'Moletom',
+        route: 'moletom',
+    },
+    {
+        id: "1727",
+        nome: 'Goods Logo Órbita',
+        preco: 389,
+        imagem: 'https://res.cloudinary.com/dsmx8c5ug/image/upload/c_crop,ar_1:1/v1748188099/moletom-3_ujzl1d.png',
+        marca: 'Barra',
+        modelo: 'Moletom',
+        route: 'moletom',
+    },
+    {
+        id: "3622",
+        nome: 'Logo Inverso',
+        preco: 149,
+        imagem: 'https://res.cloudinary.com/dsmx8c5ug/image/upload/c_crop,ar_1:1/v1748189794/moletom-2_dfdkan.png',
+        marca: 'Class',
+        modelo: 'Moletom',
+        route: 'moletom',
+    },
+    {
+        id: "6666",
+        nome: 'OG Web',
+        preco: 149,
+        imagem: 'https://res.cloudinary.com/dsmx8c5ug/image/upload/c_crop,w_1390,h_1390,ar_1:1/v1748190383/8c1faa40-78d4-4328-9207-d84784b707d3.png',
+        marca: 'Sp5der',
+        modelo: 'Moletom',
+        route: 'moletom',
+    },
+    {
+        id: "5555",
+        nome: 'OG Web 555',
+        preco: 149,
+        imagem: 'https://res.cloudinary.com/dsmx8c5ug/image/upload/c_crop,w_750,h_750,ar_1:1/v1748190377/f1c6df66-4f11-4448-baa7-cf70af3f7a04.png',
+        marca: 'Sp5der',
+        modelo: 'Moletom',
+        route: 'moletom',
+    },
+    {
+        id: "1913",
+        nome: 'Staple',
+        preco: 149,
+        imagem: 'https://res.cloudinary.com/dsmx8c5ug/image/upload/v1748188514/efa1d453-c501-47de-8a31-b7f4471e0b67.png',
+        marca: 'Vlone & Fragment',
+        modelo: 'Moletom',
+        route: 'moletom',
+    },
+]
+
+export const gorros = [
     {
         id: "4024",
         nome: '',
@@ -227,6 +284,9 @@ export const accessories = [
         modelo: 'Gorro',
         route: 'acessorios',
     },
+];
+
+export const bones = [
     {
         id: "3703",
         nome: 'Camo',
@@ -290,7 +350,7 @@ export const accessories = [
         modelo: 'Boné',
         route: 'acessorios',
     },
-];
+]
 
 export const sneakers = [
     {
@@ -405,7 +465,7 @@ export const sneakers = [
     },
 ];
 
-export const skateItens = [
+export const shapes = [
     {
         id: "4496",
         nome: 'Roadster',
@@ -429,7 +489,7 @@ export const skateItens = [
         nome: 'This Way',
         preco: 271,
         imagem: 'https://res.cloudinary.com/dsmx8c5ug/image/upload/v1746906541/deathwish_this_way_jzjwou.png',
-        marca: 'Deathwish',
+        marca: 'DeathWish',
         modelo: 'Shape',
         route: 'skateboard',
     },
@@ -478,6 +538,9 @@ export const skateItens = [
         modelo: 'Shape',
         route: 'skateboard',
     },
+]
+
+export const lixas = [
     {
         id: "4556",
         nome: 'Ultragrip',
@@ -516,9 +579,108 @@ export const skateItens = [
     },
 ];
 
-export const vetCatalogo = [
+export const shorts = [
+    {
+        id: "6725",
+        nome: 'College Relaxed Fit 13 Oz Denim Shorts',
+        preco: 573,
+        imagem: 'https://res.cloudinary.com/dsmx8c5ug/image/upload/v1748184890/9322d66a-245c-4803-a467-e3e2b3d8df18.png',
+        marca: 'Bape',
+        modelo: 'Jorts',
+        route: 'shorts',
+    },
+    {
+        id: "1239",
+        nome: '4SUF Jeans',
+        preco: 399,
+        imagem: 'https://res.cloudinary.com/dsmx8c5ug/image/upload/c_crop,w_550,h_550/v1748183946/24553cea-fb79-402d-9eb1-95f1f6327b42.png',
+        marca: 'Sufgang',
+        modelo: 'Jorts',
+        route: 'shorts',
+    },
+    {
+        id: "5678",
+        nome: 'Cirvalínea Double Hand Marrom',
+        preco: 569,
+        imagem: 'https://res.cloudinary.com/dsmx8c5ug/image/upload/c_crop,ar_1:1/v1748183143/jorts_jeans_mad_enlatados_cirvalinea_double_hand_marrom_8639_3_0e72945125c5bf36f954f02ae8e2fd59_dtotrs.webp',
+        marca: 'Mad',
+        modelo: 'Jorts',
+        route: 'shorts',
+    },
+    {
+        id: "7315",
+        nome: 'Cirvalínea Double Hand Vermelho',
+        preco: 569,
+        imagem: 'https://res.cloudinary.com/dsmx8c5ug/image/upload/c_crop,ar_1:1/v1748183135/jorts_jeans_mad_enlatados_cirvalinea_double_hand_vermelho_8641_1_7d75162daacc9ca1f4853e48fa46dafb_l6wnxu.webp',
+        marca: 'Mad',
+        modelo: 'Jorts',
+        route: 'shorts',
+    },
+    {
+        id: "5123",
+        nome: 'Cinto Tribal',
+        preco: 534,
+        imagem: 'https://res.cloudinary.com/dsmx8c5ug/image/upload/c_crop,ar_1:1/v1748185305/da818323-9ec3-44fb-9c3a-d8064074d6e7.png',
+        marca: 'Mad',
+        modelo: 'Jorts',
+        route: 'shorts',
+    },
+    {
+        id: "1245",
+        nome: 'C-Star Denim',
+        preco: 984,
+        imagem: 'https://res.cloudinary.com/dsmx8c5ug/image/upload/c_crop,w_800,h_800/v1748184153/f5183adf-1e03-4c4f-b47b-74230f2dc3ea.png',
+        marca: 'Corteiz',
+        modelo: 'Jorts',
+        route: 'shorts',
+    },
+    {
+        id: "8713",
+        nome: 'Alcatraz Denim Washed Black',
+        preco: 999,
+        imagem: 'https://res.cloudinary.com/dsmx8c5ug/image/upload/v1748187029/d85941e7-648b-4d2c-a2a6-04ad7129353c.png',
+        marca: 'Corteiz',
+        modelo: 'Jorts',
+        route: 'shorts',
+    },
+    {
+        id: "6324",
+        nome: 'Highstar Blue',
+        preco: 384,
+        imagem: 'https://res.cloudinary.com/dsmx8c5ug/image/upload/v1748183225/0d684295-6116-42dc-b4a3-b5966a926fb5.png',
+        marca: 'High',
+        modelo: 'Jorts',
+        route: 'shorts',
+    },
+    {
+        id: "2848",
+        nome: 'FCB Skeleton Home',
+        preco: 333,
+        imagem: 'https://res.cloudinary.com/dsmx8c5ug/image/upload/v1748182753/cd855204-90a9-43db-b14b-57d8e50b6baa.png',
+        marca: 'Nike & Cactus Jack',
+        modelo: 'Bermuda',
+        route: 'shorts',
+    },
+];
+
+export const vestuario = [
+    ...moletons,
     ...shirts,
+]
+export const accessories = [
+    ...gorros,
+    ...bones,
+];
+
+export const skateItens = [
+    ...shapes,
+    ...lixas,
+]
+
+export const vetCatalogo = [
+    ...vestuario,
     ...accessories,
     ...sneakers,
     ...skateItens,
+    ...shorts,
 ];

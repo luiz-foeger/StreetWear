@@ -2,27 +2,28 @@ import { useState, useMemo, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 
 import { TfiClose } from "react-icons/tfi";
-import { shirts, accessories, sneakers, skateItens } from '../../data/products';
+import { accessories, skateItens, shirts, moletons, gorros, bones, sneakers, shapes, lixas, shorts } from '../../data/products';
 
 import ListaProdutos from '../ListaProdutos/ListaProdutos';
 import estilos from '../ListaProdutos/ListaProdutos.module.css';
+import Erro from '../404/Erro';
 
 function PaginaCategoria() {
     const { categoria } = useParams();
-    const categorias = { camisetas: shirts, gorros: accessories, sneakers: sneakers, shapes: skateItens };
+    const categorias = { acessorios: accessories, skateboard: skateItens, camisetas: shirts, moletons: moletons, gorros: gorros, bones: bones, sneakers: sneakers, shapes: shapes, lixas: lixas, shorts: shorts, };
     const todosProdutos = categorias[categoria?.toLowerCase()] || [];
 
     // Estados de filtro
     const [filtroMarca, setFiltroMarca] = useState('');
     const [filtroPrecoMin, setFiltroPrecoMin] = useState(39);
-    const [filtroPrecoMax, setFiltroPrecoMax] = useState(599);
+    const [filtroPrecoMax, setFiltroPrecoMax] = useState(999);
     const [mostrarFiltros, setMostrarFiltros] = useState(false);
 
     // Verifica se a categoria é válida
     useEffect(() => {
         setFiltroMarca('');
         setFiltroPrecoMin(39);
-        setFiltroPrecoMax(599);
+        setFiltroPrecoMax(999);
     }, [categoria]);
 
     // Obter marcas únicas para o filtro ("useMemo" para otimizar o desempenho)
@@ -39,7 +40,7 @@ function PaginaCategoria() {
     function limparFiltros() {
         setFiltroMarca('');
         setFiltroPrecoMin(39);
-        setFiltroPrecoMax(599);
+        setFiltroPrecoMax(999);
     }
 
     function capitalize(str) {
@@ -55,9 +56,14 @@ function PaginaCategoria() {
                         <Link style={{ fontWeight: '300' }} to="/">Home </Link> / {capitalize(categoria)}
                     </span>
                 </div>
-                <button className={estilos.botaoFiltrar} onClick={() => setMostrarFiltros(!mostrarFiltros)} style={{ height: '100%' }}>
-                    FILTRAR
-                </button>
+                {produtosFiltrados.length >= 0 && (
+                    <div className={estilos.filtroResultado}>
+                        <h5>{produtosFiltrados.length} produtos encontrados</h5>
+                        <button className={estilos.botaoFiltrar} onClick={() => setMostrarFiltros(!mostrarFiltros)} style={{ height: '100%' }}>
+                            FILTRAR
+                        </button>
+                    </div>
+                )}
             </div>
 
             <aside className={`${estilos.filtrosAside} ${mostrarFiltros ? estilos.filtrosVisivel : ''}`}>
@@ -70,11 +76,17 @@ function PaginaCategoria() {
                     ))}
                 </select>
                 <label>Preço Mínimo: R$ {filtroPrecoMin}</label>
-                <input type="range" min="39" max="599" value={filtroPrecoMin} onChange={e => setFiltroPrecoMin(Number(e.target.value))} />
+                <input type="range" min="39" max="999" value={filtroPrecoMin} onChange={e => setFiltroPrecoMin(Number(e.target.value))} />
                 <label>Preço Máximo: R$ {filtroPrecoMax}</label>
-                <input type="range" min="39" max="599" value={filtroPrecoMax} onChange={e => setFiltroPrecoMax(Number(e.target.value))} />
+                <input type="range" min="39" max="999" value={filtroPrecoMax} onChange={e => setFiltroPrecoMax(Number(e.target.value))} />
                 <button className={estilos.botaoLimpar} onClick={limparFiltros}>Limpar Filtros</button>
             </aside>
+
+            {/* Verificações e renderizações */}
+
+            {todosProdutos.length === 0 && (
+                <Erro />
+            )}
 
             {produtosFiltrados.length === 0 ? (
                 <div className={estilos.filtroVazio}>

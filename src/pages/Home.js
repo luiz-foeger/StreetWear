@@ -4,7 +4,7 @@ import Buttons from '../components/Buttons/Buttons';
 import Banner from '../components/Banner/Banner';
 import Carrossel from '../components/Carrossel/Carrossel';
 
-import { shirts, accessories, sneakers, skateItens } from '../data/products';
+import { vestuario, accessories, sneakers, skateItens } from '../data/products';
 
 const Home = () => {
     return (
@@ -14,7 +14,7 @@ const Home = () => {
             <div>
                 <Carrossel
                     titulo="Camisetas"
-                    produtos={shirts}
+                    produtos={vestuario}
                     linkVerTudo="/produtos/acessorios"
                 />
                 <Carrossel

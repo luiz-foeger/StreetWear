@@ -40,8 +40,8 @@ function Header() {
                             <ul className={estilos.dropdownProdutos}>
                                 <li><Link to="/produtos/camisetas">Camisetas</Link></li>
                                 <li><Link to="/produtos/moletons">Moletons</Link></li>
-                                <li><Link to="/produtos/bermudas">Bermudas / Shorts</Link></li>
-                                <li><Link to="/produtos/sneakers">Calçados</Link></li>
+                                <li><Link to="/produtos/shorts">Bermudas / Shorts</Link></li>
+                                <li><Link to="/produtos/sneakers">Sneakers</Link></li>
                             </ul>
                         </div>
 
@@ -75,7 +75,8 @@ function Header() {
                             <ul onClick={() => setMostrarModal(false)}>
                                 <li><Link to="/">Início</Link></li>
                                 <li><Link to="/produtos/acessorios">Acessórios</Link></li>
-                                <li><Link to="/produtos/vestuario">Vestuário</Link></li>
+                                <li><Link to="/produtos/camisetas">Camisetas</Link></li>
+                                <li><Link to="/produtos/moletons">Moletons</Link></li>
                                 <li><Link to="/produtos/sneakers">Sneakers</Link></li>
                                 <li><Link to="/produtos/skateboard">Skate</Link></li>
                             </ul>
