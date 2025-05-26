@@ -4,17 +4,23 @@ import Buttons from '../components/Buttons/Buttons';
 import Banner from '../components/Banner/Banner';
 import Carrossel from '../components/Carrossel/Carrossel';
 
-import { vestuario, accessories, sneakers, skateItens } from '../data/products';
+import { vestuario, shorts, accessories, sneakers, skateItens } from '../data/products';
 
 const Home = () => {
     return (
         <>
             <Banner />
             <Buttons />
+            <h3 style={{ margin: '25px 0'}}></h3>
             <div>
                 <Carrossel
                     titulo="Camisetas"
                     produtos={vestuario}
+                    linkVerTudo="/produtos/acessorios"
+                />
+                <Carrossel
+                    titulo="Camisetas"
+                    produtos={shorts}
                     linkVerTudo="/produtos/acessorios"
                 />
                 <Carrossel

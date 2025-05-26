@@ -58,7 +58,7 @@ function PaginaCategoria() {
                 </div>
                 {produtosFiltrados.length >= 0 && (
                     <div className={estilos.filtroResultado}>
-                        <h5>{produtosFiltrados.length} produtos encontrados</h5>
+                        <h5>{produtosFiltrados.length} produto{produtosFiltrados.length > 1 ? 's' : ''} encontrado{produtosFiltrados.length > 1 ? 's' : ''}</h5>
                         <button className={estilos.botaoFiltrar} onClick={() => setMostrarFiltros(!mostrarFiltros)} style={{ height: '100%' }}>
                             FILTRAR
                         </button>
