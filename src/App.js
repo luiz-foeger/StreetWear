@@ -1,18 +1,16 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
-// Import Components
-import Carrinho from './components/Cart/Cart';
-import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
-
 import './App.css';
 
-// Import Pages
-import Erro from './components/404/Erro';
-import Home from './pages/Home';
-import ProdutoDetalhes from './components/Detalhes/Detalhes';
-import ScrollToTop from './components/ScrollToTop';
-import PaginaCategoria from './components/PaginaCategoria/PaginaCategoria';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import ScrollToTop from './components/common/ScrollToTop';
+import Footer from './components/layout/Footer/Footer';
+import Header from './components/layout/Header/Header';
+
+import PaginaCarrinho from './pages/Carrinho/Carrinho';
+import PaginaNaoEncontrada from './pages/NaoEncontrada/NaoEncontrada';
+import PaginaInicial from './pages/Home/Home';
+import PaginaDetalhes from './pages/Detalhes/Detalhes';
+import PaginaCategoria from './pages/Categorias/Categorias';
 
 function App() {
   return (
@@ -20,11 +18,11 @@ function App() {
       <Header />
       <ScrollToTop />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/sacola" element={<Carrinho />} />
+        <Route path="/" element={<PaginaInicial />} />
+        <Route path="/sacola" element={<PaginaCarrinho />} />
         <Route path="/produtos/:categoria" element={<PaginaCategoria />} />
-        <Route path="/detalhes/produto/:modelo/:marca/:id" element={<ProdutoDetalhes />} />
-        <Route path="*" element={<Erro />} />
+        <Route path="/detalhes/produto/:modelo/:marca/:id" element={<PaginaDetalhes />} />
+        <Route path="*" element={<PaginaNaoEncontrada />} />
       </Routes>
       <Footer />
     </div>

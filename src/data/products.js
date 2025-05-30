@@ -530,8 +530,8 @@ export const gorros = [
         nome: '',
         preco: 89,
         imagens: [
-            'https://res.cloudinary.com/dsmx8c5ug/image/upload/v1746905514/touca_sometimes_online_pypait.png',
-            'https://res.cloudinary.com/dsmx8c5ug/image/upload/v1748555935/Slice_27_fywf7t.png'
+            'https://res.cloudinary.com/dsmx8c5ug/image/upload/c_crop,ar_1:1/v1746905514/touca_sometimes_online_pypait.png',
+            'https://res.cloudinary.com/dsmx8c5ug/image/upload/c_crop,ar_1:1/v1748555935/Slice_27_fywf7t.png'
         ],
         marca: 'Sometimes Online',
         modelo: 'Gorro',
@@ -542,8 +542,8 @@ export const gorros = [
         nome: 'Goods Logo Classic',
         preco: 96,
         imagens: [
-            'https://res.cloudinary.com/dsmx8c5ug/image/upload/v1746905517/touca_barra_goods_logo_classic_t5drxc.png',
-            'https://res.cloudinary.com/dsmx8c5ug/image/upload/v1748555933/Slice_25_qbzdw8.png'
+            'https://res.cloudinary.com/dsmx8c5ug/image/upload/c_crop,ar_1:1/v1746905517/touca_barra_goods_logo_classic_t5drxc.png',
+            'https://res.cloudinary.com/dsmx8c5ug/image/upload/c_crop,ar_1:1/v1748555933/Slice_25_qbzdw8.png'
         ],
         marca: 'Barra',
         modelo: 'Gorro',
@@ -554,8 +554,8 @@ export const gorros = [
         nome: 'Baska',
         preco: 89,
         imagens: [
-            'https://res.cloudinary.com/dsmx8c5ug/image/upload/v1746905513/touca_ous_baska_do1drj.png',
-            'https://res.cloudinary.com/dsmx8c5ug/image/upload/v1748555932/Slice_23_w2hhbn.png'
+            'https://res.cloudinary.com/dsmx8c5ug/image/upload/c_crop,ar_1:1/v1746905513/touca_ous_baska_do1drj.png',
+            'https://res.cloudinary.com/dsmx8c5ug/image/upload/c_crop,ar_1:1/v1748555932/Slice_23_w2hhbn.png'
         ],
         marca: 'Öus',
         modelo: 'Gorro',
@@ -566,8 +566,8 @@ export const gorros = [
         nome: 'Outlined',
         preco: 99,
         imagens: [
-            'https://res.cloudinary.com/dsmx8c5ug/image/upload/v1746905516/touca_thrasher_outlined_vxbodr.png',
-            'https://res.cloudinary.com/dsmx8c5ug/image/upload/v1748555933/Slice_26_nkobma.png'
+            'https://res.cloudinary.com/dsmx8c5ug/image/upload/c_crop,ar_1:1/v1746905516/touca_thrasher_outlined_vxbodr.png',
+            'https://res.cloudinary.com/dsmx8c5ug/image/upload/c_crop,ar_1:1/v1748555933/Slice_26_nkobma.png'
         ],
         marca: 'Thrasher',
         modelo: 'Gorro',
@@ -578,8 +578,8 @@ export const gorros = [
         nome: 'Goovy',
         preco: 159,
         imagens: [
-            'https://res.cloudinary.com/dsmx8c5ug/image/upload/v1746905512/touca_high_goovy_cupup2.png',
-            'https://res.cloudinary.com/dsmx8c5ug/image/upload/v1748555932/Slice_24_ptavix.png'
+            'https://res.cloudinary.com/dsmx8c5ug/image/upload/c_crop,ar_1:1/v1746905512/touca_high_goovy_cupup2.png',
+            'https://res.cloudinary.com/dsmx8c5ug/image/upload/c_crop,ar_1:1/v1748555932/Slice_24_ptavix.png'
         ],
         marca: 'High',
         modelo: 'Gorro',
@@ -593,8 +593,8 @@ export const bones = [
         nome: 'Camo',
         preco: 239,
         imagens: [
-            'https://res.cloudinary.com/dsmx8c5ug/image/upload/v1746905395/bone_barra_camo_rysg4b.png',
-            'https://res.cloudinary.com/dsmx8c5ug/image/upload/c_crop,w_830,h_830,ar_1:1/v1748556194/effa760b-f80d-440c-bf34-e4e1904bfc66.png'
+            'https://res.cloudinary.com/dsmx8c5ug/image/upload/c_crop,ar_1:1/v1746905395/bone_barra_camo_rysg4b.png',
+            'https://res.cloudinary.com/dsmx8c5ug/image/upload/c_crop,ar_1:1/c_crop,w_830,h_830,ar_1:1/v1748556194/effa760b-f80d-440c-bf34-e4e1904bfc66.png'
         ],
         marca: 'Barra',
         modelo: 'Boné',
@@ -605,7 +605,7 @@ export const bones = [
         nome: 'Logo Areia',
         preco: 139,
         imagens: [
-            'https://res.cloudinary.com/dsmx8c5ug/image/upload/v1746905396/bone_barra_logo_areia_u7pybc.png',
+            'https://res.cloudinary.com/dsmx8c5ug/image/upload/c_crop,ar_1:1/v1746905396/bone_barra_logo_areia_u7pybc.png',
             'https://res.cloudinary.com/dsmx8c5ug/image/upload/c_crop,w_830,h_830,ar_1:1/v1748556437/bb1cbf97-5b92-497d-a714-672b89e274a7.png'
         ],
         marca: 'Barra',
@@ -617,8 +617,8 @@ export const bones = [
         nome: 'Veludo',
         preco: 142,
         imagens: [
-            'https://res.cloudinary.com/dsmx8c5ug/image/upload/v1746905393/bone_tupode_veludo_vaclvc.png',
-            'https://res.cloudinary.com/dsmx8c5ug/image/upload/v1748556602/Slice_31_jkcuh3.png'
+            'https://res.cloudinary.com/dsmx8c5ug/image/upload/c_crop,ar_1:1/v1746905393/bone_tupode_veludo_vaclvc.png',
+            'https://res.cloudinary.com/dsmx8c5ug/image/upload/c_crop,ar_1:1/v1748556602/Slice_31_jkcuh3.png'
         ],
         marca: 'Tupode',
         modelo: 'Boné',
@@ -629,8 +629,8 @@ export const bones = [
         nome: 'Doggy Style®',
         preco: 159,
         imagens: [
-            'https://res.cloudinary.com/dsmx8c5ug/image/upload/v1746905391/bone_bolovo_doggy_style_eb36y6.png',
-            'https://res.cloudinary.com/dsmx8c5ug/image/upload/v1748556603/Slice_29_miumad.png'
+            'https://res.cloudinary.com/dsmx8c5ug/image/upload/c_crop,ar_1:1/v1746905391/bone_bolovo_doggy_style_eb36y6.png',
+            'https://res.cloudinary.com/dsmx8c5ug/image/upload/c_crop,ar_1:1/v1748556603/Slice_29_miumad.png'
         ],
         marca: 'Bolovo',
         modelo: 'Boné',
@@ -641,8 +641,8 @@ export const bones = [
         nome: 'Fire Dad Hat',
         preco: 142,
         imagens: [
-            'https://res.cloudinary.com/dsmx8c5ug/image/upload/v1746905392/bone_carnan_dad_hat_oc9bjq.png',
-            'https://res.cloudinary.com/dsmx8c5ug/image/upload/e_background_removal/b_rgb:FFFFFF/f_png/v1748556603/Slice_30_nm20z7.png'
+            'https://res.cloudinary.com/dsmx8c5ug/image/upload/c_crop,ar_1:1/v1746905392/bone_carnan_dad_hat_oc9bjq.png',
+            'https://res.cloudinary.com/dsmx8c5ug/image/upload/c_crop,ar_1:1/e_background_removal/b_rgb:FFFFFF/f_png/v1748556603/Slice_30_nm20z7.png'
         ],
         marca: 'Carnan',
         modelo: 'Boné',
@@ -653,8 +653,8 @@ export const bones = [
         nome: 'Utility Dad Hat',
         preco: 169,
         imagens: [
-            'https://res.cloudinary.com/dsmx8c5ug/image/upload/v1746905391/bone_baw_utility_sgorsk.png',
-            'https://res.cloudinary.com/dsmx8c5ug/image/upload/e_background_removal/b_rgb:FFFFFF/f_png/v1748556610/Slice_28_zhozyd.png'
+            'https://res.cloudinary.com/dsmx8c5ug/image/upload/c_crop,ar_1:1/v1746905391/bone_baw_utility_sgorsk.png',
+            'https://res.cloudinary.com/dsmx8c5ug/image/upload/c_crop,ar_1:1/e_background_removal/b_rgb:FFFFFF/f_png/v1748556610/Slice_28_zhozyd.png'
         ],
         marca: 'Baw',
         modelo: 'Boné',
@@ -665,8 +665,8 @@ export const bones = [
         nome: 'Flame',
         preco: 995,
         imagens: [
-            'https://res.cloudinary.com/dsmx8c5ug/image/upload/v1746912863/yeezy_gap_flame_yzd5ox.png',
-            'https://res.cloudinary.com/dsmx8c5ug/image/upload/v1748556793/Slice_32_r8ylj6.png'
+            'https://res.cloudinary.com/dsmx8c5ug/image/upload/c_crop,ar_1:1/v1746912863/yeezy_gap_flame_yzd5ox.png',
+            'https://res.cloudinary.com/dsmx8c5ug/image/upload/c_crop,ar_1:1/v1748556793/Slice_32_r8ylj6.png'
         ],
         marca: 'Yeezy & Gap',
         modelo: 'Boné',

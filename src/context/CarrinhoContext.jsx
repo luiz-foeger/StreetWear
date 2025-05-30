@@ -1,4 +1,3 @@
-// CarrinhoContext.jsx
 import { createContext, useContext, useEffect, useState } from 'react';
 
 const CarrinhoContext = createContext();
@@ -61,7 +60,7 @@ export function CarrinhoProvider({ children }) {
         }
       ];
     });
-};
+  };
 
 
   const removerDoCarrinho = (id) => {
@@ -91,6 +90,7 @@ export function CarrinhoProvider({ children }) {
   // ---------------------- FINALIZAÇÃO ----------------------
 
   const limparCarrinho = () => setCarrinho([]);
+
   const totalItens = carrinho.reduce((acc, item) => acc + item.quantidade, 0);
   const totalPreco = carrinho.reduce((acc, item) => acc + item.preco * item.quantidade, 0);
 
