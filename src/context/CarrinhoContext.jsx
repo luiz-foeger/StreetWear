@@ -25,13 +25,12 @@ export function CarrinhoProvider({ children }) {
   // ---------------------- FUNÇÕES PARA MANIPULAR CARRINHO ----------------------
 
   const adicionarAoCarrinho = (produto) => {
-
     const {
       id,
       nome = '',
       modelo = '',
       marca = '',
-      imagem = '',
+      imagens = [],
       preco = 0
     } = produto;
 
@@ -56,13 +55,14 @@ export function CarrinhoProvider({ children }) {
           nome,
           modelo,
           marca,
-          imagem,
+          imagens,
           preco,
           quantidade: 1
         }
       ];
     });
-  };
+};
+
 
   const removerDoCarrinho = (id) => {
     setCarrinho(prevCarrinho => prevCarrinho.filter(item => item.id !== id));

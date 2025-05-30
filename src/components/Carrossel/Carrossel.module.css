@@ -44,7 +44,7 @@
     cursor: pointer;
     font-size: var(--font-large-size);
     padding: 0.5rem;
-    z-index: 1;
+    z-index: 999;
 }
 
 .setaEsquerda {
@@ -55,7 +55,6 @@
     right: 0;
 }
 
-/* media query mobile */
 @media (max-width: 768px) {
     .carrossel {
         overflow-x: auto;

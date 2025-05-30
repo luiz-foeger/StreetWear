@@ -16,14 +16,14 @@ function PaginaCategoria() {
     // Estados de filtro
     const [filtroMarca, setFiltroMarca] = useState('');
     const [filtroPrecoMin, setFiltroPrecoMin] = useState(39);
-    const [filtroPrecoMax, setFiltroPrecoMax] = useState(999);
+    const [filtroPrecoMax, setFiltroPrecoMax] = useState(3999);
     const [mostrarFiltros, setMostrarFiltros] = useState(false);
 
     // Verifica se a categoria é válida
     useEffect(() => {
         setFiltroMarca('');
         setFiltroPrecoMin(39);
-        setFiltroPrecoMax(999);
+        setFiltroPrecoMax(3999);
     }, [categoria]);
 
     // Obter marcas únicas para o filtro ("useMemo" para otimizar o desempenho)
@@ -40,7 +40,7 @@ function PaginaCategoria() {
     function limparFiltros() {
         setFiltroMarca('');
         setFiltroPrecoMin(39);
-        setFiltroPrecoMax(999);
+        setFiltroPrecoMax(3999);
     }
 
     function capitalize(str) {
@@ -76,9 +76,9 @@ function PaginaCategoria() {
                     ))}
                 </select>
                 <label>Preço Mínimo: R$ {filtroPrecoMin}</label>
-                <input type="range" min="39" max="999" value={filtroPrecoMin} onChange={e => setFiltroPrecoMin(Number(e.target.value))} />
+                <input type="range" min="39" max="3999" value={filtroPrecoMin} onChange={e => setFiltroPrecoMin(Number(e.target.value))} />
                 <label>Preço Máximo: R$ {filtroPrecoMax}</label>
-                <input type="range" min="39" max="999" value={filtroPrecoMax} onChange={e => setFiltroPrecoMax(Number(e.target.value))} />
+                <input type="range" min="39" max="3999" value={filtroPrecoMax} onChange={e => setFiltroPrecoMax(Number(e.target.value))} />
                 <button className={estilos.botaoLimpar} onClick={limparFiltros}>Limpar Filtros</button>
             </aside>
 

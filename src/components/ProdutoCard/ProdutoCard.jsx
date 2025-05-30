@@ -1,30 +1,45 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { useCarrinho } from '../../context/CarrinhoContext';
-import { IoBagAdd } from "react-icons/io5";
-import estilos from './ProdutoCard.module.css';
+    import { useState } from 'react';
+    import { Link } from 'react-router-dom';
+    // import { useCarrinho } from '../../context/CarrinhoContext';
+    // import { IoBagAdd } from "react-icons/io5";
+    import estilos from './ProdutoCard.module.css';
 
-function ProdutoCard({ id, imagem, nome, preco, marca, modelo }) {
-    const { adicionarAoCarrinho } = useCarrinho();
-    const [imagemCarregada, setImagemCarregada] = useState(false);
+    function ProdutoCard({ id, imagens = [], nome, preco, marca, modelo }) {
+        // const { adicionarAoCarrinho } = useCarrinho();
+        const [imagemCarregada, setImagemCarregada] = useState(false);
 
-    return (
-        <div className={estilos.card}>
-            <Link to={`/detalhes/produto/${modelo.toLowerCase()}/${marca.toLowerCase()}/${id}`} className={estilos.link}>
-                <div className={estilos.imagemContainer}>
-                    {!imagemCarregada && <div className={estilos.imagemLoading}></div>}
-                    <img
-                        src={imagem}
-                        alt={nome}
-                        className={`${estilos.imagem} ${imagemCarregada ? estilos.visivel : estilos.oculto}`}
-                        onLoad={() => setImagemCarregada(true)}
-                    />
-                </div>
-                <h2 className={estilos.nome}>{modelo} {marca} {nome}</h2>
-                <p className={estilos.preco}>R$ {preco}</p>
-            </Link>
-        </div>
-    );
-}
+        const imagemPrincipal = imagens[0];
+        const imagemSecundaria = imagens[1];
 
-export default ProdutoCard;
+        return (
+            <div className={estilos.card}>
+                <Link to={`/detalhes/produto/${modelo.toLowerCase()}/${marca.toLowerCase()}/${id}`} className={estilos.link}>
+                    <div className={estilos.imagemContainer}>
+                        {!imagemCarregada && <div className={estilos.imagemLoading}></div>}
+
+                        {imagemPrincipal && (
+                            <img
+                                src={imagemPrincipal}
+                                alt={nome}
+                                className={`${estilos.imagem} ${estilos.imagemPrincipal} ${imagemCarregada ? estilos.visivel : estilos.oculto}`}
+                                onLoad={() => setImagemCarregada(true)}
+                            />
+                        )}
+
+                        {imagemSecundaria && (
+                            <img
+                                src={imagemSecundaria}
+                                alt={`${nome} secundária`}
+                                className={`${estilos.imagem} ${estilos.imagemSecundaria}`}
+                            />
+                        )}
+                    </div>
+                    <h2 className={estilos.nome}>{modelo} {marca} {nome}</h2>
+                    <p className={estilos.preco}>R$ {preco}</p>
+                </Link>
+            </div>
+        );
+    }
+
+
+    export default ProdutoCard;

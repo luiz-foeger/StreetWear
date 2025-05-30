@@ -9,6 +9,7 @@ import { TfiClose } from "react-icons/tfi";
 import Erro from '../404/Erro';
 
 import estilos from './Detalhes.module.css';
+import GaleriaProduto from '../Galeria/Galeria';
 
 function ProdutoDetalhes() {
     const [mostrarModal, setMostrarModal] = useState(false);
@@ -33,6 +34,8 @@ function ProdutoDetalhes() {
 
     if (!item) return <Erro />;
 
+    let titulo = `${item.modelo} ${item.marca} ${item.nome}`;
+
     return (
         <>
             <div className={estilos.indicadorPagina}>
@@ -42,9 +45,12 @@ function ProdutoDetalhes() {
                 </span>
             </div>
             <div className={estilos.cardDetalhes}>
-                <img src={item.imagem} alt={item.nome} onClick={() => setMostrarModal(true)} />
+
+                <GaleriaProduto imagens={item.imagens} />
+
                 <div className={estilos.detalhes}>
-                    <h1>{item.modelo} {item.marca} {item.nome}</h1>
+                    <h1>{titulo.toUpperCase()}</h1>
+
                     <h2>R$ {item.preco}</h2>
                     <h3>COMPOSIÇÃO</h3>
                     <p>{capitalize(item.modelo)} 100% algodão com 270 g/m² <br />
@@ -69,9 +75,10 @@ function ProdutoDetalhes() {
                 mostrarModal && (
                     <div className={estilos.modalOverlay} onClick={() => setMostrarModal(false)}>
                         <div className={estilos.modalContent} onClick={(e) => e.stopPropagation()}>
-                            <div >
-                                <img className={estilos.modalImagem} src={item.imagem} alt={item.nome} />
-
+                            <div className={estilos.modalGaleria}>
+                                {item.imagens?.map((src, index) => (
+                                    <img key={index} className={estilos.modalImagem} src={src} alt={`${item.nome} ${index + 1}`} />
+                                ))}
                             </div>
                         </div>
                         <button className={estilos.botaoFechar} onClick={() => setMostrarModal(false)}><TfiClose /></button>

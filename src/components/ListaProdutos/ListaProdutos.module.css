@@ -30,6 +30,7 @@
     border-radius: 20px 20px 0 0;
     gap: 10px 50px;
     padding: 2.5rem;
+    justify-content: center;
 }
 
 /* --------- filtros de busca --------- */
@@ -190,4 +191,13 @@ option {
     .cabecalhoFiltros {
         padding: 1.25rem 1rem 0;
     }
+
+    .lista {
+        grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+        margin: 0 auto;
+    }
+
+    /* .cabecalhoFiltros h5 {
+        font-size: var(--font-super-small-size);
+    } */
 }

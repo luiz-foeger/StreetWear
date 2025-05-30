@@ -41,21 +41,23 @@ function Carrinho() {
                     <section key={item.id} className={estilos.itemCard}>
                         <div className={estilos.cardInfo}>
                             <div className={estilos.infoProduto}>
+
                                 <Link
-                                    to={`/detalhes/produto/${(item.modelo || '').toLowerCase()}/${(item.marca || '').toLowerCase()}/${item.id}`}
-                                >
+                                    to={`/detalhes/produto/${(item.modelo || '').toLowerCase()}/${(item.marca || '').toLowerCase()}/${item.id}`}>
                                     <img
-                                        src={item.imagem}
+                                        src={item.imagens?.[0]}
                                         alt={item.nome}
                                         width={80}
                                         className={estilos.imagemProduto}
                                     />
                                 </Link>
+
                                 <div style={{ height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-around', borderLeft: '1px solid #E6E6E6', paddingLeft: '20px' }}>
                                     <p style={{ fontWeight: '200' }}>{item.modelo} {item.nome}</p>
                                     <p style={{ fontWeight: '200', color: '#000000bf' }}>{item.marca}</p>
                                     <p style={{ fontWeight: '200', color: '#000000bf' }}>
-                                        R$ {Number(item.preco).toFixed(2)}
+                                        R$ {Number(item.preco)}
+                                        {/* R$ {Number(item.preco).toFixed(2)} */}
                                     </p>
                                 </div>
                                 <div>
@@ -104,7 +106,8 @@ function Carrinho() {
                                 </div>
                             </div>
                             <p className={estilos.precoTotal} style={{ fontWeight: '200' }}>
-                                R$ {(Number(item.preco) * item.quantidade).toFixed(2)}
+                                R$ {(Number(item.preco) * item.quantidade)}
+                                {/* R$ {(Number(item.preco) * item.quantidade).toFixed(2)} */}
                             </p>
                             <button
                                 className={estilos.icone}

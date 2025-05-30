@@ -12,7 +12,7 @@ function ListaProdutos({ produtos }) {
           <ProdutoCard
             key={produto.id}
             id={produto.id}
-            imagem={produto.imagem}
+            imagens={produto.imagens}
             nome={produto.nome}
             preco={produto.preco}
             marca={produto.marca}

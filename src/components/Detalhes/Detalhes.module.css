@@ -1,14 +1,15 @@
 .indicadorPagina {
-    color: #000;
-    display: flex;
+    /* display: flex; */
+    color: var(--text-color-dark);
+    font-size: var(--font-medium-size);
+    font-family: var(--font-family);
+    display: none;
     align-items: center;
     flex-direction: row;
-    margin-left: 90px;
-    height: 90px;
-    margin-bottom: -35px;
-    padding-right: 30px;
-    font-size: 18px;
-    font-family: 'Lexend', cursive;
+    margin-left: 5.625rem;
+    height: 5.625rem;
+    margin-bottom: -2.188rem;
+    padding-right: 1.875rem;
 }
 
 .indicadorPagina a {
@@ -21,7 +22,6 @@
     text-decoration: none;
 }
 
-
 /* -------------------- */
 
 .cardDetalhes {
@@ -31,8 +31,8 @@
     justify-content: center;
     width: 100%;
     height: 100%;
+    padding: 3.125rem;
     border-radius: 8px;
-    padding: 50px;
 }
 
 .detalhes {
@@ -40,77 +40,77 @@
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    font-family: 'Lexend', sans-serif;
-    margin: 0 0 0 40px;
+    font-family: var(--font-family);
+    margin-left: 2.5rem;
 }
 
 /* -------------------- */
 
 .cardDetalhes img {
-    height: 800px;
-    width: 800px;
+    /* height: 800px; */
+    /* width: 800px; */
     object-fit: contain;
     border-radius: 8px;
-    margin: 0 40px 0 0;
+    margin-right: 2.5rem;
     cursor: zoom-in;
 }
 
 .modalOverlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.822);
     /* background: rgba(0, 0, 0, 0.6); */
-    color: #000;
+    background: rgba(0, 0, 0, 0.822);
+    color: var(--text-color-dark);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     z-index: 1000;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 
 .modalContent {
-    background: #fff;
+    background-color: var(--background-color);
+    text-align: center;
+    position: relative;
     padding: 20px;
     border-radius: 10px;
     max-width: 100vh;
     width: 100%;
-    text-align: center;
-    position: relative;
 }
 
 .modalContent path {
-    fill: #000;
+    fill: var(--text-color-dark);
 }
 
 .modalContent .nome {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .modalContent .preco {
-    font-size: 42px;
+    font-size: 2.625rem;
 }
 
 .modalContent .botaoContato {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 /* -------------------- */
 
 .botaoFechar {
-    color: #b1b1b1;
-    font-size: 30px;
-    top: 25px;
-    right: 25px;
-    max-width: 30px;
-    max-height: 30px;
-    margin-top: -10px;
     position: absolute;
     background-color: transparent;
     border: none;
     transition: all 0.2s ease;
+    color: #b1b1b1;
+    max-height: 1.875rem;
+    max-width: 1.875rem;
+    font-size: 1.875rem;
+    top: 1.563rem;
+    right: 1.563rem;
+    margin-top: -0.625rem;
 }
 
 .botaoFechar:hover {
@@ -118,89 +118,87 @@
 }
 
 .modalImagem {
+    border-radius: 0.5rem;
+    margin-bottom: 0.75rem;
     width: 100%;
     height: auto;
-    border-radius: 8px;
-    margin-bottom: 12px;
     object-fit: cover;
 }
 
 .detalhes a {
+    color: var(--text-color-light);
     text-decoration: none;
-    color: #fff;
     font-weight: 200;
     width: 100%;
 }
 
 .detalhes h1 {
-    font-size: 35px;
+    color: var(--text-color-dark);
+    font-size: 2.188rem;
     width: 555px;
-    margin-bottom: 10px;
-    color: #000;
+    margin: 1.25rem 0 0.625rem;
     font-weight: 400;
 }
 
 .detalhes h2 {
-    font-size: 45px;
-    margin-bottom: 10px;
-    color: #000;
+    color: var(--text-color-dark);
+    font-size: 2.813rem;
     font-weight: 200;
-    margin: 10px 0;
+    margin: 0.625rem 0;
 }
 
 .detalhes h3 {
-    font-size: 22px;
-    margin-bottom: 10px;
-    color: #000;
-    margin-top: 20px;
+    color: var(--text-color-dark);
+    font-size: 1.375rem;
+    margin-top: 1.25rem 0 0.625rem;
     font-weight: 300;
 }
 
 .detalhes p {
-    font-size: 20px;
-    margin-bottom: 40px;
     color: #000000BF;
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
     font-weight: 200;
 }
 
 /* -------------------- */
 
 select {
-    font-size: 20px;
-    border-radius: 5px;
-    border: 1px solid #828282;
-    margin-bottom: 40px;
-    text-align: center;
+    background-color: transparent;
+    color: #000000BF;
+    font-size: 1.25rem;
     height: 40px;
     width: 200px;
+    margin-bottom: 2.5rem;
+    border-radius: 5px;
+    border: 1px solid #828282;
+    text-align: center;
     font-weight: 200;
-    color: #000000BF;
-    background-color: transparent;
 }
 
 .option {
-    font-size: 15px;
+    color: var(--text-color-dark);
+    font-size: 0.938rem;
     border-radius: 5px;
     width: 150px;
     text-align: center;
-    color: #000;
 }
 
 .botao {
-    font-family: 'Lexend', sans-serif;
-    font-weight: 200;
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    font-family: var(--font-family);
+    font-size: var(--font-medium-size);
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
-    background-color: black;
-    color: white;
     width: 100%;
     border: none;
-    padding: 12px 24px;
     border-radius: 8px;
     text-decoration: none;
-    font-size: 18px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 200;
     transition: all 0.3s ease-out;
 }
 
@@ -249,7 +247,7 @@ input[type="text"]:focus {
 
 @media screen and (max-width: 1300px) {
     .cardDetalhes {
-        padding: 0 50px;
+        padding: 0 3.125rem;
         height: 650px;
     }
 
@@ -258,40 +256,40 @@ input[type="text"]:focus {
     }
 
     .detalhes h1 {
-        font-size: 25px;
+        font-size: 1.563rem;
         width: 500px;
     }
 
     .detalhes h2 {
-        font-size: 35px;
+        font-size: 2.188rem;
     }
 
     .detalhes h3 {
-        font-size: 17px;
-        margin: 10px 0 20px
+        font-size: 1.063rem;
+        margin: 0.625rem 0 1.25rem;
     }
 
     .detalhes p {
-        font-size: 17px;
-        margin-bottom: 20px;
+        font-size: 1.063rem;
+        margin-bottom: 1.25rem;
     }
 
     select {
-        font-size: 15px;
-        margin-bottom: 20px;
+        font-size: 0.938rem;
+        margin-bottom: 1.25rem;
     }
 
     .option {
-        font-size: 15px;
+        font-size: 0.938rem;
     }
 
     .botao {
-        font-size: 15px;
+        font-size: 0.938rem;
         max-width: 480px;
     }
 
     input[type="text"] {
-        font-size: 17px;
+        font-size: 1.063rem;
     }
 
     .inputDetalhes {
@@ -324,8 +322,8 @@ input[type="text"]:focus {
     }
 
     .cardDetalhes img {
-        height: 100%;
-        width: 100%;
+        height: unset;
+        width: unset;
         max-width: 100%;
         margin: 0;
     }

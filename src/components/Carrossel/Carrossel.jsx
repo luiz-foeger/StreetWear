@@ -15,7 +15,7 @@ function Carrossel({ titulo, produtos = [], linkVerTudo = "#" }) {
     return (
         <>
             <nav className={estilos.nav}>
-                {/* <h2 className={estilos.titulo}>{titulo}</h2> */}
+                <h2 className={estilos.titulo}>{titulo}</h2>
                 <a href={linkVerTudo} className={estilos.verTudo}>Ver tudo</a>
             </nav>
 
@@ -29,7 +29,7 @@ function Carrossel({ titulo, produtos = [], linkVerTudo = "#" }) {
                         <ProdutoCard
                             key={produto.id}
                             id={produto.id}
-                            imagem={produto.imagem}
+                            imagens={produto.imagens}
                             nome={produto.nome}
                             preco={produto.preco}
                             marca={produto.marca}
