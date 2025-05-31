@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-footer {
+/* footer {
     font-family: var(--font-family);
     background: var(--primary-color);
     color: var(--text-color-light);
@@ -24,5 +24,111 @@ footer p {
 
     footer p {
         font-weight: var(--font-semibold);
+    }
+} */
+
+
+footer {
+    font-family: var(--font-family);
+    background: var(--primary-color);
+    color: var(--text-color-light);
+    font-size: var(--font-small-size);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    margin-top: 5rem;
+    padding: 3rem 0;
+}
+
+.redesSociais {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 0;
+    gap: 20px;
+}
+
+.redesSociais a {
+    color: var(--text-color-light);
+    font-size: 2rem;
+    transition: all 0.3s ease-out;
+}
+
+.redesSociais a:hover {
+    color: #a5a5a5;
+}
+
+.linksFooter {
+    display: flex;
+    flex-direction: row;
+    gap: 130px;
+}
+
+.linksFooter div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px
+}
+
+.linksFooter div .titleUl {
+    font-size: var(--font-medium-size);
+    font-weight: 500;
+}
+
+.linksFooter div ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: start;
+    gap: 15px;
+    width: 10.063rem;
+    padding: 0;
+}
+
+.linksFooter a {
+    text-decoration: none;
+    color: var(--text-color-light);
+}
+
+.linksFooter a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    border-top: #2c2c2c solid 1px;
+    font-size: var(--font-small-size);
+    color: var(--text-color-light);
+    font-weight: var(--font-semibold);
+    padding-top: 3rem;
+    margin: 0;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 1300px) {
+    .linksFooter {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .linksFooter {
+        gap: 150px;
+        flex-wrap: wrap;
+    }
+
+    .linksFooter {
+        justify-content: center;
+        gap: 20px 0;
+    }
+
+    .copyright {
+        font-size: 0.75rem;
     }
 }
