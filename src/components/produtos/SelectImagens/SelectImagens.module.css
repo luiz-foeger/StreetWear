@@ -14,21 +14,20 @@
   width: 80px;
   height: 80px;
   object-fit: cover;
-  border: 1.5px solid transparent;
+  /* border: 1.5px solid transparent; */
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.2s;
-  filter: opacity(70%);
+  filter: opacity(60%);
 }
 
 .thumbSelecionada {
-  border-color: var(--text-color-dark);
   filter: opacity(100%);
 }
 
 .imagemPrincipal {
   flex-grow: 1;
-  width: 500px;
+  width: 750px;
   height: auto;
 }
 
@@ -36,9 +35,86 @@
   width: 100%;
   border-radius: 15px;
   object-fit: contain;
+  cursor: zoom-in;
+}
+
+/* --------- estilização do modal --------- */
+
+.modalOverlay {
+  background: rgba(0, 0, 0, 0.822);
+  color: var(--text-color-dark);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.modalContent {
+  background-color: var(--background-color);
+  text-align: center;
+  position: relative;
+  max-width: 110vh;
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.modalImagem {
+  width: 100%;
+  height: 1000%;
+  margin: 0;
+  border-radius: 0;
+  object-fit: cover;
+}
+
+.modalContent path {
+  fill: var(--text-color-dark);
+}
+
+.modalContent .nome {
+  font-size: 1.25rem;
+}
+
+.modalContent .preco {
+  font-size: 2.625rem;
+}
+
+.modalContent .botaoContato {
+  font-size: 1.25rem;
+}
+
+.botaoFechar {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  transition: all 0.2s ease;
+  color: #b1b1b1;
+  max-height: 1.875rem;
+  max-width: 1.875rem;
+  font-size: 1.875rem;
+  top: 1.563rem;
+  right: 1.563rem;
+  margin-top: -0.625rem;
+}
+
+.botaoFechar:hover {
+  scale: 1.05;
 }
 
 /* --------- media queries --------- */
+
+@media screen and (max-width: 1300px) {
+  .imagemPrincipal {
+    flex-grow: 1;
+    width: 500px;
+    height: auto;
+  }
+}
 
 @media (max-width: 1050px) {
   .imagensContainer {
@@ -65,5 +141,14 @@
 
   .imagemPrincipal img {
     border-radius: 0;
+  }
+
+  .thumb {
+    border: 1.5px solid transparent;
+  }
+
+  .thumbSelecionada {
+    border-color: var(--text-color-dark);
+    filter: opacity(100%);
   }
 }

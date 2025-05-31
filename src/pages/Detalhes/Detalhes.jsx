@@ -14,7 +14,6 @@ import SelectImagem from '../../components/produtos/SelectImagens/SelectImagens'
 
 
 function PaginaDetalhes() {
-    const [mostrarModal, setMostrarModal] = useState(false);
     const { id, modelo, marca } = useParams();
     const {
         // aumentarQuantidade,
@@ -40,16 +39,16 @@ function PaginaDetalhes() {
                     /   <Link style={{ fontWeight: '300', color: '#5F5F5F', textDecoration: 'none' }} onClick={() => window.history.back()}>{capitalize(item.modelo)}s</Link> / {item.nome} {/* {capitalize(item.nome)} */}
                 </span>
             </div>
-            <div className={estilos.cardDetalhes}>
+            <div className={estilos.sectionDetalhes}>
 
                 <SelectImagem imagens={item.imagens} />
 
                 <div className={estilos.detalhesProduto}>
-                    <h1>{titulo.toUpperCase()}</h1>
-                    <h2>R$ {item.preco}</h2>
+                    <h1 className={estilos.nomeProduto}>{titulo.toUpperCase()}</h1>
+                    <h2 className={estilos.precoProduto}>R$ {item.preco}</h2>
 
-                    <h3>COMPOSIÇÃO</h3>
-                    <p>{`${descricaoProduto}${item.marca}®`}</p>
+                    <h3 className={estilos.composicao}>COMPOSIÇÃO</h3>
+                    <p className={estilos.descricaoProduto}>{`${descricaoProduto}${item.marca}®`}</p>
 
                     <select id="select" className={estilos.select} name="select" required>
                         <option style={{ fontWeight: '200' }} value="selecionar" selected disabled>Tamanho</option>
@@ -65,20 +64,8 @@ function PaginaDetalhes() {
                         <button onClick={() => alert('CUPOM NÃO ENCONTRADO!')}>CALCULAR</button>
                     </div>
                 </div>
-            </div>             {
-                mostrarModal && (
-                    <div className={estilos.modalOverlay} onClick={() => setMostrarModal(false)}>
-                        <div className={estilos.modalContent} onClick={(e) => e.stopPropagation()}>
-                            <div className={estilos.modalGaleria}>
-                                {item.imagens?.map((src, index) => (
-                                    <img key={index} className={estilos.modalImagem} src={src} alt={`${item.nome} ${index + 1}`} />
-                                ))}
-                            </div>
-                        </div>
-                        <button className={estilos.botaoFechar} onClick={() => setMostrarModal(false)}><TfiClose /></button>
-                    </div>
-                )
-            }
+            </div>
+            
         </>
     );
 }

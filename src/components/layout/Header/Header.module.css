@@ -41,11 +41,11 @@
 }
 
 .nav {
+    font-weight: var(--font-fine);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100px;
-    font-weight: 100;
 }
 
 .nav a {
@@ -78,8 +78,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 4.688rem;
-    height: 30px;
+    width: 5rem;
+    height: 1.875rem;
     color: #d4d4d4;
     transition: ease 0.2s;
 }
@@ -148,6 +148,11 @@
 /* --------- media queries --------- */
 
 @media screen and (max-width: 1300px) {
+    .icone {
+        width: 4.688rem;
+    }
+
+
     .nav a {
         font-size: var(--font-small-size);
     }
