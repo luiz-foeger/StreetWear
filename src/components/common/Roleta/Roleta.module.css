@@ -1,0 +1,37 @@
+.carrosselContainer {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  padding: 16px 0;
+  position: relative;
+}
+
+.carrossel {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: max-content;
+  animation: rolar 20s linear infinite;
+}
+
+.logo {
+  height: auto;
+  width: 70px;
+  object-fit: contain;
+  filter: grayscale(1);
+  opacity: 0.8;
+  transition: filter 0.3s, opacity 0.3s;
+}
+.logo:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+@keyframes rolar {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

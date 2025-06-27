@@ -3,11 +3,13 @@ import Banner from '../../components/common/Banner/Banner';
 import Carrossel from '../../components/common/Carrossel/Carrossel';
 
 import { vestuario, shorts, accessories, sneakers, skateItens } from '../../data/products';
+import Roleta from '../../components/common/Roleta/Roleta';
 
 const PaginaInicial = () => {
     return (
         <>
             <Banner />
+            <Roleta />
             <Buttons />
             <h3 style={{ margin: '25px 0' }}></h3>
             <div>
