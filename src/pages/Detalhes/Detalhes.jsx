@@ -11,6 +11,9 @@ import { TfiClose } from "react-icons/tfi";
 
 import PaginaNaoEncontrada from '../NaoEncontrada/NaoEncontrada';
 import SelectImagem from '../../components/produtos/SelectImagens/SelectImagens';
+import ListaProdutos from '../../components/produtos/ListaProdutos/ListaProdutos'; // já existe no projeto
+import Carrossel from '../../components/common/Carrossel/Carrossel';
+
 
 
 function PaginaDetalhes() {
@@ -30,6 +33,10 @@ function PaginaDetalhes() {
 
     let titulo = `${item.modelo} ${item.marca} ${item.nome}`;
     const descricaoProduto = descricoesPorModelo[item.modelo.toLowerCase()] || "    ";
+
+    const recomendados = vetCatalogo.filter(
+        p => p.marca.toLowerCase() === item.marca.toLowerCase() && p.id !== item.id
+    );
 
     return (
         <>
@@ -65,7 +72,17 @@ function PaginaDetalhes() {
                     </div>
                 </div>
             </div>
-            
+            {recomendados.length > 0 && (
+                <div className={estilos.recomendados}>
+                    <h3 className={estilos.tituloRecomendados}>Mais de {item.marca}®</h3>
+                    {/* caso retorne apenas 3 produtos utilizar a ListaProdutos, caso seja mais de 4 usa o Carrossel: */}
+                    {recomendados.length > 3 ? (
+                        <Carrossel produtos={recomendados} />
+                    ) : (
+                        <ListaProdutos produtos={recomendados} />
+                    )}
+                </div>
+            )}
         </>
     );
 }
