@@ -1,6 +1,7 @@
 .header {
     font-family: var(--font-family);
-    background-color: #0d0d0d;
+    /* background-color: #0d0d0d; */
+    background-color: #ffffff;
     z-index: 998;
     position: fixed;
     top: 0;
@@ -19,6 +20,7 @@
 
 .rolado {
     height: 70px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 /* --------- componentes do Header --------- */
@@ -34,10 +36,16 @@
     height: 100%;
     z-index: 999;
     cursor: url('../../../../public/assets/cursor/gta-pointer.cur'), auto;
+    filter: brightness(0);
 }
 
 .logoMobile {
     display: none;
+    filter: brightness(0);
+}
+
+.header svg {
+    color: var(--text-color-dark);
 }
 
 .nav {
@@ -51,14 +59,16 @@
 .nav a {
     font-size: var(--font-medium-size);
     text-decoration: none;
-    color: #ddd;
+    /* color: #ddd; */
+    color: var(--text-color-dark);
     transition: ease 0.2s;
     font-weight: 200;
     margin-top: 5px;
 }
 
 .nav a:hover {
-    color: var(--text-color-light);
+    /* color: var(--text-color-dark); */
+    color: #818181;
 }
 
 .navDesktop {
@@ -80,7 +90,8 @@
     justify-content: center;
     width: 5rem;
     height: 1.875rem;
-    color: #d4d4d4;
+    /* color: #d4d4d4; */
+    color: var(--text-color-dark);
     transition: ease 0.2s;
 }
 
@@ -114,7 +125,16 @@
 }
 
 .dropdownProdutos {
-    background-color: #0d0d0df2;
+    /* background-color: #0d0d0df2; */
+    background-color: #fffffff2;
+    /* box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05); */
+    /* box shadow apenas na borda de baixo: */
+    box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.05);
+    /* background-color: #fffffff6; */
+    /* background: rgba(255, 255, 255, 0.84); */
+    backdrop-filter: blur(6.4px);
+    -webkit-backdrop-filter: blur(6.4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     display: flex;
     opacity: 0;
     visibility: hidden;
@@ -137,12 +157,14 @@
 .dropdownProdutos a {
     display: block;
     padding: 1px 0;
-    color: #ffffffec;
+    /* color: #ffffffec; */
+    color: var(--text-color-dark);
     text-decoration: none;
 }
 
 .dropdownProdutos a:hover {
-    color: #a0a0a0;
+    /* color: #a0a0a0; */
+    color: #818181;
 }
 
 /* --------- media queries --------- */
@@ -171,6 +193,10 @@
 }
 
 @media screen and (max-width: 545px) {
+    .header {
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
     .logo {
         display: none;
     }

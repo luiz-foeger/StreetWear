@@ -38,7 +38,8 @@ function Header() {
                     <img className={estilos.logo} src="https://res.cloudinary.com/dsmx8c5ug/image/upload/e_background_removal/f_png/v1748627055/logo-desktop_iqsl8x.png" alt="Logo" />
                 </Link>
 
-                <button className={`${estilos.iconeMobile} ${rolado ? estilos.rolado : ""}`}><IoIosMenu onClick={() => setMostrarAside(!mostrarAside)} /></button>
+                {/* <button className={`${estilos.iconeMobile} ${rolado ? estilos.rolado : ""}`}><IoIosMenu onClick={() => setMostrarAside(!mostrarAside)} /></button> */}
+                <button className={estilos.iconeMobile}><IoIosMenu onClick={() => setMostrarAside(!mostrarAside)} /></button>
 
                 <Link to="/" className={estilos.logoMobile}>
                     <img className={estilos.logoMobile} src="https://res.cloudinary.com/dsmx8c5ug/image/upload/e_background_removal/f_png/v1748627046/logo-mobile_nc2mg9.png" alt="Logo" />
@@ -125,7 +126,8 @@ function Header() {
                     </ul>
                 </aside>
 
-                <Link className={`${estilos.icone} ${rolado ? estilos.rolado : ""}`} to="/sacola">
+                {/* <Link className={`${estilos.icone} ${rolado ? estilos.rolado : ""}`} to="/sacola"> */}
+                <Link className={estilos.icone} to="/sacola">
                     <HiOutlineShoppingBag />
                 </Link>
             </header>
