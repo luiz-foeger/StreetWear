@@ -65,7 +65,7 @@ function PaginaDetalhes() {
                         <option style={{ fontWeight: '200' }} value="G">G</option>
                         <option style={{ fontWeight: '200' }} value="GG">GG</option>
                     </select>
-                    <Link to="/sacola"><button className={estilos.botao} onClick={() => adicionarAoCarrinho(item)}>Adicionar ao Carrinho</button></Link>
+                    <button className={estilos.botao} onClick={() => adicionarAoCarrinho(item)}>Adicionar ao Carrinho</button>
                     <div className={estilos.inputDetalhes}>
                         <input type="text" placeholder='Digite seu CUPOM' />
                         <button onClick={() => alert('CUPOM NÃO ENCONTRADO!')}>CALCULAR</button>

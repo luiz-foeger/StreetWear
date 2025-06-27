@@ -19,7 +19,7 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<PaginaInicial />} />
-        <Route path="/sacola" element={<PaginaCarrinho />} />
+        {/* <Route path="/sacola" element={<PaginaCarrinho />} /> */}
         <Route path="/produtos/:categoria" element={<PaginaCategoria />} />
         <Route path="/detalhes/produto/:modelo/:marca/:id" element={<PaginaDetalhes />} />
         <Route path="*" element={<PaginaNaoEncontrada />} />

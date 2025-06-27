@@ -8,10 +8,13 @@ import { TfiClose } from "react-icons/tfi";
 
 import estilos from './Header.module.css';
 
+import AsideCarrinho from '../AsideCarrinho/AsideCarrinho';
+
 
 function Header() {
     const [rolado, setRolado] = useState(false);
     const [mostrarAside, setMostrarAside] = useState(false);
+    const [mostrarCarrinho, setMostrarCarrinho] = useState(false);
 
     const [categoriaExpandida, setCategoriaExpandida] = useState({
         vestuarios: false,
@@ -127,9 +130,14 @@ function Header() {
                 </aside>
 
                 {/* <Link className={`${estilos.icone} ${rolado ? estilos.rolado : ""}`} to="/sacola"> */}
-                <Link className={estilos.icone} to="/sacola">
+                {/* <Link className={estilos.icone} to="/sacola">
                     <HiOutlineShoppingBag />
-                </Link>
+                </Link> */}
+                <button className={estilos.icone} onClick={() => setMostrarCarrinho(true)}>
+                    <HiOutlineShoppingBag />
+                </button>
+                <AsideCarrinho aberto={mostrarCarrinho} onFechar={() => setMostrarCarrinho(false)} />
+
             </header>
         </>
     );

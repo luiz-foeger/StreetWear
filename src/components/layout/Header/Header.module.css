@@ -93,6 +93,8 @@
     /* color: #d4d4d4; */
     color: var(--text-color-dark);
     transition: ease 0.2s;
+    background: transparent;
+    border: none;
 }
 
 .iconeMobile {

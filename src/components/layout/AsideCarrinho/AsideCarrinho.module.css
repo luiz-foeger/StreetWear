@@ -1,0 +1,164 @@
+.asideCarrinho {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 400px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -2px 0 16px rgba(0, 0, 0, 0.08);
+  z-index: 1001;
+  transition: right 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.asideCarrinho h5 {
+  margin: 0;
+}
+
+.visivel {
+  right: 0;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.2rem;
+  border-bottom: 1px solid #eee;
+}
+
+/* .rodape {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0 1.2rem;
+} */
+
+.fecharAside {
+  background: transparent;
+  border: none;
+  font-size: var(--font-large-size);
+  cursor: pointer;
+}
+
+.conteudo {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.2rem;
+}
+
+.itemCard {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+}
+
+/* .imagemProduto {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-right: 1rem;
+} */
+
+.imagemProduto {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+  left: 0;
+  padding-right: 10px;
+  /* margin-right: 20px;
+    border-right: solid 1px #E6E6E6; */
+}
+
+.info {
+  flex: 1;
+  gap: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.info>p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 250px;
+}
+
+.info p {
+  margin: 0;
+}
+
+.qtdProduto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Source Code Pro', monospace;
+  width: 89px;
+  height: 10px;
+}
+
+.qtdProduto p {
+  padding: 0 10px;
+  margin: 0;
+  border-top: solid 1px #E6E6E6;
+  border-bottom: solid 1px #E6E6E6;
+}
+
+.qtdProduto button {
+  display: flex;
+  align-items: center;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 900;
+  font-size: 16px;
+  padding: 0 10px;
+  background-color: #ffffff00;
+  border: solid 1px #E6E6E6;
+}
+
+/* .qtdProduto {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+*/
+
+.icone {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+.botaoEsvaziar,
+.botaoFinalizar {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.botaoEsvaziar {
+  background: #eee;
+  color: #333;
+}
+
+.botaoFinalizar {
+  background: #111;
+  color: #fff;
+}
+
+.total {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  text-align: right;
+}
